@@ -1,0 +1,137 @@
+{
+  "overview": {
+    "total_records": 9,
+    "unique_urls": 9,
+    "unique_normalized_urls": 9,
+    "unique_domains": 2,
+    "depth_range": {
+      "min": 2,
+      "max": 6,
+      "avg": 3.2222222222222223
+    }
+  },
+  "completeness": {
+    "url": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "url_normalized": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "depth": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "parent_url": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "discovered_at": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "queued_at": {
+      "count": 9,
+      "percentage": 100.0
+    },
+    "crawled_at": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "response_time_ms": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "status_code": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "content_type": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "content_length": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "title": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "link_count": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "url_quality": {
+    "protocols": {
+      "http": 9
+    },
+    "ports": {
+      "8081": 2,
+      "default": 7
+    },
+    "file_extensions": {
+      "php": 6
+    },
+    "url_length": {
+      "min": 28,
+      "max": 120,
+      "avg": 77.66666666666667
+    },
+    "issues": [
+      "9 URLs use insecure HTTP protocol"
+    ]
+  },
+  "relationships": {
+    "orphan_count": 0,
+    "has_parent_count": 9,
+    "unique_parents": 7,
+    "most_prolific_parents": [
+      [
+        "https://libguides.hartford.edu/religion/judaicstudies/websites",
+        2
+      ],
+      [
+        "https://hartford.edu/academics/interdisciplinary-studies-uis/default.aspx",
+        2
+      ],
+      [
+        "https://www.hartford.edu/academics/center-for-student-success/advising.aspx",
+        1
+      ],
+      [
+        "https://hartford.edu/academics/schools-colleges/enhp/academics/department-of-education/montessori-education/med-in-education-montessori-concentration.aspx",
+        1
+      ],
+      [
+        "https://hartford.edu/academics/schools-colleges/hartt/academics/music/music-vocal-performance.aspx",
+        1
+      ]
+    ]
+  },
+  "temporal_analysis": {
+    "discovery_span_seconds": 6,
+    "crawled_count": 0,
+    "not_crawled_count": 9,
+    "crawl_rate": 0.0
+  },
+  "strengths": [
+    "All URLs have discovery timestamps",
+    "All URLs have queue timestamps",
+    "No duplicate URLs in dataset",
+    "Consistent protocol usage across all URLs"
+  ],
+  "weaknesses": [
+    "No URLs have been crawled yet (all crawled_at timestamps are null)",
+    "Content-type data is 0.0% complete",
+    "Title data is 0.0% complete",
+    "Some URLs use insecure HTTP protocol"
+  ],
+  "recommendations": [
+    "Begin crawling queued URLs to populate response data",
+    "Extract page titles during crawling for better content analysis",
+    "Consider upgrading HTTP URLs to HTTPS where possible"
+  ]
+}

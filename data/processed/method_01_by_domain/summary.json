@@ -1,0 +1,8 @@
+{
+  "method": "by_domain",
+  "total_domains": 2,
+  "domains": {
+    "archives.hartford.edu": 2,
+    "catalog.hartford.edu": 7
+  }
+}
