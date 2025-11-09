@@ -1,4 +1,4 @@
-# 🚀 Advanced Content Extraction Techniques
+# Advanced Content Extraction Techniques
 
 ## The Problem with Basic HTML Parsing
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 The 5 Expert Extraction Techniques
+## The 5 Expert Extraction Techniques
 
 ### 1. **API Reverse Engineering** (THE GOLDMINE!)
 
@@ -37,18 +37,18 @@
 **Example**:
 ```
 Page URL: https://catalog.hartford.edu/courses/MUS-101
-API URL:  https://catalog.hartford.edu/api/v1/courses/MUS-101
+API URL: https://catalog.hartford.edu/api/v1/courses/MUS-101
 
 Response:
 {
-  "id": 12345,
-  "code": "MUS-101",
-  "title": "Introduction to Music Theory",
-  "credits": 3,
-  "professor": {
-    "id": 789,
-    "name": "Dr. Jane Smith"
-  }
+ "id": 12345,
+ "code": "MUS-101",
+ "title": "Introduction to Music Theory",
+ "credits": 3,
+ "professor": {
+ "id": 789,
+ "name": "Dr. Jane Smith"
+ }
 }
 ```
 
@@ -86,8 +86,8 @@ api_data = engineer.fetch_api_data(endpoints[0])
 ```javascript
 window.__INITIAL_STATE__ = {...};
 window.__PRELOADED_STATE__ = {...};
-window.__NEXT_DATA__ = {...};  // Next.js
-window.__NUXT__ = {...};       // Nuxt.js
+window.__NEXT_DATA__ = {...}; // Next.js
+window.__NUXT__ = {...}; // Nuxt.js
 var data = {...};
 ```
 
@@ -95,15 +95,15 @@ var data = {...};
 ```html
 <script>
 window.__INITIAL_STATE__ = {
-  "course": {
-    "id": 12345,
-    "title": "Music Theory 101",
-    "professor": "Dr. Jane Smith",
-    "credits": 3,
-    "price": 599
-  },
-  "reviews": [...],
-  "related_courses": [...]
+ "course": {
+ "id": 12345,
+ "title": "Music Theory 101",
+ "professor": "Dr. Jane Smith",
+ "credits": 3,
+ "price": 599
+ },
+ "reviews": [...],
+ "related_courses": [...]
 };
 </script>
 ```
@@ -150,10 +150,10 @@ parser = LLMParser()
 
 # Define what you want as plain English
 schema = {
-    'course_title': 'The course title',
-    'course_code': 'The course code (like MUS-101)',
-    'professor': 'The professor teaching the course',
-    'price': 'The course price in dollars'
+ 'course_title': 'The course title',
+ 'course_code': 'The course code (like MUS-101)',
+ 'professor': 'The professor teaching the course',
+ 'price': 'The course price in dollars'
 }
 
 # LLM extracts it regardless of HTML structure
@@ -161,17 +161,17 @@ data = parser.extract_with_llm(html, schema)
 
 # Returns:
 {
-    "course_title": "Introduction to Music Theory",
-    "course_code": "MUS-101",
-    "professor": "Dr. Jane Smith",
-    "price": "$599"
+ "course_title": "Introduction to Music Theory",
+ "course_code": "MUS-101",
+ "professor": "Dr. Jane Smith",
+ "price": "$599"
 }
 ```
 
 **Setup** (local, free):
 ```bash
 # Install Ollama (local LLM server)
-brew install ollama  # or download from ollama.ai
+brew install ollama # or download from ollama.ai
 
 # Download a model
 ollama pull llama3:8b
@@ -217,16 +217,16 @@ image_texts = extractor.extract_text_from_images(html, base_url)
 
 # Returns:
 {
-    "https://example.com/banner.jpg": "Summer Concert Series\nJuly 15-20, 2024\nTickets $25",
-    "https://example.com/chart.png": "Revenue Growth: 35% YoY"
+ "https://example.com/banner.jpg": "Summer Concert Series\nJuly 15-20, 2024\nTickets $25",
+ "https://example.com/chart.png": "Revenue Growth: 35% YoY"
 }
 ```
 
 **Setup**:
 ```bash
 # Install Tesseract OCR
-brew install tesseract  # macOS
-sudo apt install tesseract-ocr  # Linux
+brew install tesseract # macOS
+sudo apt install tesseract-ocr # Linux
 
 # Install Python wrapper
 pip install pytesseract Pillow
@@ -248,21 +248,21 @@ pip install pytesseract Pillow
 **Example**:
 ```html
 <div class="product"
-     data-product-id="12345"
-     data-sku="MUS-101-FALL"
-     data-price-cents="59900"
-     data-in-stock="true"
-     data-category="music-theory">
+ data-product-id="12345"
+ data-sku="MUS-101-FALL"
+ data-price-cents="59900"
+ data-in-stock="true"
+ data-category="music-theory">
 
-  <h2>Introduction to Music Theory</h2>
-  <span class="price">$599.00</span>
+ <h2>Introduction to Music Theory</h2>
+ <span class="price">$599.00</span>
 </div>
 ```
 
 **Bad way** (parsing text):
 ```python
-price_text = soup.select('.price')[0].text  # "$599.00"
-price = float(price_text.replace('$', '').replace(',', ''))  # Fragile!
+price_text = soup.select('.price')[0].text # "$599.00"
+price = float(price_text.replace('$', '').replace(',', '')) # Fragile!
 ```
 
 **Good way** (data attributes):
@@ -274,14 +274,14 @@ data = extractor.extract_data_attributes(html)
 
 # Returns clean, structured data:
 {
-  "product_0": {
-    "attributes": {
-      "data-product-id": "12345",
-      "data-price-cents": "59900",  # Already an integer!
-      "data-in-stock": "true",
-      "data-category": "music-theory"
-    }
-  }
+ "product_0": {
+ "attributes": {
+ "data-product-id": "12345",
+ "data-price-cents": "59900", # Already an integer!
+ "data-in-stock": "true",
+ "data-category": "music-theory"
+ }
+ }
 }
 ```
 
@@ -293,7 +293,7 @@ data = extractor.extract_data_attributes(html)
 
 ---
 
-## 🔥 The Complete Extraction Pipeline
+## The Complete Extraction Pipeline
 
 Use **all 5 techniques** together for maximum data coverage:
 
@@ -302,66 +302,66 @@ from src.core.advanced_extraction import AdvancedContentExtractor
 
 # Initialize with all features
 extractor = AdvancedContentExtractor(
-    use_ocr=True,   # Enable image text extraction
-    use_llm=True    # Enable AI parsing
+ use_ocr=True, # Enable image text extraction
+ use_llm=True # Enable AI parsing
 )
 
 # Run complete extraction
 result = extractor.extract_all(html, url)
 
 # Now you have:
-print(result.api_endpoints)      # Hidden APIs found
-print(result.api_data)           # Clean JSON from API
-print(result.embedded_json)      # Hydration state data
-print(result.data_attributes)    # All data-* attributes
-print(result.image_text)         # Text from images (OCR)
-print(result.llm_extracted)      # AI-extracted fields
+print(result.api_endpoints) # Hidden APIs found
+print(result.api_data) # Clean JSON from API
+print(result.embedded_json) # Hydration state data
+print(result.data_attributes) # All data-* attributes
+print(result.image_text) # Text from images (OCR)
+print(result.llm_extracted) # AI-extracted fields
 ```
 
 **Example output**:
 ```python
 result.api_endpoints = [
-    'https://catalog.hartford.edu/api/v1/courses/12345',
-    'https://catalog.hartford.edu/api/v1/professors/789'
+ 'https://catalog.hartford.edu/api/v1/courses/12345',
+ 'https://catalog.hartford.edu/api/v1/professors/789'
 ]
 
 result.api_data = {
-    "id": 12345,
-    "code": "MUS-101",
-    "title": "Introduction to Music Theory",
-    "credits": 3
+ "id": 12345,
+ "code": "MUS-101",
+ "title": "Introduction to Music Theory",
+ "credits": 3
 }
 
 result.embedded_json = [
-    {
-        "course": {"id": 12345, "title": "Music Theory 101"},
-        "professor": {"name": "Dr. Jane Smith"}
-    }
+ {
+ "course": {"id": 12345, "title": "Music Theory 101"},
+ "professor": {"name": "Dr. Jane Smith"}
+ }
 ]
 
 result.data_attributes = {
-    "course_0": {
-        "attributes": {
-            "data-course-id": "12345",
-            "data-price": "599"
-        }
-    }
+ "course_0": {
+ "attributes": {
+ "data-course-id": "12345",
+ "data-price": "599"
+ }
+ }
 }
 
 result.image_text = {
-    "https://site.com/syllabus.jpg": "Course Syllabus\nSpring 2024"
+ "https://site.com/syllabus.jpg": "Course Syllabus\nSpring 2024"
 }
 
 result.llm_extracted = {
-    "course_title": "Introduction to Music Theory",
-    "professor": "Dr. Jane Smith",
-    "price": "$599"
+ "course_title": "Introduction to Music Theory",
+ "professor": "Dr. Jane Smith",
+ "price": "$599"
 }
 ```
 
 ---
 
-## 📊 Comparison: Before vs After
+## Comparison: Before vs After
 
 ### Before (Basic HTML Parsing)
 ```python
@@ -371,7 +371,7 @@ soup = BeautifulSoup(html, 'html.parser')
 title = soup.select('div.course-info > h2.title')[0].text
 
 # Messy text parsing
-price_text = soup.select('span.price')[0].text  # "$599.00"
+price_text = soup.select('span.price')[0].text # "$599.00"
 price = float(price_text.replace('$', '').replace(',', ''))
 
 # Missed JavaScript content
@@ -386,23 +386,23 @@ extractor = AdvancedContentExtractor()
 result = extractor.extract_all(html, url)
 
 # Clean, structured data
-course = result.api_data  # or result.embedded_json[0]
+course = result.api_data # or result.embedded_json[0]
 
 title = course['title']
-price = course['price']  # Already a number!
+price = course['price'] # Already a number!
 professor = course['professor']['name']
 ```
 
 **Benefits**:
-- ✅ 10x more reliable
-- ✅ 10x faster to write
-- ✅ 10x easier to maintain
-- ✅ Gets MORE data
-- ✅ Resilient to website changes
+- 10x more reliable
+- 10x faster to write
+- 10x easier to maintain
+- Gets MORE data
+- Resilient to website changes
 
 ---
 
-## 🎯 Real-World Examples
+## Real-World Examples
 
 ### Example 1: University Course Catalog
 
@@ -411,9 +411,9 @@ professor = course['professor']['name']
 # Fragile, breaks on redesign
 courses = soup.select('div.course-card')
 for course in courses:
-    title = course.select_one('h3.course-title').text
-    code = course.select_one('span.code').text
-    # Many more fragile selectors...
+ title = course.select_one('h3.course-title').text
+ code = course.select_one('span.code').text
+ # Many more fragile selectors...
 ```
 
 **Advanced approach**:
@@ -428,7 +428,7 @@ courses = state['courses']
 
 # Option 3: LLM (most resilient)
 courses = llm_parser.extract_with_llm(html, {
-    'courses': 'List all courses with title, code, and professor'
+ 'courses': 'List all courses with title, code, and professor'
 })
 ```
 
@@ -437,8 +437,8 @@ courses = llm_parser.extract_with_llm(html, {
 **Traditional approach**:
 ```python
 # Parsing text is unreliable
-price = soup.select('.price')[0].text  # "$1,299.99"
-stock = 'In Stock' in soup.get_text()   # Fragile!
+price = soup.select('.price')[0].text # "$1,299.99"
+stock = 'In Stock' in soup.get_text() # Fragile!
 ```
 
 **Advanced approach**:
@@ -447,8 +447,8 @@ stock = 'In Stock' in soup.get_text()   # Fragile!
 attrs = data_attr_extractor.extract_data_attributes(html)
 product = attrs['product_0']['attributes']
 
-price = int(product['data-price-cents']) / 100  # 129999 → 1299.99
-in_stock = product['data-in-stock'] == 'true'   # Boolean!
+price = int(product['data-price-cents']) / 100 # 129999 → 1299.99
+in_stock = product['data-in-stock'] == 'true' # Boolean!
 sku = product['data-sku']
 ```
 
@@ -471,14 +471,14 @@ image_texts = ocr_extractor.extract_text_from_images(html, url)
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```bash
 # Basic (API + Embedded Data + Data Attributes)
 pip install beautifulsoup4 requests
 
 # OCR support
-brew install tesseract  # or apt install tesseract-ocr
+brew install tesseract # or apt install tesseract-ocr
 pip install pytesseract Pillow
 
 # LLM support (local, free)
@@ -488,7 +488,7 @@ ollama pull llama3:8b
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 ### 1. **Try techniques in order**:
 1. API Reverse Engineering (fastest, cleanest)
@@ -501,16 +501,16 @@ ollama pull llama3:8b
 ```python
 # Once you find the API, save it
 if api_data:
-    save_to_cache(url, api_data)
-    # Don't parse HTML next time!
+ save_to_cache(url, api_data)
+ # Don't parse HTML next time!
 ```
 
 ### 3. **Validate extracted data**:
 ```python
 # Always check if extraction worked
 if not result.api_data and not result.embedded_json:
-    # Fall back to traditional parsing
-    fallback_parse(html)
+ # Fall back to traditional parsing
+ fallback_parse(html)
 ```
 
 ### 4. **Use LLM for one-time extraction**:
@@ -520,7 +520,7 @@ LLMs are slow. Use them to:
 
 ---
 
-## 🚀 The Bottom Line
+## The Bottom Line
 
 **Stop parsing HTML like it's 2010!**
 
@@ -532,13 +532,13 @@ Modern websites give you their data in **5 better ways**:
 4. **Images** - OCR for visual content
 5. **AI** - LLM parsing for anything
 
-**This is how production scrapers work in 2024!**
+**This is how production scrapers work in 2025!**
 
 Your system now has all 5 techniques implemented in `src/core/advanced_extraction.py`.
 
 ---
 
-## 📚 Further Reading
+## Further Reading
 
 - **API Reverse Engineering**: [Chrome DevTools Network Tab](https://developer.chrome.com/docs/devtools/network/)
 - **JSON-LD**: [Schema.org Documentation](https://schema.org/)
@@ -547,4 +547,4 @@ Your system now has all 5 techniques implemented in `src/core/advanced_extractio
 
 ---
 
-**Remember**: The best data is the data you don't have to parse! 🎯
+**Remember**: The best data is the data you don't have to parse! 

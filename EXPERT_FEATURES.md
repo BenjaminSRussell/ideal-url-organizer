@@ -1,6 +1,6 @@
 # Expert-Level Features - The Missing Piece
 
-## 🎯 The Problem
+## The Problem
 
 The original system analyzed URLs based on **structure alone** (domain, path, query params). But that's only half the story. The **real goldmine** is the **actual content** of the pages.
 
@@ -8,16 +8,16 @@ This document describes the **expert-level features** that transform this from a
 
 ---
 
-## 📄 Content-Based Data Extraction
+## Content-Based Data Extraction
 
 ### What We Extract
 
 #### 1. **HTTP Status Codes**
 ```python
-status_code: 200  # Success
-status_code: 301  # Permanent Redirect
-status_code: 404  # Not Found
-status_code: 500  # Server Error
+status_code: 200 # Success
+status_code: 301 # Permanent Redirect
+status_code: 404 # Not Found
+status_code: 500 # Server Error
 ```
 
 **Why it matters**: Reveals link rot and site health issues.
@@ -28,7 +28,7 @@ status_code: 500  # Server Error
 #### 2. **Final Redirected URL (TRUE Canonical)**
 ```python
 original_url: "http://example.com/old"
-final_url: "https://example.com/new"  # After redirects
+final_url: "https://example.com/new" # After redirects
 ```
 
 **Why it matters**: This is the REAL canonical URL, not just string normalization.
@@ -57,7 +57,7 @@ h1_tags: ["Music Theory 101", "Course Overview"]
 #### 6. **Full Text Content**
 ```python
 text_content: "This course introduces students to..."
-text_length: 5234  # characters
+text_length: 5234 # characters
 ```
 
 **Why it matters**: Raw material for ALL advanced analysis.
@@ -65,13 +65,13 @@ text_length: 5234  # characters
 #### 7. **Structured Data (Schema.org/JSON-LD)**
 ```json
 {
-  "@type": "Course",
-  "courseCode": "MUS 101",
-  "name": "Introduction to Music",
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "University of Hartford"
-  }
+ "@type": "Course",
+ "courseCode": "MUS 101",
+ "name": "Introduction to Music",
+ "provider": {
+ "@type": "EducationalOrganization",
+ "name": "University of Hartford"
+ }
 }
 ```
 
@@ -80,15 +80,15 @@ text_length: 5234  # characters
 #### 8. **Outbound Links**
 ```python
 outbound_links: ["https://..."]
-internal_links: [...]  # Same domain
-external_links: [...]  # Different domain
+internal_links: [...] # Same domain
+external_links: [...] # Different domain
 ```
 
 **Why it matters**: Understand relationships. Course pages link to departments, professors, registration.
 
 ---
 
-## 🧠 Expert-Level Semantic Analysis
+## Expert-Level Semantic Analysis
 
 ### 1. Text Embeddings - Semantic Similarity
 
@@ -144,9 +144,9 @@ entities = ner.extract_entities(text)
 
 # Result:
 {
-    'PERSON': ['Professor Jane Doe', 'Dr. John Smith'],
-    'ORG': ['School of Music', 'Hartt School'],
-    'GPE': ['Hartford', 'Connecticut']
+ 'PERSON': ['Professor Jane Doe', 'Dr. John Smith'],
+ 'ORG': ['School of Music', 'Hartt School'],
+ 'GPE': ['Hartford', 'Connecticut']
 }
 ```
 
@@ -201,9 +201,9 @@ analyzer = LinkGraphAnalyzer()
 analysis = analyzer.analyze(pages)
 
 # Finds:
-pagerank_scores = analysis['pagerank']  # Most important pages
-hubs = analysis['hits']['top_hubs']    # Navigation pages
-authorities = analysis['hits']['top_authorities']  # Key content
+pagerank_scores = analysis['pagerank'] # Most important pages
+hubs = analysis['hits']['top_hubs'] # Navigation pages
+authorities = analysis['hits']['top_authorities'] # Key content
 ```
 
 **Real use cases**:
@@ -213,7 +213,7 @@ authorities = analysis['hits']['top_authorities']  # Key content
 
 ---
 
-## 🎨 New Content-Based Organization Methods
+## New Content-Based Organization Methods
 
 ### Method 22: By HTTP Status Code
 
@@ -228,7 +228,7 @@ authorities = analysis['hits']['top_authorities']  # Key content
 ```
 2xx_success_200: 145 URLs
 3xx_redirect_301: 12 URLs
-4xx_client_error_404: 8 URLs  ← LINK ROT!
+4xx_client_error_404: 8 URLs ← LINK ROT!
 ```
 
 ---
@@ -242,10 +242,10 @@ authorities = analysis['hits']['top_authorities']  # Key content
 **Example**:
 ```json
 {
-  "Course": 45 pages,
-  "Person": 23 pages,
-  "Event": 12 pages,
-  "Organization": 8 pages
+ "Course": 45 pages,
+ "Person": 23 pages,
+ "Event": 12 pages,
+ "Organization": 8 pages
 }
 ```
 
@@ -288,7 +288,7 @@ Cluster 3: General education requirements
 
 ---
 
-## 🚀 How to Use Expert Features
+## How to Use Expert Features
 
 ### 1. Install Dependencies
 
@@ -349,7 +349,7 @@ organizer.run(pages)
 
 ---
 
-## 📊 Complete Demo
+## Complete Demo
 
 Run the comprehensive demo:
 
@@ -367,7 +367,7 @@ This demonstrates:
 
 ---
 
-## 🎯 Real-World Use Cases
+## Real-World Use Cases
 
 ### University Website Analysis
 - **Find all course pages**: Filter by Schema.org type="Course"
@@ -392,11 +392,11 @@ This demonstrates:
 
 ---
 
-## ⚡ Performance Tips
+## Performance Tips
 
 ### 1. Rate Limiting
 ```python
-crawler = WebCrawler(delay_between_requests=1.0)  # Be polite!
+crawler = WebCrawler(delay_between_requests=1.0) # Be polite!
 ```
 
 ### 2. Batch Processing
@@ -417,12 +417,12 @@ np.save('embeddings.npy', embeddings)
 from concurrent.futures import ThreadPoolExecutor
 
 with ThreadPoolExecutor(max_workers=5) as executor:
-    pages = list(executor.map(crawler.fetch, urls))
+ pages = list(executor.map(crawler.fetch, urls))
 ```
 
 ---
 
-## 🎓 Learning Resources
+## Learning Resources
 
 ### Text Embeddings
 - [Sentence-BERT Paper](https://arxiv.org/abs/1908.10084)
@@ -442,7 +442,7 @@ with ThreadPoolExecutor(max_workers=5) as executor:
 
 ---
 
-## 🔥 The Bottom Line
+## The Bottom Line
 
 **Before**: URL structure analysis
 **After**: Complete web content intelligence
@@ -456,4 +456,4 @@ with ThreadPoolExecutor(max_workers=5) as executor:
 **Before**: Manual categorization
 **After**: Automatic topic discovery
 
-**This is what separates toy projects from production systems!** 🚀
+**This is what separates toy projects from production systems!** 
