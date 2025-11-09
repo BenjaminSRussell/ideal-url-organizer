@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List, Dict
 from collections import defaultdict
 import json
+import hashlib
 
 from src.core.data_loader import DataLoader, URLRecord
 from src.core.url_parser import URLParser
@@ -18,6 +19,30 @@ class ByPathStructureOrganizer:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.parser = URLParser()
+
+    def safe_filename(self, name: str, max_length: int = 200) -> str:
+        """
+        Create a safe filename from a path segment.
+        Handles extremely long paths by truncating and adding hash.
+
+        Args:
+            name: The path segment
+            max_length: Maximum filename length (default 200, well under OS limit of 255)
+
+        Returns:
+            Safe filename string
+        """
+        # Sanitize special characters
+        safe_name = name.replace('/', '_').replace('.', '_').replace('<', '').replace('>', '')
+
+        # If within limit, return as-is
+        if len(safe_name) <= max_length:
+            return safe_name + '.jsonl'
+
+        # For very long names, truncate and add hash for uniqueness
+        hash_suffix = hashlib.md5(name.encode()).hexdigest()[:8]
+        truncated = safe_name[:max_length-9]  # Leave room for hash and underscore
+        return f"{truncated}_{hash_suffix}.jsonl"
 
     def organize(self, records: List[URLRecord]) -> Dict[str, List[URLRecord]]:
         """
@@ -63,8 +88,8 @@ class ByPathStructureOrganizer:
 
         # Save each path's URLs to separate file
         for path, records in organized_data.items():
-            # Sanitize path for filename
-            filename = path.replace('/', '_').replace('.', '_').replace('<', '').replace('>', '') + '.jsonl'
+            # Use safe filename generation (handles very long paths)
+            filename = self.safe_filename(path)
             filepath = self.output_dir / filename
 
             with open(filepath, 'w') as f:
