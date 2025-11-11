@@ -31,11 +31,8 @@ class ProductionTester:
 
     def run_all_tests(self):
         """Run all production tests"""
-        print("=" * 80)
-        print("PRODUCTION TEST SUITE - 2025")
-        print("=" * 80)
-        print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print()
+        print("\nProduction Test Suite")
+        print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
         tests = [
             ('URL Parser Edge Cases', self.test_url_parser_edge_cases),
@@ -317,9 +314,7 @@ class ProductionTester:
 
     def _print_summary(self):
         """Print test summary"""
-        print("\n" + "=" * 80)
-        print("TEST SUMMARY")
-        print("=" * 80)
+        print("\nTest Summary")
 
         total = len(self.results['passed']) + len(self.results['failed'])
         passed = len(self.results['passed'])

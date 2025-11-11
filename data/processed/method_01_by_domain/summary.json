@@ -1,8 +1,10 @@
 {
   "method": "by_domain",
-  "total_domains": 2,
+  "total_domains": 4,
   "domains": {
-    "archives.hartford.edu": 2,
-    "catalog.hartford.edu": 7
+    "blackboard.hartford.edu": 1,
+    "engage.hartford.edu": 1,
+    "example.com": 1,
+    "hartford.edu": 86
   }
 }

@@ -333,9 +333,7 @@ class ContentExtractor:
 
 def demo_content_extraction():
     """Demonstrate content extraction"""
-    print("="*80)
-    print("CONTENT EXTRACTION DEMO")
-    print("="*80)
+    print("Content Extraction Demo")
 
     # Example URL
     test_url = "http://catalog.hartford.edu/"

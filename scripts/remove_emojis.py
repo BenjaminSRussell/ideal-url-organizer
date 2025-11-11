@@ -77,14 +77,12 @@ def main():
     ]
 
     print("Removing emojis from markdown files...")
-    print("=" * 80)
 
     for md_file in md_files:
         if md_file.exists():
             process_file(md_file)
 
-    print("=" * 80)
-    print("Done! All emojis removed.")
+    print("Done - all emojis removed.")
 
 
 if __name__ == '__main__':

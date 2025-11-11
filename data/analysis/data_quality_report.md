@@ -2,11 +2,11 @@
 
 ## Overview
 
-- **total_records**: 9
-- **unique_urls**: 9
-- **unique_normalized_urls**: 9
-- **unique_domains**: 2
-- **depth_range**: {'min': 2, 'max': 6, 'avg': 3.2222222222222223}
+- **total_records**: 89
+- **unique_urls**: 53
+- **unique_normalized_urls**: 53
+- **unique_domains**: 4
+- **depth_range**: {'min': 0, 'max': 3, 'avg': 1.8426966292134832}
 
 ## Strengths
 
@@ -14,27 +14,11 @@
 
 ✓ All URLs have queue timestamps
 
-✓ No duplicate URLs in dataset
-
 ✓ Consistent protocol usage across all URLs
 
 
 ## Weaknesses
 
-✗ No URLs have been crawled yet (all crawled_at timestamps are null)
-
-✗ Content-type data is 0.0% complete
-
-✗ Title data is 0.0% complete
-
-✗ Some URLs use insecure HTTP protocol
-
 
 ## Recommendations
-
-→ Begin crawling queued URLs to populate response data
-
-→ Extract page titles during crawling for better content analysis
-
-→ Consider upgrading HTTP URLs to HTTPS where possible
 

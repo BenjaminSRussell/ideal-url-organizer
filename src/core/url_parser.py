@@ -282,9 +282,7 @@ class URLParser:
 
 def demo_url_parsing():
     """Demonstrate proper URL parsing vs regex"""
-    print("=" * 80)
-    print("URL PARSING DEMONSTRATION - NO REGEX!")
-    print("=" * 80)
+    print("URL Parsing Demo - No Regex!")
 
     tracker_params = [
         'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
@@ -325,9 +323,7 @@ def demo_url_parsing():
     for key, value in components.items():
         print(f"  {key}: {value}")
 
-    print("\n" + "=" * 80)
-    print("See? No regex needed! Just proper URL parsing.")
-    print("=" * 80)
+    print("\nNo regex needed - just proper URL parsing.")
 
 
 if __name__ == '__main__':

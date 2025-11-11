@@ -188,9 +188,7 @@ class LinkGraphAnalyzer:
         Returns:
             Analysis results
         """
-        print("\n" + "="*80)
-        print("LINK GRAPH ANALYSIS")
-        print("="*80)
+        print("\nLink Graph Analysis")
 
         # Build graph
         print("\nBuilding link graph...")

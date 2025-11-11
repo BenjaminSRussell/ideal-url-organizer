@@ -1,137 +1,116 @@
 {
   "overview": {
-    "total_records": 9,
-    "unique_urls": 9,
-    "unique_normalized_urls": 9,
-    "unique_domains": 2,
+    "total_records": 89,
+    "unique_urls": 53,
+    "unique_normalized_urls": 53,
+    "unique_domains": 4,
     "depth_range": {
-      "min": 2,
-      "max": 6,
-      "avg": 3.2222222222222223
+      "min": 0,
+      "max": 3,
+      "avg": 1.8426966292134832
     }
   },
   "completeness": {
     "url": {
-      "count": 9,
+      "count": 89,
       "percentage": 100.0
     },
     "url_normalized": {
-      "count": 9,
+      "count": 89,
       "percentage": 100.0
     },
     "depth": {
-      "count": 9,
+      "count": 89,
       "percentage": 100.0
     },
     "parent_url": {
-      "count": 9,
-      "percentage": 100.0
+      "count": 87,
+      "percentage": 97.75280898876404
     },
     "discovered_at": {
-      "count": 9,
+      "count": 89,
       "percentage": 100.0
     },
     "queued_at": {
-      "count": 9,
+      "count": 89,
       "percentage": 100.0
     },
     "crawled_at": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 89,
+      "percentage": 100.0
     },
     "response_time_ms": {
       "count": 0,
       "percentage": 0.0
     },
     "status_code": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 89,
+      "percentage": 100.0
     },
     "content_type": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 89,
+      "percentage": 100.0
     },
     "content_length": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 89,
+      "percentage": 100.0
     },
     "title": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 87,
+      "percentage": 97.75280898876404
     },
     "link_count": {
-      "count": 0,
-      "percentage": 0.0
+      "count": 89,
+      "percentage": 100.0
     }
   },
   "url_quality": {
     "protocols": {
-      "http": 9
+      "https": 89
     },
     "ports": {
-      "8081": 2,
-      "default": 7
+      "default": 89
     },
     "file_extensions": {
-      "php": 6
+      "aspx": 85
     },
     "url_length": {
-      "min": 28,
-      "max": 120,
-      "avg": 77.66666666666667
+      "min": 19,
+      "max": 110,
+      "avg": 54.51685393258427
     },
-    "issues": [
-      "9 URLs use insecure HTTP protocol"
-    ]
+    "issues": []
   },
   "relationships": {
-    "orphan_count": 0,
-    "has_parent_count": 9,
-    "unique_parents": 7,
+    "orphan_count": 2,
+    "has_parent_count": 87,
+    "unique_parents": 3,
     "most_prolific_parents": [
       [
-        "https://libguides.hartford.edu/religion/judaicstudies/websites",
-        2
+        "https://hartford.edu",
+        38
       ],
       [
-        "https://hartford.edu/academics/interdisciplinary-studies-uis/default.aspx",
-        2
+        "https://hartford.edu/about/default.aspx",
+        28
       ],
       [
-        "https://www.hartford.edu/academics/center-for-student-success/advising.aspx",
-        1
-      ],
-      [
-        "https://hartford.edu/academics/schools-colleges/enhp/academics/department-of-education/montessori-education/med-in-education-montessori-concentration.aspx",
-        1
-      ],
-      [
-        "https://hartford.edu/academics/schools-colleges/hartt/academics/music/music-vocal-performance.aspx",
-        1
+        "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        21
       ]
     ]
   },
   "temporal_analysis": {
-    "discovery_span_seconds": 6,
-    "crawled_count": 0,
-    "not_crawled_count": 9,
-    "crawl_rate": 0.0
+    "discovery_span_seconds": 169,
+    "crawled_count": 89,
+    "not_crawled_count": 0,
+    "crawl_rate": 100.0
   },
   "strengths": [
     "All URLs have discovery timestamps",
     "All URLs have queue timestamps",
-    "No duplicate URLs in dataset",
     "Consistent protocol usage across all URLs"
   ],
-  "weaknesses": [
-    "No URLs have been crawled yet (all crawled_at timestamps are null)",
-    "Content-type data is 0.0% complete",
-    "Title data is 0.0% complete",
-    "Some URLs use insecure HTTP protocol"
-  ],
-  "recommendations": [
-    "Begin crawling queued URLs to populate response data",
-    "Extract page titles during crawling for better content analysis",
-    "Consider upgrading HTTP URLs to HTTPS where possible"
-  ]
+  "weaknesses": [],
+  "recommendations": []
 }

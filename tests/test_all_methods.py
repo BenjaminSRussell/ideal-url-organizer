@@ -16,9 +16,7 @@ from src.core.config import get_config
 
 def test_data_loading():
     """Test that sample data loads correctly"""
-    print("\n" + "="*80)
-    print("TEST 1: Data Loading")
-    print("="*80)
+    print("\nTest 1: Data Loading")
 
     loader = DataLoader()
     records = loader.load()
@@ -37,9 +35,7 @@ def test_data_loading():
 
 def test_url_parsing():
     """Test URL parsing without regex"""
-    print("="*80)
-    print("TEST 2: URL Parsing (NO REGEX)")
-    print("="*80)
+    print("\nTest 2: URL Parsing (No Regex)")
 
     parser = URLParser()
 
@@ -75,9 +71,7 @@ def test_url_parsing():
 
 def test_url_cleaning():
     """Test URL cleaning and normalization"""
-    print("="*80)
-    print("TEST 3: URL Cleaning & Normalization")
-    print("="*80)
+    print("\nTest 3: URL Cleaning & Normalization")
 
     config = get_config()
     tracker_params = config.get_tracker_params()
@@ -105,9 +99,7 @@ def test_url_cleaning():
 
 def test_organization_methods():
     """Test that organization methods work"""
-    print("="*80)
-    print("TEST 4: Organization Methods")
-    print("="*80)
+    print("\nTest 4: Organization Methods")
 
     from src.organizers.method_01_by_domain import ByDomainOrganizer
     from src.organizers.method_02_by_depth import ByDepthOrganizer
@@ -145,9 +137,7 @@ def test_organization_methods():
 
 def test_data_quality_analysis():
     """Test data quality analyzer"""
-    print("="*80)
-    print("TEST 5: Data Quality Analysis")
-    print("="*80)
+    print("\nTest 5: Data Quality Analysis")
 
     from src.analyzers.data_quality_analyzer import DataQualityAnalyzer
 
@@ -171,10 +161,8 @@ def test_data_quality_analysis():
 
 def run_all_tests():
     """Run all tests"""
-    print("\n" + "="*80)
-    print("URL ORGANIZER TEST SUITE")
-    print("Testing with provided sample data")
-    print("="*80)
+    print("\nURL Organizer Test Suite")
+    print("Testing with provided sample data\n")
 
     tests = [
         test_data_loading,
@@ -198,17 +186,14 @@ def run_all_tests():
             traceback.print_exc()
             failed += 1
 
-    # Summary
-    print("\n" + "="*80)
-    print("TEST SUMMARY")
-    print("="*80)
+    print("\nTest Summary")
     print(f"Passed: {passed}/{len(tests)}")
     print(f"Failed: {failed}/{len(tests)}")
 
     if failed == 0:
-        print("\n✓ ALL TESTS PASSED!")
+        print("\nAll tests passed!")
     else:
-        print(f"\n✗ {failed} TESTS FAILED")
+        print(f"\n{failed} tests failed")
 
     return failed == 0
 

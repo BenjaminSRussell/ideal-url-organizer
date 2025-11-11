@@ -1,9 +1,9 @@
 {
   "method": "canonical_deduplication",
-  "total_original_urls": 9,
-  "total_canonical_urls": 9,
-  "unique_urls": 9,
-  "duplicate_groups": 0,
-  "total_duplicates": 0,
-  "deduplication_savings": 0
+  "total_original_urls": 89,
+  "total_canonical_urls": 53,
+  "unique_urls": 17,
+  "duplicate_groups": 36,
+  "total_duplicates": 72,
+  "deduplication_savings": 36
 }

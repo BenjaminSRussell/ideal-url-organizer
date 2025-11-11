@@ -46,7 +46,5 @@ htmlcov/
 .coverage.*
 .cache
 
-# Data (optional - keep raw data but ignore processed)
-# data/processed/*/
-# data/visualizations/*/
-data/test_output/
+# Data
+data/

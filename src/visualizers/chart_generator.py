@@ -44,9 +44,7 @@ class ChartGenerator:
             print("Plotting libraries not available. Skipping chart generation.")
             return
 
-        print("\n" + "="*80)
-        print("GENERATING VISUALIZATIONS")
-        print("="*80)
+        print("\nGenerating visualizations")
 
         self._generate_depth_distribution(records)
         self._generate_domain_distribution(records)

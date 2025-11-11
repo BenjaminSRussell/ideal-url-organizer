@@ -1,8 +1,5 @@
 """
-Production Logging System
-
-Minimal interference with code, comprehensive error tracking.
-Date-based organization, separate logs for different components.
+Production logging system with date-based organization and error tracking
 """
 import logging
 import sys
@@ -15,25 +12,9 @@ import json
 
 
 class ProductionLogger:
-    """
-    Centralized logging system for production use
-
-    Features:
-    - Date-based log organization
-    - Component-specific logging
-    - Minimal CLI interference
-    - Comprehensive error tracking
-    - Failure analysis
-    """
+    """Centralized logging system with date-based organization"""
 
     def __init__(self, base_log_dir: str = None, verbose: bool = False):
-        """
-        Initialize production logger
-
-        Args:
-            base_log_dir: Base directory for logs
-            verbose: If True, also log to console
-        """
         if base_log_dir is None:
             project_root = Path(__file__).parent.parent.parent
             base_log_dir = project_root / "logs"
@@ -41,42 +22,30 @@ class ProductionLogger:
         self.base_log_dir = Path(base_log_dir)
         self.base_log_dir.mkdir(parents=True, exist_ok=True)
 
-        # Create date-based subdirectory
         self.today = datetime.now().strftime('%Y-%m-%d')
         self.log_dir = self.base_log_dir / self.today
         self.log_dir.mkdir(parents=True, exist_ok=True)
 
         self.verbose = verbose
         self.loggers = {}
-
-        # Initialize component loggers
         self._init_loggers()
 
     def _init_loggers(self):
         """Initialize loggers for different components"""
-        components = [
-            'crawler', 'parser', 'organizer', 'analyzer',
-            'extractor', 'visualizer', 'general', 'failures'
-        ]
+        components = ['crawler', 'parser', 'organizer', 'analyzer', 'extractor', 'visualizer', 'general', 'failures']
 
         for component in components:
             logger = logging.getLogger(f'url_organizer.{component}')
             logger.setLevel(logging.DEBUG)
 
-            # File handler
             log_file = self.log_dir / f'{component}.log'
             file_handler = logging.FileHandler(log_file)
             file_handler.setLevel(logging.DEBUG)
 
-            # Format
-            formatter = logging.Formatter(
-                '%(asctime)s | %(levelname)s | %(name)s | %(message)s',
-                datefmt='%Y-%m-%d %H:%M:%S'
-            )
+            formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(name)s | %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
             file_handler.setFormatter(formatter)
             logger.addHandler(file_handler)
 
-            # Console handler (only if verbose)
             if self.verbose:
                 console_handler = logging.StreamHandler(sys.stdout)
                 console_handler.setLevel(logging.INFO)
@@ -90,15 +59,7 @@ class ProductionLogger:
         return self.loggers.get(component, self.loggers['general'])
 
     def log_failure(self, component: str, operation: str, error: Exception, context: dict = None):
-        """
-        Log failure with full context
-
-        Args:
-            component: Component name
-            operation: Operation that failed
-            error: Exception that occurred
-            context: Additional context
-        """
+        """Log failure with full context"""
         logger = self.loggers['failures']
 
         failure_entry = {
@@ -111,10 +72,7 @@ class ProductionLogger:
             'context': context or {}
         }
 
-        # Log to failures.log
         logger.error(json.dumps(failure_entry, indent=2))
-
-        # Also log to component-specific log
         comp_logger = self.get_logger(component)
         comp_logger.error(f"FAILURE in {operation}: {error}")
 
@@ -152,14 +110,7 @@ def get_logger(verbose: bool = False) -> ProductionLogger:
 
 
 def log_errors(component: str, operation: str = None):
-    """
-    Decorator to automatically log errors
-
-    Usage:
-        @log_errors('crawler', 'fetch_page')
-        def fetch_page(url):
-            ...
-    """
+    """Decorator to automatically log errors"""
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -184,18 +135,7 @@ def log_errors(component: str, operation: str = None):
 
 
 def safe_execute(func, *args, component: str = 'general', operation: str = None, default=None, **kwargs):
-    """
-    Execute function with automatic error logging and fallback
-
-    Args:
-        func: Function to execute
-        component: Component name for logging
-        operation: Operation name
-        default: Default value to return on error
-
-    Returns:
-        Function result or default on error
-    """
+    """Execute function with error logging and fallback"""
     op = operation or func.__name__
     logger = get_logger()
 
@@ -204,45 +144,27 @@ def safe_execute(func, *args, component: str = 'general', operation: str = None,
         logger.log_success(component, op)
         return result
     except Exception as e:
-        context = {
-            'function': func.__name__,
-            'args': str(args)[:200],
-            'kwargs': str(kwargs)[:200]
-        }
+        context = {'function': func.__name__, 'args': str(args)[:200], 'kwargs': str(kwargs)[:200]}
         logger.log_failure(component, op, e, context)
-
-        # Return default instead of crashing
         return default
 
 
 class FailureAnalyzer:
-    """Analyze failure logs to identify patterns and weaknesses"""
+    """Analyze failure logs to identify patterns"""
 
     def __init__(self, log_dir: Path = None):
-        """Initialize failure analyzer"""
         if log_dir is None:
             project_root = Path(__file__).parent.parent.parent
             log_dir = project_root / "logs"
-
         self.log_dir = Path(log_dir)
 
     def analyze_failures(self, days: int = 7) -> dict:
-        """
-        Analyze failures from past N days
-
-        Args:
-            days: Number of days to analyze
-
-        Returns:
-            Analysis report
-        """
+        """Analyze failures from past N days"""
         failures = []
 
-        # Collect all failure logs
         for date_dir in self.log_dir.iterdir():
             if not date_dir.is_dir():
                 continue
-
             failure_log = date_dir / 'failures.log'
             if failure_log.exists():
                 with open(failure_log) as f:
@@ -252,36 +174,26 @@ class FailureAnalyzer:
                         except:
                             continue
 
-        # Analyze patterns
         analysis = {
             'total_failures': len(failures),
             'by_component': {},
             'by_error_type': {},
             'by_operation': {},
-            'most_common': [],
-            'critical_failures': []
+            'most_common': []
         }
 
         for failure in failures:
-            # By component
             comp = failure.get('component', 'unknown')
             analysis['by_component'][comp] = analysis['by_component'].get(comp, 0) + 1
 
-            # By error type
             error_type = failure.get('error_type', 'unknown')
             analysis['by_error_type'][error_type] = analysis['by_error_type'].get(error_type, 0) + 1
 
-            # By operation
             op = failure.get('operation', 'unknown')
             analysis['by_operation'][op] = analysis['by_operation'].get(op, 0) + 1
 
-        # Find most common
         if analysis['by_error_type']:
-            analysis['most_common'] = sorted(
-                analysis['by_error_type'].items(),
-                key=lambda x: x[1],
-                reverse=True
-            )[:5]
+            analysis['most_common'] = sorted(analysis['by_error_type'].items(), key=lambda x: x[1], reverse=True)[:5]
 
         return analysis
 
@@ -290,30 +202,20 @@ class FailureAnalyzer:
         analysis = self.analyze_failures()
 
         report = [
-            "FAILURE ANALYSIS REPORT",
-            "=" * 80,
-            f"\nGenerated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
-            f"\nTotal Failures: {analysis['total_failures']}",
-            "\n\nFAILURES BY COMPONENT:",
-            "-" * 40
+            "Failure Analysis Report",
+            f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+            f"Total Failures: {analysis['total_failures']}",
+            "\nFailures by Component:"
         ]
 
         for comp, count in sorted(analysis['by_component'].items(), key=lambda x: x[1], reverse=True):
             report.append(f"  {comp}: {count}")
 
-        report.extend([
-            "\n\nFAILURES BY ERROR TYPE:",
-            "-" * 40
-        ])
-
+        report.append("\nFailures by Error Type:")
         for error_type, count in sorted(analysis['by_error_type'].items(), key=lambda x: x[1], reverse=True):
             report.append(f"  {error_type}: {count}")
 
-        report.extend([
-            "\n\nMOST COMMON FAILURES:",
-            "-" * 40
-        ])
-
+        report.append("\nMost Common Failures:")
         for error_type, count in analysis['most_common']:
             report.append(f"  {error_type}: {count} occurrences")
 
@@ -327,10 +229,7 @@ class FailureAnalyzer:
 
 
 if __name__ == '__main__':
-    # Demo logging system
     logger = get_logger(verbose=True)
-
-    # Test different log types
     logger.log_success('crawler', 'fetch_page', {'url': 'http://example.com', 'status': 200})
     logger.log_warning('parser', 'Invalid HTML structure', {'url': 'http://example.com'})
 
@@ -339,14 +238,12 @@ if __name__ == '__main__':
     except Exception as e:
         logger.log_failure('extractor', 'extract_data', e, {'url': 'http://example.com'})
 
-    # Test decorator
     @log_errors('organizer', 'organize_urls')
     def test_function():
         return "success"
 
     test_function()
 
-    # Analyze failures
     analyzer = FailureAnalyzer()
     report = analyzer.generate_report()
-    print("\n" + report)
+    print(f"\n{report}")

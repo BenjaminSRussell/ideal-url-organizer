@@ -282,9 +282,7 @@ class ComprehensiveMethodTester:
         """Run comprehensive test for a single method"""
         organizer_class, description = self.methods[method_name]
 
-        print(f"\n{'='*80}")
-        print(f"Testing: {description} ({method_name})")
-        print(f"{'='*80}")
+        print(f"\nTesting: {description} ({method_name})")
 
         start_time = time.time()
         test_results = {
@@ -348,12 +346,9 @@ class ComprehensiveMethodTester:
 
     def run_all_tests(self):
         """Run all tests"""
-        print("="*80)
-        print("COMPREHENSIVE ORGANIZATION METHODS TEST SUITE - 2025")
-        print("="*80)
+        print("\nComprehensive Test Suite")
         print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print(f"Testing {len(self.methods)} methods")
-        print()
+        print(f"Testing {len(self.methods)} methods\n")
 
         overall_start = time.time()
 
@@ -366,9 +361,7 @@ class ComprehensiveMethodTester:
         """Print test summary"""
         elapsed = time.time() - start_time
 
-        print("\n" + "="*80)
-        print("TEST SUMMARY")
-        print("="*80)
+        print("\nTest Summary")
 
         total = len(self.methods)
         passed = len(self.results['passed'])

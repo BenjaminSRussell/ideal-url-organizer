@@ -343,9 +343,7 @@ class SemanticAnalyzer:
         Returns:
             Analysis results
         """
-        print("\n" + "="*80)
-        print("SEMANTIC ANALYSIS")
-        print("="*80)
+        print("\nSemantic Analysis")
 
         analysis = {
             'total_pages': len(pages),

@@ -1,7 +1,4 @@
-"""
-Data Quality Analyzer
-Analyzes URL data for quality issues, patterns, strengths, and weaknesses
-"""
+"""Data quality analysis for URL records"""
 from pathlib import Path
 from typing import List, Dict, Any
 from collections import Counter
@@ -12,7 +9,7 @@ from src.core.url_parser import URLParser
 
 
 class DataQualityAnalyzer:
-    """Comprehensive data quality analysis"""
+    """Data quality analysis"""
 
     def __init__(self, output_dir: Path = None):
         if output_dir is None:
@@ -24,18 +21,8 @@ class DataQualityAnalyzer:
         self.parser = URLParser()
 
     def analyze(self, records: List[URLRecord]) -> Dict[str, Any]:
-        """
-        Perform comprehensive data quality analysis
-
-        Args:
-            records: List of URL records
-
-        Returns:
-            Analysis results
-        """
-        print("\n" + "="*80)
-        print("DATA QUALITY ANALYSIS")
-        print("="*80)
+        """Perform data quality analysis"""
+        print("\nData Quality Analysis")
 
         analysis = {
             'overview': self._analyze_overview(records),
@@ -48,7 +35,6 @@ class DataQualityAnalyzer:
             'recommendations': []
         }
 
-        # Determine strengths and weaknesses
         analysis['strengths'], analysis['weaknesses'], analysis['recommendations'] = \
             self._identify_strengths_weaknesses(analysis, records)
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Main Orchestrator for URL Organizer
-Run individual methods or all methods together
+URL Organizer - Main orchestrator for running organization methods
 """
 import argparse
 import sys
@@ -41,14 +40,13 @@ from src.organizers.method_21_domain_and_depth_matrix import DomainDepthMatrixOr
 
 
 class URLOrganizerOrchestrator:
-    """Main orchestrator for running organization methods"""
+    """Orchestrates URL organization methods"""
 
     def __init__(self):
         self.config = get_config()
         self.data_loader = DataLoader()
         self.project_root = Path(__file__).parent.parent
 
-        # Map method names to organizer classes
         self.methods = {
             'method_01_by_domain': (ByDomainOrganizer, 'Organize by Domain'),
             'method_02_by_depth': (ByDepthOrganizer, 'Organize by Crawl Depth'),
@@ -83,26 +81,22 @@ class URLOrganizerOrchestrator:
         organizer_class, description = self.methods[method_name]
         output_dir = self.project_root / 'data' / 'processed' / method_name
 
-        print(f"\n{'='*80}")
-        print(f"Running: {description}")
-        print(f"{'='*80}")
+        print(f"\n{description}")
 
         try:
             organizer = organizer_class(output_dir)
             organizer.run(self.data_loader)
-            print(f"✓ Completed successfully")
+            print(f"Completed successfully")
             return True
         except Exception as e:
-            print(f"✗ Error: {e}")
+            print(f"Error: {e}")
             import traceback
             traceback.print_exc()
             return False
 
     def run_all_methods(self):
         """Run all organization methods"""
-        print("\n" + "="*80)
-        print("RUNNING ALL ORGANIZATION METHODS")
-        print("="*80)
+        print("\nRunning all organization methods")
 
         start_time = datetime.now()
         results = {}
@@ -111,128 +105,69 @@ class URLOrganizerOrchestrator:
             success = self.run_method(method_name)
             results[method_name] = 'success' if success else 'failed'
 
-        # Print summary
         elapsed = (datetime.now() - start_time).total_seconds()
         success_count = sum(1 for r in results.values() if r == 'success')
         total_count = len(results)
 
-        print("\n" + "="*80)
-        print("SUMMARY")
-        print("="*80)
-        print(f"Completed {success_count}/{total_count} methods in {elapsed:.2f}s")
+        print(f"\nCompleted {success_count}/{total_count} methods in {elapsed:.2f}s")
 
         if success_count < total_count:
             print("\nFailed methods:")
             for method, result in results.items():
                 if result == 'failed':
-                    print(f"  ✗ {method}")
+                    print(f"  {method}")
 
     def run_analysis(self):
         """Run data quality analysis"""
-        print("\n" + "="*80)
-        print("RUNNING DATA QUALITY ANALYSIS")
-        print("="*80)
+        print("\nRunning data quality analysis")
 
         analyzer = DataQualityAnalyzer()
         analyzer.run(self.data_loader)
 
     def run_visualization(self):
         """Generate visualizations"""
-        print("\n" + "="*80)
-        print("GENERATING VISUALIZATIONS")
-        print("="*80)
+        print("\nGenerating visualizations")
 
         generator = ChartGenerator()
         generator.run(self.data_loader)
 
     def list_methods(self):
         """List all available methods"""
-        print("\n" + "="*80)
-        print("AVAILABLE ORGANIZATION METHODS")
-        print("="*80)
+        print("\nAvailable organization methods:")
 
         for method_name, (_, description) in self.methods.items():
-            print(f"  • {method_name}: {description}")
+            print(f"  {method_name}: {description}")
 
         print(f"\nTotal: {len(self.methods)} methods")
 
     def run_full_pipeline(self):
         """Run complete analysis pipeline"""
-        print("\n" + "="*80)
-        print("FULL ANALYSIS PIPELINE")
-        print("="*80)
-        print("This will run:")
-        print("  1. Data quality analysis")
-        print("  2. All organization methods")
-        print("  3. Visualization generation")
-        print("="*80)
+        print("\nFull pipeline: analysis, methods, and visualization")
 
         start_time = datetime.now()
 
-        # Run analysis
         self.run_analysis()
-
-        # Run all methods
         self.run_all_methods()
-
-        # Run visualizations
         self.run_visualization()
 
-        # Final summary
         elapsed = (datetime.now() - start_time).total_seconds()
-        print("\n" + "="*80)
-        print("PIPELINE COMPLETE")
-        print("="*80)
-        print(f"Total time: {elapsed:.2f}s")
-        print(f"\nResults saved to: {self.project_root / 'data'}")
+        print(f"\nPipeline complete in {elapsed:.2f}s")
+        print(f"Results: {self.project_root / 'data'}")
 
 
 def main():
     """Main entry point"""
-    parser = argparse.ArgumentParser(
-        description='URL Organizer - Comprehensive URL data organization and analysis',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Run all methods
-  python src/main.py --all
-
-  # Run specific method
-  python src/main.py --method method_01_by_domain
-
-  # Run data quality analysis
-  python src/main.py --analyze
-
-  # Generate visualizations
-  python src/main.py --visualize
-
-  # Run full pipeline
-  python src/main.py --full
-
-  # List all methods
-  python src/main.py --list
-        """
-    )
-
-    parser.add_argument('--all', action='store_true',
-                        help='Run all organization methods')
-    parser.add_argument('--method', type=str,
-                        help='Run specific organization method')
-    parser.add_argument('--analyze', action='store_true',
-                        help='Run data quality analysis')
-    parser.add_argument('--visualize', action='store_true',
-                        help='Generate visualizations')
-    parser.add_argument('--full', action='store_true',
-                        help='Run full pipeline (analysis + all methods + visualization)')
-    parser.add_argument('--list', action='store_true',
-                        help='List all available methods')
+    parser = argparse.ArgumentParser(description='URL Organizer')
+    parser.add_argument('--all', action='store_true', help='Run all organization methods')
+    parser.add_argument('--method', type=str, help='Run specific organization method')
+    parser.add_argument('--analyze', action='store_true', help='Run data quality analysis')
+    parser.add_argument('--visualize', action='store_true', help='Generate visualizations')
+    parser.add_argument('--full', action='store_true', help='Run full pipeline')
+    parser.add_argument('--list', action='store_true', help='List all available methods')
 
     args = parser.parse_args()
-
-    # Create orchestrator
     orchestrator = URLOrganizerOrchestrator()
 
-    # Handle commands
     if args.list:
         orchestrator.list_methods()
     elif args.full:

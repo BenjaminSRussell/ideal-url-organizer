@@ -507,9 +507,7 @@ class AdvancedContentExtractor:
 
 def demo():
     """Demonstrate advanced extraction techniques"""
-    print("="*80)
-    print("ADVANCED CONTENT EXTRACTION DEMO")
-    print("="*80)
+    print("Advanced Content Extraction Demo")
 
     # Example HTML with various data sources
     example_html = """
@@ -548,10 +546,7 @@ def demo():
     extractor = AdvancedContentExtractor(use_ocr=False, use_llm=False)
     result = extractor.extract_all(example_html, "https://example.com/courses/12345")
 
-    # Show results
-    print("\n" + "="*80)
-    print("EXTRACTION RESULTS")
-    print("="*80)
+    print("\nExtraction Results")
 
     print(f"\nAPI Endpoints: {result.api_endpoints}")
     print(f"\nEmbedded JSON: {len(result.embedded_json)} objects found")

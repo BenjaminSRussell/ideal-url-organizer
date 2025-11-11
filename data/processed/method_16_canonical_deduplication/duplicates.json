@@ -1,1 +1,1586 @@
-[]
+[
+  {
+    "canonical_url": "https://hartford.edu/about/accreditation/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/accreditation/default.aspx",
+      "https://hartford.edu/about/accreditation/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/accreditation/default.aspx",
+        "url_normalized": "https://hartford.edu/about/accreditation/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794980,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 694188,
+        "title": "Accreditation\u2014Programs, Schools and Colleges\n      - University of Hartford",
+        "link_count": 257
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/accreditation/default.aspx",
+        "url_normalized": "https://hartford.edu/about/accreditation/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 694188,
+        "title": "Accreditation\u2014Programs, Schools and Colleges\n      - University of Hartford",
+        "link_count": 257
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/campus-leadership/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/campus-leadership/default.aspx",
+      "https://hartford.edu/about/campus-leadership/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/campus-leadership/default.aspx",
+        "url_normalized": "https://hartford.edu/about/campus-leadership/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 677735,
+        "title": "Campus Leadership\u2014Governance and Administration\n      - University of Hartford",
+        "link_count": 235
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/campus-leadership/default.aspx",
+        "url_normalized": "https://hartford.edu/about/campus-leadership/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 677735,
+        "title": "Campus Leadership\u2014Governance and Administration\n      - University of Hartford",
+        "link_count": 235
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/default.aspx",
+      "https://hartford.edu/about/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/default.aspx",
+        "url_normalized": "https://hartford.edu/about/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794974,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 712987,
+        "title": "Learn More About the University of Hartford\n      - University of Hartford",
+        "link_count": 250
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/default.aspx",
+        "url_normalized": "https://hartford.edu/about/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 712987,
+        "title": "Learn More About the University of Hartford\n      - University of Hartford",
+        "link_count": 250
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/history/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/history/default.aspx",
+      "https://hartford.edu/about/history/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/history/default.aspx",
+        "url_normalized": "https://hartford.edu/about/history/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794974,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 691097,
+        "title": "Learn the History of the University of Hartford | Then & Now\n      - University of Hartford",
+        "link_count": 233
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/history/default.aspx",
+        "url_normalized": "https://hartford.edu/about/history/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 691097,
+        "title": "Learn the History of the University of Hartford | Then & Now\n      - University of Hartford",
+        "link_count": 233
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/inclusive-excellence/default.aspx",
+      "https://hartford.edu/about/inclusive-excellence/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "url_normalized": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 696180,
+        "title": "Inclusive Excellence and Belonging at the University of Hartford\n      - University of Hartford",
+        "link_count": 255
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "url_normalized": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 696180,
+        "title": "Inclusive Excellence and Belonging at the University of Hartford\n      - University of Hartford",
+        "link_count": 255
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/mission-vision/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/mission-vision/default.aspx",
+      "https://hartford.edu/about/mission-vision/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/mission-vision/default.aspx",
+        "url_normalized": "https://hartford.edu/about/mission-vision/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 674897,
+        "title": "President's Office Mission and Vision\n      - University of Hartford",
+        "link_count": 232
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/mission-vision/default.aspx",
+        "url_normalized": "https://hartford.edu/about/mission-vision/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 674897,
+        "title": "President's Office Mission and Vision\n      - University of Hartford",
+        "link_count": 232
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+      "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "url_normalized": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 709637,
+        "title": "UHart Start - Strategic Action Plan - University of Hartford\n      - University of Hartford",
+        "link_count": 246
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "url_normalized": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 709637,
+        "title": "UHart Start - Strategic Action Plan - University of Hartford\n      - University of Hartford",
+        "link_count": 246
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/offices-divisions/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/offices-divisions/default.aspx",
+      "https://hartford.edu/about/offices-divisions/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 676039,
+        "title": "Offices, Departments, and Divisions\n      - University of Hartford",
+        "link_count": 264
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 676039,
+        "title": "Offices, Departments, and Divisions\n      - University of Hartford",
+        "link_count": 264
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+      "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794980,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 704631,
+        "title": "Future Employees\n     - University of Hartford",
+        "link_count": 240
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 704631,
+        "title": "Future Employees\n     - University of Hartford",
+        "link_count": 240
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+      "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 674811,
+        "title": "Office of the Registrar | University of Hartford\n      - University of Hartford",
+        "link_count": 265
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 674811,
+        "title": "Office of the Registrar | University of Hartford\n      - University of Hartford",
+        "link_count": 265
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+      "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 676842,
+        "title": "Commencement\n      - University of Hartford",
+        "link_count": 240
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 676842,
+        "title": "Commencement\n      - University of Hartford",
+        "link_count": 240
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/why-uhart/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/why-uhart/default.aspx",
+      "https://hartford.edu/about/why-uhart/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/default.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 689736,
+        "title": "Why Choose UHart? Exceptional Programs, Notable Faculty, Inclusive Community | Learn More\n      - University of Hartford",
+        "link_count": 243
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/default.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794980,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 689736,
+        "title": "Why Choose UHart? Exceptional Programs, Notable Faculty, Inclusive Community | Learn More\n      - University of Hartford",
+        "link_count": 243
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/why-uhart/glance.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/why-uhart/glance.aspx",
+      "https://hartford.edu/about/why-uhart/glance.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 685689,
+        "title": "Facts and Statistics\u2014At a Glance\n      - University of Hartford",
+        "link_count": 244
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 685689,
+        "title": "Facts and Statistics\u2014At a Glance\n      - University of Hartford",
+        "link_count": 244
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/about/why-uhart/location.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/about/why-uhart/location.aspx",
+      "https://hartford.edu/about/why-uhart/location.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/location.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/location.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 682915,
+        "title": "Location\n     - University of Hartford",
+        "link_count": 245
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/about/why-uhart/location.aspx",
+        "url_normalized": "https://hartford.edu/about/why-uhart/location.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794980,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 682915,
+        "title": "Location\n     - University of Hartford",
+        "link_count": 245
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/academic-calendar/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/academic-calendar/default.aspx",
+      "https://hartford.edu/academics/academic-calendar/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794974,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 745242,
+        "title": "View This Year's Full Academic Calendar | University of Hartford Important Dates\n      - University of Hartford",
+        "link_count": 241
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 745242,
+        "title": "View This Year's Full Academic Calendar | University of Hartford Important Dates\n      - University of Hartford",
+        "link_count": 241
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/academic-support/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/academic-support/default.aspx",
+      "https://hartford.edu/academics/academic-support/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/academic-support/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/academic-support/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 690549,
+        "title": "Academic Support & Success Programs\n      - University of Hartford",
+        "link_count": 247
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/academic-support/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/academic-support/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 690549,
+        "title": "Academic Support & Success Programs\n      - University of Hartford",
+        "link_count": 247
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/center-for-student-success/default.aspx",
+      "https://hartford.edu/academics/center-for-student-success/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 719466,
+        "title": "Center for Student Success\n      - University of Hartford",
+        "link_count": 258
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 719466,
+        "title": "Center for Student Success\n      - University of Hartford",
+        "link_count": 258
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/course-catalogs/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/course-catalogs/default.aspx",
+      "https://hartford.edu/academics/course-catalogs/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 682805,
+        "title": "View The Undergraduate & Graduate Course Catalogs | University of Hartford\n      - University of Hartford",
+        "link_count": 259
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 682805,
+        "title": "View The Undergraduate & Graduate Course Catalogs | University of Hartford\n      - University of Hartford",
+        "link_count": 259
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/curriculum/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/curriculum/default.aspx",
+      "https://hartford.edu/academics/curriculum/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/curriculum/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/curriculum/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794974,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 679550,
+        "title": "Curriculum\n     - University of Hartford",
+        "link_count": 235
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/curriculum/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/curriculum/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794963,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 679550,
+        "title": "Curriculum\n     - University of Hartford",
+        "link_count": 235
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/default.aspx",
+      "https://hartford.edu/academics/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794968,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 708721,
+        "title": "Academics at The University of Hartford | Your Future, Amplified.\n      - University of Hartford",
+        "link_count": 251
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 708721,
+        "title": "Academics at The University of Hartford | Your Future, Amplified.\n      - University of Hartford",
+        "link_count": 251
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+      "https://hartford.edu/academics/graduate-professional-studies/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 704242,
+        "title": "Graduate and Professional Studies\n      - University of Hartford",
+        "link_count": 252
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 704242,
+        "title": "Graduate and Professional Studies\n      - University of Hartford",
+        "link_count": 252
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+      "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 679043,
+        "title": "Continuing Education\n     - University of Hartford",
+        "link_count": 250
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 679043,
+        "title": "Continuing Education\n     - University of Hartford",
+        "link_count": 250
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/honors-program/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/honors-program/default.aspx",
+      "https://hartford.edu/academics/honors-program/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/honors-program/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/honors-program/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 688127,
+        "title": "Honors Program | University of Hartford \n      - University of Hartford",
+        "link_count": 243
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/honors-program/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/honors-program/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 688127,
+        "title": "Honors Program | University of Hartford \n      - University of Hartford",
+        "link_count": 243
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/library/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/library/default.aspx",
+      "https://hartford.edu/academics/library/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/library/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/library/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 722625,
+        "title": "Harrison Libraries at University of Hartford\n      - University of Hartford",
+        "link_count": 274
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/library/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/library/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 722625,
+        "title": "Harrison Libraries at University of Hartford\n      - University of Hartford",
+        "link_count": 274
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/our-faculty.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/our-faculty.aspx",
+      "https://hartford.edu/academics/our-faculty.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/our-faculty.aspx",
+        "url_normalized": "https://hartford.edu/academics/our-faculty.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794981,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 687681,
+        "title": "Our Faculty\n     - University of Hartford",
+        "link_count": 248
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/our-faculty.aspx",
+        "url_normalized": "https://hartford.edu/academics/our-faculty.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 687681,
+        "title": "Our Faculty\n     - University of Hartford",
+        "link_count": 248
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+      "https://hartford.edu/academics/schools-and-colleges/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794976,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 684690,
+        "title": "About Schools and Colleges\u2014Academics\n      - University of Hartford",
+        "link_count": 244
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794966,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 684690,
+        "title": "About Schools and Colleges\u2014Academics\n      - University of Hartford",
+        "link_count": 244
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/academics/study-abroad/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/academics/study-abroad/default.aspx",
+      "https://hartford.edu/academics/study-abroad/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/study-abroad/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/study-abroad/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 693322,
+        "title": "Study Abroad\n     - University of Hartford",
+        "link_count": 249
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/academics/study-abroad/default.aspx",
+        "url_normalized": "https://hartford.edu/academics/study-abroad/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794965,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 693322,
+        "title": "Study Abroad\n     - University of Hartford",
+        "link_count": 249
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/admission/apply.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/admission/apply.aspx",
+      "https://hartford.edu/admission/apply.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/admission/apply.aspx",
+        "url_normalized": "https://hartford.edu/admission/apply.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794973,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 691161,
+        "title": "Apply to the University of Hartford\n      - University of Hartford",
+        "link_count": 242
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/admission/apply.aspx",
+        "url_normalized": "https://hartford.edu/admission/apply.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 691161,
+        "title": "Apply to the University of Hartford\n      - University of Hartford",
+        "link_count": 242
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/calendar/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/calendar/default.aspx",
+      "https://hartford.edu/calendar/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/calendar/default.aspx",
+        "url_normalized": "https://hartford.edu/calendar/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 671665,
+        "title": "Campus Calendar\n     - University of Hartford",
+        "link_count": 236
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/calendar/default.aspx",
+        "url_normalized": "https://hartford.edu/calendar/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 671665,
+        "title": "Campus Calendar\n     - University of Hartford",
+        "link_count": 236
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/community/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/community/default.aspx",
+      "https://hartford.edu/community/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/community/default.aspx",
+        "url_normalized": "https://hartford.edu/community/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794974,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 715806,
+        "title": "Community\n     - University of Hartford",
+        "link_count": 250
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/community/default.aspx",
+        "url_normalized": "https://hartford.edu/community/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 715806,
+        "title": "Community\n     - University of Hartford",
+        "link_count": 250
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/default.aspx?int=",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/default.aspx?int",
+      "https://hartford.edu/default.aspx?int"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/default.aspx?int",
+        "url_normalized": "https://hartford.edu/default.aspx?int",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794975,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 1109101,
+        "title": "Welcome to UHart\n      - University of Hartford",
+        "link_count": 482
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/default.aspx?int",
+        "url_normalized": "https://hartford.edu/default.aspx?int",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 1109101,
+        "title": "Welcome to UHart\n      - University of Hartford",
+        "link_count": 482
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/directory/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/directory/default.aspx",
+      "https://hartford.edu/directory/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/directory/default.aspx",
+        "url_normalized": "https://hartford.edu/directory/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 724331,
+        "title": "Directory\n     - University of Hartford",
+        "link_count": 258
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/directory/default.aspx",
+        "url_normalized": "https://hartford.edu/directory/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794969,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 724331,
+        "title": "Directory\n     - University of Hartford",
+        "link_count": 258
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/news/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/news/default.aspx",
+      "https://hartford.edu/news/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/news/default.aspx",
+        "url_normalized": "https://hartford.edu/news/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794981,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 883755,
+        "title": "UHart News\n      - University of Hartford",
+        "link_count": 340
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/news/default.aspx",
+        "url_normalized": "https://hartford.edu/news/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 883755,
+        "title": "UHart News\n      - University of Hartford",
+        "link_count": 340
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/programs-of-study/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/programs-of-study/default.aspx",
+      "https://hartford.edu/programs-of-study/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/programs-of-study/default.aspx",
+        "url_normalized": "https://hartford.edu/programs-of-study/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 1342076,
+        "title": "Programs of Study | University of Hartford | Majors, Minors, & More\n      - University of Hartford",
+        "link_count": 432
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/programs-of-study/default.aspx",
+        "url_normalized": "https://hartford.edu/programs-of-study/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 1342076,
+        "title": "Programs of Study | University of Hartford | Majors, Minors, & More\n      - University of Hartford",
+        "link_count": 432
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/success-stories/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/success-stories/default.aspx",
+      "https://hartford.edu/success-stories/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/success-stories/default.aspx",
+        "url_normalized": "https://hartford.edu/success-stories/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794972,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 678724,
+        "title": "Success Stories\n     - University of Hartford",
+        "link_count": 234
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/success-stories/default.aspx",
+        "url_normalized": "https://hartford.edu/success-stories/default.aspx",
+        "depth": 3,
+        "parent_url": "https://hartford.edu/about/default.aspx",
+        "fragments": [],
+        "discovered_at": 1762794885,
+        "queued_at": 1762794885,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 678724,
+        "title": "Success Stories\n     - University of Hartford",
+        "link_count": 234
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://hartford.edu/unotes/default.aspx",
+    "count": 2,
+    "original_urls": [
+      "https://hartford.edu/unotes/default.aspx",
+      "https://hartford.edu/unotes/default.aspx"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/unotes/default.aspx",
+        "url_normalized": "https://hartford.edu/unotes/default.aspx",
+        "depth": 1,
+        "parent_url": "https://hartford.edu",
+        "fragments": [],
+        "discovered_at": 1762794879,
+        "queued_at": 1762794879,
+        "crawled_at": 1762794971,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 787281,
+        "title": "UNotes\n      - University of Hartford",
+        "link_count": 300
+      },
+      {
+        "schema_version": 1,
+        "url": "https://hartford.edu/unotes/default.aspx",
+        "url_normalized": "https://hartford.edu/unotes/default.aspx",
+        "depth": 2,
+        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "fragments": [],
+        "discovered_at": 1762794881,
+        "queued_at": 1762794881,
+        "crawled_at": 1762794970,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "content_length": 787281,
+        "title": "UNotes\n      - University of Hartford",
+        "link_count": 300
+      }
+    ]
+  }
+]
