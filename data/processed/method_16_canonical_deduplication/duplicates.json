@@ -1,1585 +1,3917 @@
 [
   {
-    "canonical_url": "https://hartford.edu/about/accreditation/default.aspx",
+    "canonical_url": "http://library.umass.edu/",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/accreditation/default.aspx",
-      "https://hartford.edu/about/accreditation/default.aspx"
+      "http://library.umass.edu/",
+      "http://www.library.umass.edu/"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/accreditation/default.aspx",
-        "url_normalized": "https://hartford.edu/about/accreditation/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "url": "http://library.umass.edu/",
+        "url_normalized": "http://library.umass.edu/",
+        "depth": 4,
+        "parent_url": "https://credo.library.umass.edu/view/collection/mums700",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794980,
+        "discovered_at": 1762997818,
+        "queued_at": 1762997818,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 694188,
-        "title": "Accreditation\u2014Programs, Schools and Colleges\n      - University of Hartford",
-        "link_count": 257
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/accreditation/default.aspx",
-        "url_normalized": "https://hartford.edu/about/accreditation/default.aspx",
+        "url": "http://www.library.umass.edu/",
+        "url_normalized": "http://www.library.umass.edu/",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "http://guides.library.umass.edu/",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
+        "discovered_at": 1762997814,
+        "queued_at": 1762997814,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 694188,
-        "title": "Accreditation\u2014Programs, Schools and Colleges\n      - University of Hartford",
-        "link_count": 257
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/campus-leadership/default.aspx",
+    "canonical_url": "http://scua.library.umass.edu/scua/department-history",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/campus-leadership/default.aspx",
-      "https://hartford.edu/about/campus-leadership/default.aspx"
+      "http://scua.library.umass.edu/scua/department-history",
+      "http://scua.library.umass.edu/scua/department-history/"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/campus-leadership/default.aspx",
-        "url_normalized": "https://hartford.edu/about/campus-leadership/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "url": "http://scua.library.umass.edu/scua/department-history",
+        "url_normalized": "http://scua.library.umass.edu/scua/department-history",
+        "depth": 4,
+        "parent_url": "http://scua.library.umass.edu/umarmot/services-at-scua/askanarc/",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794976,
+        "discovered_at": 1762997822,
+        "queued_at": 1762997822,
+        "crawled_at": 1762997859,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 677735,
-        "title": "Campus Leadership\u2014Governance and Administration\n      - University of Hartford",
-        "link_count": 235
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 77316,
+        "title": "Mission and history \u2013 Special Collections & University Archives",
+        "link_count": 150
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/campus-leadership/default.aspx",
-        "url_normalized": "https://hartford.edu/about/campus-leadership/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "url": "http://scua.library.umass.edu/scua/department-history/",
+        "url_normalized": "http://scua.library.umass.edu/scua/department-history/",
+        "depth": 4,
+        "parent_url": "http://scua.library.umass.edu/umarmot/services-at-scua/askanarc/",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997822,
+        "queued_at": 1762997822,
+        "crawled_at": 1762997855,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 677735,
-        "title": "Campus Leadership\u2014Governance and Administration\n      - University of Hartford",
-        "link_count": 235
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 77316,
+        "title": "Mission and history \u2013 Special Collections & University Archives",
+        "link_count": 150
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/default.aspx",
+    "canonical_url": "http://umass.edu/",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/default.aspx",
-      "https://hartford.edu/about/default.aspx"
+      "http://umass.edu/",
+      "http://www.umass.edu/"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/default.aspx",
-        "url_normalized": "https://hartford.edu/about/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "url": "http://umass.edu/",
+        "url_normalized": "http://umass.edu/",
+        "depth": 3,
+        "parent_url": "http://guides.library.umass.edu/",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794974,
+        "discovered_at": 1762997814,
+        "queued_at": 1762997814,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 712987,
-        "title": "Learn More About the University of Hartford\n      - University of Hartford",
-        "link_count": 250
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/default.aspx",
-        "url_normalized": "https://hartford.edu/about/default.aspx",
+        "url": "http://www.umass.edu/",
+        "url_normalized": "http://www.umass.edu/",
+        "depth": 5,
+        "parent_url": "http://www.umass.edu/wfum/",
+        "fragments": [],
+        "discovered_at": 1762997893,
+        "queued_at": 1762997893,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "http://umass.edu/hr",
+    "count": 2,
+    "original_urls": [
+      "http://www.umass.edu/hr",
+      "http://www.umass.edu/hr/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "http://www.umass.edu/hr",
+        "url_normalized": "http://www.umass.edu/hr",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528414/research-fellow-outreach-coordinator-watersmart",
+        "fragments": [],
+        "discovered_at": 1762997970,
+        "queued_at": 1762997970,
+        "crawled_at": 1762998134,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 108429,
+        "title": "Call for Nominations: : Human Resources : UMass Amherst",
+        "link_count": 106
+      },
+      {
+        "schema_version": 1,
+        "url": "http://www.umass.edu/hr/",
+        "url_normalized": "http://www.umass.edu/hr/",
+        "depth": 11,
+        "parent_url": "http://www.umass.edu/hr",
+        "fragments": [],
+        "discovered_at": 1762998134,
+        "queued_at": 1762998134,
+        "crawled_at": 1762998296,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 108429,
+        "title": "Call for Nominations: : Human Resources : UMass Amherst",
+        "link_count": 106
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://careers.umass.edu/amherst/en-us/listing",
+    "count": 2,
+    "original_urls": [
+      "https://careers.umass.edu/amherst/en-us/listing",
+      "https://careers.umass.edu/amherst/en-us/listing/?"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://careers.umass.edu/amherst/en-us/listing",
+        "url_normalized": "https://careers.umass.edu/amherst/en-us/listing",
+        "depth": 9,
+        "parent_url": "https://www.umass.edu/hr/benefits-and-pay/benefits/paid-time-and-holidays/holidays-and-campus-closure-days",
+        "fragments": [],
+        "discovered_at": 1762998082,
+        "queued_at": 1762998082,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://careers.umass.edu/amherst/en-us/listing/?",
+        "url_normalized": "https://careers.umass.edu/amherst/en-us/listing/?",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528414/research-fellow-outreach-coordinator-watersmart",
+        "fragments": [],
+        "discovered_at": 1762997970,
+        "queued_at": 1762997970,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://credo.library.umass.edu/view/browse/names",
+    "count": 2,
+    "original_urls": [
+      "https://credo.library.umass.edu/view/browse/names",
+      "https://credo.library.umass.edu/view/browse/names/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://credo.library.umass.edu/view/browse/names",
+        "url_normalized": "https://credo.library.umass.edu/view/browse/names",
+        "depth": 3,
+        "parent_url": "https://credo.library.umass.edu/",
+        "fragments": [],
+        "discovered_at": 1762997813,
+        "queued_at": 1762997813,
+        "crawled_at": 1762997821,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 17990,
+        "title": "Credo: browse",
+        "link_count": 136
+      },
+      {
+        "schema_version": 1,
+        "url": "https://credo.library.umass.edu/view/browse/names/",
+        "url_normalized": "https://credo.library.umass.edu/view/browse/names/",
+        "depth": 4,
+        "parent_url": "https://credo.library.umass.edu/view/browse/names",
+        "fragments": [],
+        "discovered_at": 1762997821,
+        "queued_at": 1762997821,
+        "crawled_at": 1762997850,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html",
+        "content_length": 17990,
+        "title": "Credo: browse",
+        "link_count": 136
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://groups.cs.umass.edu/ember",
+    "count": 2,
+    "original_urls": [
+      "https://groups.cs.umass.edu/ember",
+      "https://groups.cs.umass.edu/ember/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://groups.cs.umass.edu/ember",
+        "url_normalized": "https://groups.cs.umass.edu/ember",
+        "depth": 7,
+        "parent_url": "https://groups.cs.umass.edu/ember/",
+        "fragments": [],
+        "discovered_at": 1762998198,
+        "queued_at": 1762998198,
+        "crawled_at": 1762998205,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 46009,
+        "title": "Ember",
+        "link_count": 19
+      },
+      {
+        "schema_version": 1,
+        "url": "https://groups.cs.umass.edu/ember/",
+        "url_normalized": "https://groups.cs.umass.edu/ember/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/ours/cics-resources",
+        "fragments": [],
+        "discovered_at": 1762998190,
+        "queued_at": 1762998190,
+        "crawled_at": 1762998198,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 46009,
+        "title": "Ember",
+        "link_count": 19
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://library.umass.edu/",
+    "count": 2,
+    "original_urls": [
+      "https://library.umass.edu/",
+      "https://www.library.umass.edu/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://library.umass.edu/",
+        "url_normalized": "https://library.umass.edu/",
+        "depth": 3,
+        "parent_url": "https://credo.library.umass.edu/",
+        "fragments": [],
+        "discovered_at": 1762997813,
+        "queued_at": 1762997813,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.library.umass.edu/",
+        "url_normalized": "https://www.library.umass.edu/",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997809,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 62645,
+        "title": "UMass Amherst Libraries",
+        "link_count": 102
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://spire.umass.edu/",
+    "count": 2,
+    "original_urls": [
+      "https://spire.umass.edu/",
+      "https://www.spire.umass.edu/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://spire.umass.edu/",
+        "url_normalized": "https://spire.umass.edu/",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/universityplus/resources/tuition-and-fees",
+        "fragments": [],
+        "discovered_at": 1762997821,
+        "queued_at": 1762997821,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.spire.umass.edu/",
+        "url_normalized": "https://www.spire.umass.edu/",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/universityplus/resources/tuition-and-fees",
+        "fragments": [],
+        "discovered_at": 1762997821,
+        "queued_at": 1762997821,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/",
+      "https://www.umass.edu/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/",
+        "url_normalized": "https://umass.edu/",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997807,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 190829,
+        "title": "UMass Amherst",
+        "link_count": 223
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/",
+        "url_normalized": "https://www.umass.edu/",
         "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "parent_url": "https://www.umass.edu/universityplus/programs/summer",
         "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 712987,
-        "title": "Learn More About the University of Hartford\n      - University of Hartford",
-        "link_count": 250
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/history/default.aspx",
+    "canonical_url": "https://umass.edu/flex",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/history/default.aspx",
-      "https://hartford.edu/about/history/default.aspx"
+      "https://umass.edu/flex",
+      "https://www.umass.edu/flex"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/history/default.aspx",
-        "url_normalized": "https://hartford.edu/about/history/default.aspx",
+        "url": "https://umass.edu/flex",
+        "url_normalized": "https://umass.edu/flex",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794974,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997821,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 691097,
-        "title": "Learn the History of the University of Hartford | Then & Now\n      - University of Hartford",
-        "link_count": 233
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 170571,
+        "title": "UMass Flex : UMass Amherst",
+        "link_count": 195
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/history/default.aspx",
-        "url_normalized": "https://hartford.edu/about/history/default.aspx",
+        "url": "https://www.umass.edu/flex",
+        "url_normalized": "https://www.umass.edu/flex",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/universityplus/about",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997818,
+        "queued_at": 1762997818,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 691097,
-        "title": "Learn the History of the University of Hartford | Then & Now\n      - University of Hartford",
-        "link_count": 233
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/inclusive-excellence/default.aspx",
-      "https://hartford.edu/about/inclusive-excellence/default.aspx"
+      "https://umass.edu/gateway/academics",
+      "https://www.umass.edu/gateway/academics"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
-        "url_normalized": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "url": "https://umass.edu/gateway/academics",
+        "url_normalized": "https://umass.edu/gateway/academics",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997821,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 696180,
-        "title": "Inclusive Excellence and Belonging at the University of Hartford\n      - University of Hartford",
-        "link_count": 255
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 178069,
+        "title": "Academics : UMass Amherst",
+        "link_count": 226
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/inclusive-excellence/default.aspx",
-        "url_normalized": "https://hartford.edu/about/inclusive-excellence/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics",
+        "url_normalized": "https://www.umass.edu/gateway/academics",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794969,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 696180,
-        "title": "Inclusive Excellence and Belonging at the University of Hartford\n      - University of Hartford",
-        "link_count": 255
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/mission-vision/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/academic-advising",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/mission-vision/default.aspx",
-      "https://hartford.edu/about/mission-vision/default.aspx"
+      "https://umass.edu/gateway/academics/academic-advising",
+      "https://www.umass.edu/gateway/academics/academic-advising"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/mission-vision/default.aspx",
-        "url_normalized": "https://hartford.edu/about/mission-vision/default.aspx",
+        "url": "https://umass.edu/gateway/academics/academic-advising",
+        "url_normalized": "https://umass.edu/gateway/academics/academic-advising",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 674897,
-        "title": "President's Office Mission and Vision\n      - University of Hartford",
-        "link_count": 232
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/mission-vision/default.aspx",
-        "url_normalized": "https://hartford.edu/about/mission-vision/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/academic-advising",
+        "url_normalized": "https://www.umass.edu/gateway/academics/academic-advising",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 674897,
-        "title": "President's Office Mission and Vision\n      - University of Hartford",
-        "link_count": 232
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
-      "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx"
+      "https://umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
+      "https://www.umass.edu/gateway/academics/accelerated-masters-4plus1-degree"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
-        "url_normalized": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "url": "https://umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
+        "url_normalized": "https://umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 709637,
-        "title": "UHart Start - Strategic Action Plan - University of Hartford\n      - University of Hartford",
-        "link_count": 246
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
-        "url_normalized": "https://hartford.edu/about/mission-vision/strategic-vision/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
+        "url_normalized": "https://www.umass.edu/gateway/academics/accelerated-masters-4plus1-degree",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794976,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 709637,
-        "title": "UHart Start - Strategic Action Plan - University of Hartford\n      - University of Hartford",
-        "link_count": 246
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/offices-divisions/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/explore-our-programs",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/offices-divisions/default.aspx",
-      "https://hartford.edu/about/offices-divisions/default.aspx"
+      "https://umass.edu/gateway/academics/explore-our-programs",
+      "https://www.umass.edu/gateway/academics/explore-our-programs"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "url": "https://umass.edu/gateway/academics/explore-our-programs",
+        "url_normalized": "https://umass.edu/gateway/academics/explore-our-programs",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997817,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 676039,
-        "title": "Offices, Departments, and Divisions\n      - University of Hartford",
-        "link_count": 264
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 218535,
+        "title": "Explore Our Programs : UMass Amherst",
+        "link_count": 207
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/explore-our-programs",
+        "url_normalized": "https://www.umass.edu/gateway/academics/explore-our-programs",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794969,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 676039,
-        "title": "Offices, Departments, and Divisions\n      - University of Hartford",
-        "link_count": 264
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/graduate-programs",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
-      "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx"
+      "https://umass.edu/gateway/academics/graduate-programs",
+      "https://www.umass.edu/gateway/academics/graduate-programs"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "url": "https://umass.edu/gateway/academics/graduate-programs",
+        "url_normalized": "https://umass.edu/gateway/academics/graduate-programs",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794980,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 704631,
-        "title": "Future Employees\n     - University of Hartford",
-        "link_count": 240
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/human-resources-development-archive/employment-opportunities.aspx",
+        "url": "https://www.umass.edu/gateway/academics/graduate-programs",
+        "url_normalized": "https://www.umass.edu/gateway/academics/graduate-programs",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794970,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 704631,
-        "title": "Future Employees\n     - University of Hartford",
-        "link_count": 240
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/mount-ida-campus",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
-      "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx"
+      "https://umass.edu/gateway/academics/mount-ida-campus",
+      "https://www.umass.edu/gateway/academics/mount-ida-campus"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "url": "https://umass.edu/gateway/academics/mount-ida-campus",
+        "url_normalized": "https://umass.edu/gateway/academics/mount-ida-campus",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794976,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 674811,
-        "title": "Office of the Registrar | University of Hartford\n      - University of Hartford",
-        "link_count": 265
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/mount-ida-campus",
+        "url_normalized": "https://www.umass.edu/gateway/academics/mount-ida-campus",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 674811,
-        "title": "Office of the Registrar | University of Hartford\n      - University of Hartford",
-        "link_count": 265
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/schools-and-colleges",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
-      "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx"
+      "https://umass.edu/gateway/academics/schools-and-colleges",
+      "https://www.umass.edu/gateway/academics/schools-and-colleges"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "url": "https://umass.edu/gateway/academics/schools-and-colleges",
+        "url_normalized": "https://umass.edu/gateway/academics/schools-and-colleges",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997825,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 676842,
-        "title": "Commencement\n      - University of Hartford",
-        "link_count": 240
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 173806,
+        "title": "Schools and Colleges : UMass Amherst",
+        "link_count": 212
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
-        "url_normalized": "https://hartford.edu/about/offices-divisions/office-registrar/graduation/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/schools-and-colleges",
+        "url_normalized": "https://www.umass.edu/gateway/academics/schools-and-colleges",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 676842,
-        "title": "Commencement\n      - University of Hartford",
-        "link_count": 240
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/why-uhart/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/undergraduate-programs",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/why-uhart/default.aspx",
-      "https://hartford.edu/about/why-uhart/default.aspx"
+      "https://umass.edu/gateway/academics/undergraduate-programs",
+      "https://www.umass.edu/gateway/academics/undergraduate-programs"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/default.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/default.aspx",
+        "url": "https://umass.edu/gateway/academics/undergraduate-programs",
+        "url_normalized": "https://umass.edu/gateway/academics/undergraduate-programs",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 689736,
-        "title": "Why Choose UHart? Exceptional Programs, Notable Faculty, Inclusive Community | Learn More\n      - University of Hartford",
-        "link_count": 243
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/default.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/default.aspx",
+        "url": "https://www.umass.edu/gateway/academics/undergraduate-programs",
+        "url_normalized": "https://www.umass.edu/gateway/academics/undergraduate-programs",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794980,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 689736,
-        "title": "Why Choose UHart? Exceptional Programs, Notable Faculty, Inclusive Community | Learn More\n      - University of Hartford",
-        "link_count": 243
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/why-uhart/glance.aspx",
+    "canonical_url": "https://umass.edu/gateway/academics/university-libraries",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/why-uhart/glance.aspx",
-      "https://hartford.edu/about/why-uhart/glance.aspx"
+      "https://umass.edu/gateway/academics/university-libraries",
+      "https://www.umass.edu/gateway/academics/university-libraries"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/glance.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "url": "https://umass.edu/gateway/academics/university-libraries",
+        "url_normalized": "https://umass.edu/gateway/academics/university-libraries",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 685689,
-        "title": "Facts and Statistics\u2014At a Glance\n      - University of Hartford",
-        "link_count": 244
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/glance.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/glance.aspx",
+        "url": "https://www.umass.edu/gateway/academics/university-libraries",
+        "url_normalized": "https://www.umass.edu/gateway/academics/university-libraries",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794970,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 685689,
-        "title": "Facts and Statistics\u2014At a Glance\n      - University of Hartford",
-        "link_count": 244
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/about/why-uhart/location.aspx",
+    "canonical_url": "https://umass.edu/gateway/arts",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/about/why-uhart/location.aspx",
-      "https://hartford.edu/about/why-uhart/location.aspx"
+      "https://umass.edu/gateway/arts",
+      "https://www.umass.edu/gateway/arts"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/location.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/location.aspx",
+        "url": "https://umass.edu/gateway/arts",
+        "url_normalized": "https://umass.edu/gateway/arts",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794976,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 682915,
-        "title": "Location\n     - University of Hartford",
-        "link_count": 245
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/about/why-uhart/location.aspx",
-        "url_normalized": "https://hartford.edu/about/why-uhart/location.aspx",
+        "url": "https://www.umass.edu/gateway/arts",
+        "url_normalized": "https://www.umass.edu/gateway/arts",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794980,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 682915,
-        "title": "Location\n     - University of Hartford",
-        "link_count": 245
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/academics/academic-calendar/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/info/current-students",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/academics/academic-calendar/default.aspx",
-      "https://hartford.edu/academics/academic-calendar/default.aspx"
+      "https://umass.edu/gateway/info/current-students",
+      "https://www.umass.edu/gateway/info/current-students"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/academic-calendar/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "url": "https://umass.edu/gateway/info/current-students",
+        "url_normalized": "https://umass.edu/gateway/info/current-students",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794974,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997820,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 745242,
-        "title": "View This Year's Full Academic Calendar | University of Hartford Important Dates\n      - University of Hartford",
-        "link_count": 241
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 166147,
+        "title": "Current Students : UMass Amherst",
+        "link_count": 231
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/academic-calendar/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/academic-calendar/default.aspx",
+        "url": "https://www.umass.edu/gateway/info/current-students",
+        "url_normalized": "https://www.umass.edu/gateway/info/current-students",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 745242,
-        "title": "View This Year's Full Academic Calendar | University of Hartford Important Dates\n      - University of Hartford",
-        "link_count": 241
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/academics/academic-support/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/info/faculty-and-staff",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/academics/academic-support/default.aspx",
-      "https://hartford.edu/academics/academic-support/default.aspx"
+      "https://umass.edu/gateway/info/faculty-and-staff",
+      "https://www.umass.edu/gateway/info/faculty-and-staff"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/academic-support/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/academic-support/default.aspx",
+        "url": "https://umass.edu/gateway/info/faculty-and-staff",
+        "url_normalized": "https://umass.edu/gateway/info/faculty-and-staff",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997807,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 690549,
-        "title": "Academic Support & Success Programs\n      - University of Hartford",
-        "link_count": 247
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 164719,
+        "title": "Faculty and Staff : UMass Amherst",
+        "link_count": 225
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/academic-support/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/academic-support/default.aspx",
+        "url": "https://www.umass.edu/gateway/info/faculty-and-staff",
+        "url_normalized": "https://www.umass.edu/gateway/info/faculty-and-staff",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 690549,
-        "title": "Academic Support & Success Programs\n      - University of Hartford",
-        "link_count": 247
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/info/parents-and-families",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/academics/center-for-student-success/default.aspx",
-      "https://hartford.edu/academics/center-for-student-success/default.aspx"
+      "https://umass.edu/gateway/info/parents-and-families",
+      "https://www.umass.edu/gateway/info/parents-and-families"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "url": "https://umass.edu/gateway/info/parents-and-families",
+        "url_normalized": "https://umass.edu/gateway/info/parents-and-families",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 719466,
-        "title": "Center for Student Success\n      - University of Hartford",
-        "link_count": 258
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/center-for-student-success/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/center-for-student-success/default.aspx",
+        "url": "https://www.umass.edu/gateway/info/parents-and-families",
+        "url_normalized": "https://www.umass.edu/gateway/info/parents-and-families",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 719466,
-        "title": "Center for Student Success\n      - University of Hartford",
-        "link_count": 258
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/academics/course-catalogs/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/prospective-students",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/academics/course-catalogs/default.aspx",
-      "https://hartford.edu/academics/course-catalogs/default.aspx"
+      "https://umass.edu/gateway/prospective-students",
+      "https://www.umass.edu/gateway/prospective-students"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/course-catalogs/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "url": "https://umass.edu/gateway/prospective-students",
+        "url_normalized": "https://umass.edu/gateway/prospective-students",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997808,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 682805,
-        "title": "View The Undergraduate & Graduate Course Catalogs | University of Hartford\n      - University of Hartford",
-        "link_count": 259
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 160717,
+        "title": "Prospective Students : UMass Amherst",
+        "link_count": 203
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/course-catalogs/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/course-catalogs/default.aspx",
+        "url": "https://www.umass.edu/gateway/prospective-students",
+        "url_normalized": "https://www.umass.edu/gateway/prospective-students",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 682805,
-        "title": "View The Undergraduate & Graduate Course Catalogs | University of Hartford\n      - University of Hartford",
-        "link_count": 259
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/academics/curriculum/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/research",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/academics/curriculum/default.aspx",
-      "https://hartford.edu/academics/curriculum/default.aspx"
+      "https://umass.edu/gateway/research",
+      "https://www.umass.edu/gateway/research"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/curriculum/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/curriculum/default.aspx",
+        "url": "https://umass.edu/gateway/research",
+        "url_normalized": "https://umass.edu/gateway/research",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794974,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 679550,
-        "title": "Curriculum\n     - University of Hartford",
-        "link_count": 235
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/academics/curriculum/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/curriculum/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794963,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 679550,
-        "title": "Curriculum\n     - University of Hartford",
-        "link_count": 235
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/default.aspx",
-      "https://hartford.edu/academics/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794968,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 708721,
-        "title": "Academics at The University of Hartford | Your Future, Amplified.\n      - University of Hartford",
-        "link_count": 251
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794970,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 708721,
-        "title": "Academics at The University of Hartford | Your Future, Amplified.\n      - University of Hartford",
-        "link_count": 251
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-      "https://hartford.edu/academics/graduate-professional-studies/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 704242,
-        "title": "Graduate and Professional Studies\n      - University of Hartford",
-        "link_count": 252
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 704242,
-        "title": "Graduate and Professional Studies\n      - University of Hartford",
-        "link_count": 252
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-      "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 679043,
-        "title": "Continuing Education\n     - University of Hartford",
-        "link_count": 250
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-        "url_normalized": "https://hartford.edu/academics/graduate-professional-studies/programs/continuing-education.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 679043,
-        "title": "Continuing Education\n     - University of Hartford",
-        "link_count": 250
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/honors-program/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/honors-program/default.aspx",
-      "https://hartford.edu/academics/honors-program/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/honors-program/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/honors-program/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794976,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 688127,
-        "title": "Honors Program | University of Hartford \n      - University of Hartford",
-        "link_count": 243
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/honors-program/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/honors-program/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 688127,
-        "title": "Honors Program | University of Hartford \n      - University of Hartford",
-        "link_count": 243
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/library/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/library/default.aspx",
-      "https://hartford.edu/academics/library/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/library/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/library/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 722625,
-        "title": "Harrison Libraries at University of Hartford\n      - University of Hartford",
-        "link_count": 274
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/library/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/library/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 722625,
-        "title": "Harrison Libraries at University of Hartford\n      - University of Hartford",
-        "link_count": 274
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/our-faculty.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/our-faculty.aspx",
-      "https://hartford.edu/academics/our-faculty.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/our-faculty.aspx",
-        "url_normalized": "https://hartford.edu/academics/our-faculty.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794981,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 687681,
-        "title": "Our Faculty\n     - University of Hartford",
-        "link_count": 248
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/our-faculty.aspx",
-        "url_normalized": "https://hartford.edu/academics/our-faculty.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794969,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 687681,
-        "title": "Our Faculty\n     - University of Hartford",
-        "link_count": 248
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-      "https://hartford.edu/academics/schools-and-colleges/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794976,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 684690,
-        "title": "About Schools and Colleges\u2014Academics\n      - University of Hartford",
-        "link_count": 244
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/schools-and-colleges/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794966,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 684690,
-        "title": "About Schools and Colleges\u2014Academics\n      - University of Hartford",
-        "link_count": 244
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/academics/study-abroad/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/academics/study-abroad/default.aspx",
-      "https://hartford.edu/academics/study-abroad/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/study-abroad/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/study-abroad/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 693322,
-        "title": "Study Abroad\n     - University of Hartford",
-        "link_count": 249
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/academics/study-abroad/default.aspx",
-        "url_normalized": "https://hartford.edu/academics/study-abroad/default.aspx",
-        "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
-        "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794965,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 693322,
-        "title": "Study Abroad\n     - University of Hartford",
-        "link_count": 249
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/admission/apply.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/admission/apply.aspx",
-      "https://hartford.edu/admission/apply.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/admission/apply.aspx",
-        "url_normalized": "https://hartford.edu/admission/apply.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794973,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 691161,
-        "title": "Apply to the University of Hartford\n      - University of Hartford",
-        "link_count": 242
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/admission/apply.aspx",
-        "url_normalized": "https://hartford.edu/admission/apply.aspx",
+        "url": "https://www.umass.edu/gateway/research",
+        "url_normalized": "https://www.umass.edu/gateway/research",
         "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "parent_url": "https://www.umass.edu/research/",
         "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794969,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 691161,
-        "title": "Apply to the University of Hartford\n      - University of Hartford",
-        "link_count": 242
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/calendar/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/research/centers-and-institutes",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/calendar/default.aspx",
-      "https://hartford.edu/calendar/default.aspx"
+      "https://umass.edu/gateway/research/centers-and-institutes",
+      "https://www.umass.edu/gateway/research/centers-and-institutes"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/calendar/default.aspx",
-        "url_normalized": "https://hartford.edu/calendar/default.aspx",
+        "url": "https://umass.edu/gateway/research/centers-and-institutes",
+        "url_normalized": "https://umass.edu/gateway/research/centers-and-institutes",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 671665,
-        "title": "Campus Calendar\n     - University of Hartford",
-        "link_count": 236
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/calendar/default.aspx",
-        "url_normalized": "https://hartford.edu/calendar/default.aspx",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
-        "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794969,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 671665,
-        "title": "Campus Calendar\n     - University of Hartford",
-        "link_count": 236
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/community/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/community/default.aspx",
-      "https://hartford.edu/community/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/community/default.aspx",
-        "url_normalized": "https://hartford.edu/community/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794974,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 715806,
-        "title": "Community\n     - University of Hartford",
-        "link_count": 250
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/community/default.aspx",
-        "url_normalized": "https://hartford.edu/community/default.aspx",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
-        "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794970,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 715806,
-        "title": "Community\n     - University of Hartford",
-        "link_count": 250
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/default.aspx?int=",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/default.aspx?int",
-      "https://hartford.edu/default.aspx?int"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/default.aspx?int",
-        "url_normalized": "https://hartford.edu/default.aspx?int",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794975,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 1109101,
-        "title": "Welcome to UHart\n      - University of Hartford",
-        "link_count": 482
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/default.aspx?int",
-        "url_normalized": "https://hartford.edu/default.aspx?int",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
-        "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794970,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 1109101,
-        "title": "Welcome to UHart\n      - University of Hartford",
-        "link_count": 482
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/directory/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/directory/default.aspx",
-      "https://hartford.edu/directory/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/directory/default.aspx",
-        "url_normalized": "https://hartford.edu/directory/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794971,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 724331,
-        "title": "Directory\n     - University of Hartford",
-        "link_count": 258
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/directory/default.aspx",
-        "url_normalized": "https://hartford.edu/directory/default.aspx",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
-        "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794969,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 724331,
-        "title": "Directory\n     - University of Hartford",
-        "link_count": 258
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/news/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/news/default.aspx",
-      "https://hartford.edu/news/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/news/default.aspx",
-        "url_normalized": "https://hartford.edu/news/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794981,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 883755,
-        "title": "UHart News\n      - University of Hartford",
-        "link_count": 340
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/news/default.aspx",
-        "url_normalized": "https://hartford.edu/news/default.aspx",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
-        "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794970,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 883755,
-        "title": "UHart News\n      - University of Hartford",
-        "link_count": 340
-      }
-    ]
-  },
-  {
-    "canonical_url": "https://hartford.edu/programs-of-study/default.aspx",
-    "count": 2,
-    "original_urls": [
-      "https://hartford.edu/programs-of-study/default.aspx",
-      "https://hartford.edu/programs-of-study/default.aspx"
-    ],
-    "records": [
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/programs-of-study/default.aspx",
-        "url_normalized": "https://hartford.edu/programs-of-study/default.aspx",
-        "depth": 1,
-        "parent_url": "https://hartford.edu",
-        "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794970,
-        "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 1342076,
-        "title": "Programs of Study | University of Hartford | Majors, Minors, & More\n      - University of Hartford",
-        "link_count": 432
-      },
-      {
-        "schema_version": 1,
-        "url": "https://hartford.edu/programs-of-study/default.aspx",
-        "url_normalized": "https://hartford.edu/programs-of-study/default.aspx",
+        "url": "https://www.umass.edu/gateway/research/centers-and-institutes",
+        "url_normalized": "https://www.umass.edu/gateway/research/centers-and-institutes",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 1342076,
-        "title": "Programs of Study | University of Hartford | Majors, Minors, & More\n      - University of Hartford",
-        "link_count": 432
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/success-stories/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/research/faculty-excellence",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/success-stories/default.aspx",
-      "https://hartford.edu/success-stories/default.aspx"
+      "https://umass.edu/gateway/research/faculty-excellence",
+      "https://www.umass.edu/gateway/research/faculty-excellence"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/success-stories/default.aspx",
-        "url_normalized": "https://hartford.edu/success-stories/default.aspx",
+        "url": "https://umass.edu/gateway/research/faculty-excellence",
+        "url_normalized": "https://umass.edu/gateway/research/faculty-excellence",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794972,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997825,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 678724,
-        "title": "Success Stories\n     - University of Hartford",
-        "link_count": 234
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 182210,
+        "title": "Faculty Excellence : UMass Amherst",
+        "link_count": 213
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/success-stories/default.aspx",
-        "url_normalized": "https://hartford.edu/success-stories/default.aspx",
+        "url": "https://www.umass.edu/gateway/research/faculty-excellence",
+        "url_normalized": "https://www.umass.edu/gateway/research/faculty-excellence",
         "depth": 3,
-        "parent_url": "https://hartford.edu/about/default.aspx",
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794885,
-        "queued_at": 1762794885,
-        "crawled_at": 1762794970,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 678724,
-        "title": "Success Stories\n     - University of Hartford",
-        "link_count": 234
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       }
     ]
   },
   {
-    "canonical_url": "https://hartford.edu/unotes/default.aspx",
+    "canonical_url": "https://umass.edu/gateway/research/innovation-impact",
     "count": 2,
     "original_urls": [
-      "https://hartford.edu/unotes/default.aspx",
-      "https://hartford.edu/unotes/default.aspx"
+      "https://umass.edu/gateway/research/innovation-impact",
+      "https://www.umass.edu/gateway/research/innovation-impact"
     ],
     "records": [
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/unotes/default.aspx",
-        "url_normalized": "https://hartford.edu/unotes/default.aspx",
+        "url": "https://umass.edu/gateway/research/innovation-impact",
+        "url_normalized": "https://umass.edu/gateway/research/innovation-impact",
         "depth": 1,
-        "parent_url": "https://hartford.edu",
+        "parent_url": "https://umass.edu",
         "fragments": [],
-        "discovered_at": 1762794879,
-        "queued_at": 1762794879,
-        "crawled_at": 1762794971,
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
         "response_time_ms": null,
-        "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 787281,
-        "title": "UNotes\n      - University of Hartford",
-        "link_count": 300
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
       },
       {
         "schema_version": 1,
-        "url": "https://hartford.edu/unotes/default.aspx",
-        "url_normalized": "https://hartford.edu/unotes/default.aspx",
-        "depth": 2,
-        "parent_url": "https://engage.hartford.edu/register/?id=3655ab24-caf9-4733-a15a-83f204290585",
+        "url": "https://www.umass.edu/gateway/research/innovation-impact",
+        "url_normalized": "https://www.umass.edu/gateway/research/innovation-impact",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
         "fragments": [],
-        "discovered_at": 1762794881,
-        "queued_at": 1762794881,
-        "crawled_at": 1762794970,
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/research/stories",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/research/stories",
+      "https://www.umass.edu/gateway/research/stories"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/research/stories",
+        "url_normalized": "https://umass.edu/gateway/research/stories",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/research/stories",
+        "url_normalized": "https://www.umass.edu/gateway/research/stories",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/research/student-research",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/research/student-research",
+      "https://www.umass.edu/gateway/research/student-research"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/research/student-research",
+        "url_normalized": "https://umass.edu/gateway/research/student-research",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/research/student-research",
+        "url_normalized": "https://www.umass.edu/gateway/research/student-research",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/research/timeline",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/research/timeline",
+      "https://www.umass.edu/gateway/research/timeline"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/research/timeline",
+        "url_normalized": "https://umass.edu/gateway/research/timeline",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/research/timeline",
+        "url_normalized": "https://www.umass.edu/gateway/research/timeline",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/student-life",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/student-life",
+      "https://www.umass.edu/gateway/student-life"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/student-life",
+        "url_normalized": "https://umass.edu/gateway/student-life",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/student-life",
+        "url_normalized": "https://www.umass.edu/gateway/student-life",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/student-life/life-amherst",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/student-life/life-amherst",
+      "https://www.umass.edu/gateway/student-life/life-amherst"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/student-life/life-amherst",
+        "url_normalized": "https://umass.edu/gateway/student-life/life-amherst",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/student-life/life-amherst",
+        "url_normalized": "https://www.umass.edu/gateway/student-life/life-amherst",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/student-life/living-and-dining",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/student-life/living-and-dining",
+      "https://www.umass.edu/gateway/student-life/living-and-dining"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/student-life/living-and-dining",
+        "url_normalized": "https://umass.edu/gateway/student-life/living-and-dining",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/student-life/living-and-dining",
+        "url_normalized": "https://www.umass.edu/gateway/student-life/living-and-dining",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/student-life/student-activities",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/student-life/student-activities",
+      "https://www.umass.edu/gateway/student-life/student-activities"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/student-life/student-activities",
+        "url_normalized": "https://umass.edu/gateway/student-life/student-activities",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/student-life/student-activities",
+        "url_normalized": "https://www.umass.edu/gateway/student-life/student-activities",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/student-life/student-support-and-wellness",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/student-life/student-support-and-wellness",
+      "https://www.umass.edu/gateway/student-life/student-support-and-wellness"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/student-life/student-support-and-wellness",
+        "url_normalized": "https://umass.edu/gateway/student-life/student-support-and-wellness",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/student-life/student-support-and-wellness",
+        "url_normalized": "https://www.umass.edu/gateway/student-life/student-support-and-wellness",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge",
+      "https://www.umass.edu/gateway/umass-edge"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge",
+        "url_normalized": "https://umass.edu/gateway/umass-edge",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+      "https://www.umass.edu/gateway/umass-edge/we-are-community-engaged-university"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-community-engaged-university",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+      "https://www.umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-creative-and-entrepreneurial",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+      "https://www.umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-diverse-and-open-minded",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+      "https://www.umass.edu/gateway/umass-edge/we-are-fueling-innovation"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-fueling-innovation",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+      "https://www.umass.edu/gateway/umass-edge/we-are-health-promoting-university"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-health-promoting-university",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-revolutionary",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-revolutionary",
+      "https://www.umass.edu/gateway/umass-edge/we-are-revolutionary"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-revolutionary",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-revolutionary",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-revolutionary",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-revolutionary",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-are-university-without-walls",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-are-university-without-walls",
+      "https://www.umass.edu/gateway/umass-edge/we-are-university-without-walls"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-are-university-without-walls",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-are-university-without-walls",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-are-university-without-walls",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-are-university-without-walls",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/we-embrace-sustainability",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/we-embrace-sustainability",
+      "https://www.umass.edu/gateway/umass-edge/we-embrace-sustainability"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/we-embrace-sustainability",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/we-embrace-sustainability",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/we-embrace-sustainability",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/we-embrace-sustainability",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-edge/world-class-public-research-university",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-edge/world-class-public-research-university",
+      "https://www.umass.edu/gateway/umass-edge/world-class-public-research-university"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-edge/world-class-public-research-university",
+        "url_normalized": "https://umass.edu/gateway/umass-edge/world-class-public-research-university",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-edge/world-class-public-research-university",
+        "url_normalized": "https://www.umass.edu/gateway/umass-edge/world-class-public-research-university",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/gateway/umass-stories",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/gateway/umass-stories",
+      "https://www.umass.edu/gateway/umass-stories"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/gateway/umass-stories",
+        "url_normalized": "https://umass.edu/gateway/umass-stories",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/gateway/umass-stories",
+        "url_normalized": "https://www.umass.edu/gateway/umass-stories",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/search",
+        "fragments": [],
+        "discovered_at": 1762997826,
+        "queued_at": 1762997826,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/peoplefinder",
+    "count": 2,
+    "original_urls": [
+      "https://umass.edu/peoplefinder/",
+      "https://www.umass.edu/peoplefinder/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://umass.edu/peoplefinder/",
+        "url_normalized": "https://umass.edu/peoplefinder/",
+        "depth": 7,
+        "parent_url": "https://groups.cs.umass.edu/ember/",
+        "fragments": [],
+        "discovered_at": 1762998198,
+        "queued_at": 1762998198,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/peoplefinder/",
+        "url_normalized": "https://www.umass.edu/peoplefinder/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/registrar/fresh-start",
+        "fragments": [],
+        "discovered_at": 1762997896,
+        "queued_at": 1762997896,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://websites.umass.edu/strike2025",
+    "count": 2,
+    "original_urls": [
+      "https://websites.umass.edu/strike2025",
+      "https://websites.umass.edu/strike2025/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://websites.umass.edu/strike2025",
+        "url_normalized": "https://websites.umass.edu/strike2025",
+        "depth": 5,
+        "parent_url": "https://websites.umass.edu/strike2025/",
+        "fragments": [],
+        "discovered_at": 1762997883,
+        "queued_at": 1762997883,
+        "crawled_at": 1762997897,
         "response_time_ms": null,
         "status_code": 200,
-        "content_type": "text/html; charset=utf-8",
-        "content_length": 787281,
-        "title": "UNotes\n      - University of Hartford",
-        "link_count": 300
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 98652,
+        "title": "THE STRIKE \u2013 Building Workers\u2019 Power Today",
+        "link_count": 30
+      },
+      {
+        "schema_version": 1,
+        "url": "https://websites.umass.edu/strike2025/",
+        "url_normalized": "https://websites.umass.edu/strike2025/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/lrrc/graduate/ula",
+        "fragments": [],
+        "discovered_at": 1762997874,
+        "queued_at": 1762997874,
+        "crawled_at": 1762997883,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 98653,
+        "title": "THE STRIKE \u2013 Building Workers\u2019 Power Today",
+        "link_count": 30
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://library.umass.edu/ill",
+    "count": 2,
+    "original_urls": [
+      "https://www.library.umass.edu/ill",
+      "https://www.library.umass.edu/ill/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.library.umass.edu/ill",
+        "url_normalized": "https://www.library.umass.edu/ill",
+        "depth": 3,
+        "parent_url": "https://illiad.library.umass.edu/illiad/",
+        "fragments": [],
+        "discovered_at": 1762997813,
+        "queued_at": 1762997813,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.library.umass.edu/ill/",
+        "url_normalized": "https://www.library.umass.edu/ill/",
+        "depth": 2,
+        "parent_url": "https://www.library.umass.edu/",
+        "fragments": [],
+        "discovered_at": 1762997809,
+        "queued_at": 1762997809,
+        "crawled_at": 1762997814,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 84976,
+        "title": "About Interlibrary Loan (ILL)",
+        "link_count": 129
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/accessibility",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/accessibility",
+      "https://www.umass.edu/accessibility/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/accessibility",
+        "url_normalized": "https://www.umass.edu/accessibility",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/accessibility/",
+        "fragments": [],
+        "discovered_at": 1762997827,
+        "queued_at": 1762997827,
+        "crawled_at": 1762997953,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 47990,
+        "title": "Home : Accessibility : UMass Amherst",
+        "link_count": 52
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/accessibility/",
+        "url_normalized": "https://www.umass.edu/accessibility/",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/universityplus/programs/summer",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997827,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 47990,
+        "title": "Home : Accessibility : UMass Amherst",
+        "link_count": 52
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/architecture",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/architecture",
+      "https://www.umass.edu/architecture/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/architecture",
+        "url_normalized": "https://www.umass.edu/architecture",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/architecture/",
+        "fragments": [],
+        "discovered_at": 1762998193,
+        "queued_at": 1762998193,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/architecture/",
+        "url_normalized": "https://www.umass.edu/architecture/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/ours/majors",
+        "fragments": [],
+        "discovered_at": 1762998098,
+        "queued_at": 1762998098,
+        "crawled_at": 1762998193,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 58174,
+        "title": "Architecture at UMass : Architecture : UMass Amherst",
+        "link_count": 58
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/bdic",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/bdic",
+      "https://www.umass.edu/bdic/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/bdic",
+        "url_normalized": "https://www.umass.edu/bdic",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/bdic/",
+        "fragments": [],
+        "discovered_at": 1762997863,
+        "queued_at": 1762997863,
+        "crawled_at": 1762998000,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 48539,
+        "title": "BDIC Homepage : Bachelor's Degree with Individual Concentration (BDIC) : UMass Amherst",
+        "link_count": 42
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/bdic/",
+        "url_normalized": "https://www.umass.edu/bdic/",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/uww/professional-development",
+        "fragments": [],
+        "discovered_at": 1762997809,
+        "queued_at": 1762997809,
+        "crawled_at": 1762997863,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 48539,
+        "title": "BDIC Homepage : Bachelor's Degree with Individual Concentration (BDIC) : UMass Amherst",
+        "link_count": 42
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/bursar",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/bursar",
+      "https://www.umass.edu/bursar/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/bursar",
+        "url_normalized": "https://www.umass.edu/bursar",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/bursar/payment/student",
+        "fragments": [],
+        "discovered_at": 1762997900,
+        "queued_at": 1762997900,
+        "crawled_at": 1762998075,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59839,
+        "title": "Office of the Bursar : Office of the Bursar : UMass Amherst",
+        "link_count": 69
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/bursar/",
+        "url_normalized": "https://www.umass.edu/bursar/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/uww/career-launch-cost",
+        "fragments": [],
+        "discovered_at": 1762997997,
+        "queued_at": 1762997997,
+        "crawled_at": 1762998140,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59839,
+        "title": "Office of the Bursar : Office of the Bursar : UMass Amherst",
+        "link_count": 69
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/cmass",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/cmass",
+      "https://www.umass.edu/cmass/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/cmass",
+        "url_normalized": "https://www.umass.edu/cmass",
+        "depth": 7,
+        "parent_url": "https://www.umass.edu/cmass/",
+        "fragments": [],
+        "discovered_at": 1762998147,
+        "queued_at": 1762998147,
+        "crawled_at": 1762998313,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 50060,
+        "title": "CMASS Homepage : Center for Multicultural Advancement and Student Success : UMass Amherst",
+        "link_count": 50
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/cmass/",
+        "url_normalized": "https://www.umass.edu/cmass/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/orsl/resources/muslim",
+        "fragments": [],
+        "discovered_at": 1762998000,
+        "queued_at": 1762998000,
+        "crawled_at": 1762998147,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 50060,
+        "title": "CMASS Homepage : Center for Multicultural Advancement and Student Success : UMass Amherst",
+        "link_count": 50
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/counseling",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/counseling",
+      "https://www.umass.edu/counseling/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/counseling",
+        "url_normalized": "https://www.umass.edu/counseling",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/counseling/",
+        "fragments": [],
+        "discovered_at": 1762998122,
+        "queued_at": 1762998122,
+        "crawled_at": 1762998271,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45554,
+        "title": "CCPH | HOME : Center for Counseling and Psychological Health : UMass Amherst",
+        "link_count": 34
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/counseling/",
+        "url_normalized": "https://www.umass.edu/counseling/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/accessibility/wellness-resources",
+        "fragments": [],
+        "discovered_at": 1762997964,
+        "queued_at": 1762997964,
+        "crawled_at": 1762998122,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45554,
+        "title": "CCPH | HOME : Center for Counseling and Psychological Health : UMass Amherst",
+        "link_count": 34
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/dialogue",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/dialogue",
+      "https://www.umass.edu/dialogue/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/dialogue",
+        "url_normalized": "https://www.umass.edu/dialogue",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/dialogue/",
+        "fragments": [],
+        "discovered_at": 1762998183,
+        "queued_at": 1762998183,
+        "crawled_at": 1762998332,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 75213,
+        "title": "Home : Community, Democracy, and Dialogue : UMass Amherst",
+        "link_count": 49
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/dialogue/",
+        "url_normalized": "https://www.umass.edu/dialogue/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/diversity/about",
+        "fragments": [],
+        "discovered_at": 1762998062,
+        "queued_at": 1762998062,
+        "crawled_at": 1762998183,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 75213,
+        "title": "Home : Community, Democracy, and Dialogue : UMass Amherst",
+        "link_count": 49
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/disability-services",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/disability-services",
+      "https://www.umass.edu/disability-services/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/disability-services",
+        "url_normalized": "https://www.umass.edu/disability-services",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/disability-services/about/laws-and-policies",
+        "fragments": [],
+        "discovered_at": 1762998123,
+        "queued_at": 1762998123,
+        "crawled_at": 1762998276,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 48581,
+        "title": "Disability Services HOME : Disability Services : UMass Amherst",
+        "link_count": 64
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/disability-services/",
+        "url_normalized": "https://www.umass.edu/disability-services/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/disability-services/register/documentation",
+        "fragments": [],
+        "discovered_at": 1762998276,
+        "queued_at": 1762998276,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/diversity",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/diversity",
+      "https://www.umass.edu/diversity/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/diversity",
+        "url_normalized": "https://www.umass.edu/diversity",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/diversity/our-commitment-accessibility/",
+        "fragments": [],
+        "discovered_at": 1762997890,
+        "queued_at": 1762997890,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/diversity/",
+        "url_normalized": "https://www.umass.edu/diversity/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/diversity/about",
+        "fragments": [],
+        "discovered_at": 1762998062,
+        "queued_at": 1762998062,
+        "crawled_at": 1762998180,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 63108,
+        "title": "Office of Equity and Inclusion : UMass Amherst",
+        "link_count": 56
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/faculty-development",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/faculty-development",
+      "https://www.umass.edu/faculty-development/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/faculty-development",
+        "url_normalized": "https://www.umass.edu/faculty-development",
+        "depth": 7,
+        "parent_url": "https://www.umass.edu/faculty-development/news/mutual-mentoring-awards-announced-ofds-2024-25-grant-program",
+        "fragments": [],
+        "discovered_at": 1762998116,
+        "queued_at": 1762998116,
+        "crawled_at": 1762998241,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 54189,
+        "title": "Homepage : Office of Faculty Development : UMass Amherst",
+        "link_count": 53
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/faculty-development/",
+        "url_normalized": "https://www.umass.edu/faculty-development/",
+        "depth": 8,
+        "parent_url": "https://www.umass.edu/faculty-development/events",
+        "fragments": [],
+        "discovered_at": 1762998242,
+        "queued_at": 1762998242,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/hr",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/hr",
+      "https://www.umass.edu/hr/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/hr",
+        "url_normalized": "https://www.umass.edu/hr",
+        "depth": 9,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/search/?job-mail-subscribe-privacy=agree&search-keyword=biology&_gl=1%2a8ne2jz%2a_gcl_au%2amtizntyymda5ny4xnzmzmtcyndm3%2a_ga%2amtq4mdqwmtmwlje3mzmxnzi0mzc.%2a_ga_21rls0l7eb%2amtc0mdc3mdy4mi4yljeumtc0mdc3mjy1ny4wljauma..",
+        "fragments": [],
+        "discovered_at": 1762997966,
+        "queued_at": 1762997966,
+        "crawled_at": 1762998131,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 108429,
+        "title": "Call for Nominations: : Human Resources : UMass Amherst",
+        "link_count": 106
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/hr/",
+        "url_normalized": "https://www.umass.edu/hr/",
+        "depth": 9,
+        "parent_url": "https://www.umass.edu/hr/benefits-and-pay/benefits/paid-time-and-holidays/holidays-and-campus-closure-days",
+        "fragments": [],
+        "discovered_at": 1762998082,
+        "queued_at": 1762998082,
+        "crawled_at": 1762998188,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 108429,
+        "title": "Call for Nominations: : Human Resources : UMass Amherst",
+        "link_count": 106
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/ials",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/ials",
+      "https://www.umass.edu/ials/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/ials",
+        "url_normalized": "https://www.umass.edu/ials",
+        "depth": 11,
+        "parent_url": "https://www.umass.edu/ials/core-facilities",
+        "fragments": [],
+        "discovered_at": 1762998130,
+        "queued_at": 1762998130,
+        "crawled_at": 1762998291,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 86796,
+        "title": "Home | Institute for Applied Life Sciences",
+        "link_count": 160
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/ials/",
+        "url_normalized": "https://www.umass.edu/ials/",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528737/assistant-professor-immunology",
+        "fragments": [],
+        "discovered_at": 1762997973,
+        "queued_at": 1762997973,
+        "crawled_at": 1762998131,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 86882,
+        "title": "Home | Institute for Applied Life Sciences",
+        "link_count": 160
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/itprogram",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/itprogram",
+      "https://www.umass.edu/itprogram/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/itprogram",
+        "url_normalized": "https://www.umass.edu/itprogram",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/uww/professional-development",
+        "fragments": [],
+        "discovered_at": 1762997809,
+        "queued_at": 1762997809,
+        "crawled_at": 1762997867,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 53941,
+        "title": "Complement Your Major with IT Knowledge : Information Technology Program : UMass Amherst",
+        "link_count": 35
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/itprogram/",
+        "url_normalized": "https://www.umass.edu/itprogram/",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/itprogram",
+        "fragments": [],
+        "discovered_at": 1762997867,
+        "queued_at": 1762997867,
+        "crawled_at": 1762998010,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 53941,
+        "title": "Complement Your Major with IT Knowledge : Information Technology Program : UMass Amherst",
+        "link_count": 35
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/judaic-near-east",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/judaic-near-east",
+      "https://www.umass.edu/judaic-near-east/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/judaic-near-east",
+        "url_normalized": "https://www.umass.edu/judaic-near-east",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/judaic-near-east/middle-eastern-studies",
+        "fragments": [],
+        "discovered_at": 1762997998,
+        "queued_at": 1762997998,
+        "crawled_at": 1762998135,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 40176,
+        "title": "Judaic and Near Eastern Studies : UMass Amherst",
+        "link_count": 37
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/judaic-near-east/",
+        "url_normalized": "https://www.umass.edu/judaic-near-east/",
+        "depth": 7,
+        "parent_url": "https://www.umass.edu/judaic-near-east/about/welcome",
+        "fragments": [],
+        "discovered_at": 1762998139,
+        "queued_at": 1762998139,
+        "crawled_at": 1762998291,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 40176,
+        "title": "Judaic and Near Eastern Studies : UMass Amherst",
+        "link_count": 37
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/living",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/living",
+      "https://www.umass.edu/living/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/living",
+        "url_normalized": "https://www.umass.edu/living",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/student-life/live-on-campus",
+        "fragments": [],
+        "discovered_at": 1762998058,
+        "queued_at": 1762998058,
+        "crawled_at": 1762998171,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 48027,
+        "title": "Live at UMass - Live on Campus - Home : Live On Campus : UMass Amherst",
+        "link_count": 50
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/living/",
+        "url_normalized": "https://www.umass.edu/living/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/orsl/resources/muslim",
+        "fragments": [],
+        "discovered_at": 1762998000,
+        "queued_at": 1762998000,
+        "crawled_at": 1762998143,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 48027,
+        "title": "Live at UMass - Live on Campus - Home : Live On Campus : UMass Amherst",
+        "link_count": 50
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/lrc",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/lrc",
+      "https://www.umass.edu/lrc/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/lrc",
+        "url_normalized": "https://www.umass.edu/lrc",
+        "depth": 3,
+        "parent_url": "https://www.library.umass.edu/lrc/",
+        "fragments": [],
+        "discovered_at": 1762997824,
+        "queued_at": 1762997824,
+        "crawled_at": 1762997913,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 63553,
+        "title": "Learning Resource Center : Learning Resource Center : UMass Amherst",
+        "link_count": 34
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/lrc/",
+        "url_normalized": "https://www.umass.edu/lrc/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/ours/",
+        "fragments": [],
+        "discovered_at": 1762997909,
+        "queued_at": 1762997909,
+        "crawled_at": 1762998099,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 63553,
+        "title": "Learning Resource Center : Learning Resource Center : UMass Amherst",
+        "link_count": 34
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/mathematics-statistics",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/mathematics-statistics",
+      "https://www.umass.edu/mathematics-statistics/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/mathematics-statistics",
+        "url_normalized": "https://www.umass.edu/mathematics-statistics",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/mathematics-statistics/research/statistical-consulting",
+        "fragments": [],
+        "discovered_at": 1762997900,
+        "queued_at": 1762997900,
+        "crawled_at": 1762998077,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 43362,
+        "title": "Department of Mathematics and Statistics : UMass Amherst",
+        "link_count": 53
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/mathematics-statistics/",
+        "url_normalized": "https://www.umass.edu/mathematics-statistics/",
+        "depth": 6,
+        "parent_url": "https://websites.umass.edu/mathadmin/",
+        "fragments": [],
+        "discovered_at": 1762997911,
+        "queued_at": 1762997911,
+        "crawled_at": 1762998096,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 43362,
+        "title": "Department of Mathematics and Statistics : UMass Amherst",
+        "link_count": 53
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/molecular-cellular",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/molecular-cellular",
+      "https://www.umass.edu/molecular-cellular/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/molecular-cellular",
+        "url_normalized": "https://www.umass.edu/molecular-cellular",
+        "depth": 11,
+        "parent_url": "https://gpls.cns.umass.edu/mcb/program",
+        "fragments": [],
+        "discovered_at": 1762997984,
+        "queued_at": 1762997984,
+        "crawled_at": 1762998130,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 49830,
+        "title": "Molecular & Cellular Biology : UMass Amherst",
+        "link_count": 61
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/molecular-cellular/",
+        "url_normalized": "https://www.umass.edu/molecular-cellular/",
+        "depth": 8,
+        "parent_url": "https://www.bio.umass.edu/biology/research",
+        "fragments": [],
+        "discovered_at": 1762997948,
+        "queued_at": 1762997948,
+        "crawled_at": 1762998116,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 49830,
+        "title": "Molecular & Cellular Biology : UMass Amherst",
+        "link_count": 61
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/neuroscience-behavior",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/neuroscience-behavior",
+      "https://www.umass.edu/neuroscience-behavior/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/neuroscience-behavior",
+        "url_normalized": "https://www.umass.edu/neuroscience-behavior",
+        "depth": 9,
+        "parent_url": "https://www.umass.edu/neuroscience-behavior/",
+        "fragments": [],
+        "discovered_at": 1762998121,
+        "queued_at": 1762998121,
+        "crawled_at": 1762998257,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42433,
+        "title": "Neuroscience & Behavior : UMass Amherst",
+        "link_count": 50
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/neuroscience-behavior/",
+        "url_normalized": "https://www.umass.edu/neuroscience-behavior/",
+        "depth": 8,
+        "parent_url": "https://www.bio.umass.edu/biology/research",
+        "fragments": [],
+        "discovered_at": 1762997948,
+        "queued_at": 1762997948,
+        "crawled_at": 1762998121,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42433,
+        "title": "Neuroscience & Behavior : UMass Amherst",
+        "link_count": 50
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/organismic-evolutionary",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/organismic-evolutionary",
+      "https://www.umass.edu/organismic-evolutionary/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/organismic-evolutionary",
+        "url_normalized": "https://www.umass.edu/organismic-evolutionary",
+        "depth": 9,
+        "parent_url": "https://www.umass.edu/organismic-evolutionary/",
+        "fragments": [],
+        "discovered_at": 1762998120,
+        "queued_at": 1762998120,
+        "crawled_at": 1762998250,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 36336,
+        "title": "Organismic & Evolutionary Biology : UMass Amherst",
+        "link_count": 35
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/organismic-evolutionary/",
+        "url_normalized": "https://www.umass.edu/organismic-evolutionary/",
+        "depth": 8,
+        "parent_url": "https://www.bio.umass.edu/biology/research",
+        "fragments": [],
+        "discovered_at": 1762997948,
+        "queued_at": 1762997948,
+        "crawled_at": 1762998120,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 36336,
+        "title": "Organismic & Evolutionary Biology : UMass Amherst",
+        "link_count": 35
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/ours",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/ours",
+      "https://www.umass.edu/ours/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/ours",
+        "url_normalized": "https://www.umass.edu/ours",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/ours/",
+        "fragments": [],
+        "discovered_at": 1762997909,
+        "queued_at": 1762997909,
+        "crawled_at": 1762998106,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 62180,
+        "title": "Home : Office of Undergraduate Research and Studies : UMass Amherst",
+        "link_count": 45
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/ours/",
+        "url_normalized": "https://www.umass.edu/ours/",
+        "depth": 3,
+        "parent_url": "https://www.library.umass.edu/lrc/",
+        "fragments": [],
+        "discovered_at": 1762997824,
+        "queued_at": 1762997824,
+        "crawled_at": 1762997909,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 62180,
+        "title": "Home : Office of Undergraduate Research and Studies : UMass Amherst",
+        "link_count": 45
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/plant-biology",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/plant-biology",
+      "https://www.umass.edu/plant-biology/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/plant-biology",
+        "url_normalized": "https://www.umass.edu/plant-biology",
+        "depth": 11,
+        "parent_url": "https://gpls.cns.umass.edu/pb/admissions/program-overview",
+        "fragments": [],
+        "discovered_at": 1762997988,
+        "queued_at": 1762997988,
+        "crawled_at": 1762998136,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 51684,
+        "title": "Plant Biology : UMass Amherst",
+        "link_count": 49
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/plant-biology/",
+        "url_normalized": "https://www.umass.edu/plant-biology/",
+        "depth": 8,
+        "parent_url": "https://www.bio.umass.edu/biology/research",
+        "fragments": [],
+        "discovered_at": 1762997948,
+        "queued_at": 1762997948,
+        "crawled_at": 1762998122,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 51684,
+        "title": "Plant Biology : UMass Amherst",
+        "link_count": 49
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/psychological-brain-sciences",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/psychological-brain-sciences",
+      "https://www.umass.edu/psychological-brain-sciences/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/psychological-brain-sciences",
+        "url_normalized": "https://www.umass.edu/psychological-brain-sciences",
+        "depth": 8,
+        "parent_url": "https://www.umass.edu/psychological-brain-sciences/about/directory/lori-astheimer",
+        "fragments": [],
+        "discovered_at": 1762998115,
+        "queued_at": 1762998115,
+        "crawled_at": 1762998224,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 73161,
+        "title": "Department of Psychological and Brain Sciences : UMass Amherst",
+        "link_count": 78
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/psychological-brain-sciences/",
+        "url_normalized": "https://www.umass.edu/psychological-brain-sciences/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/psc/",
+        "fragments": [],
+        "discovered_at": 1762998122,
+        "queued_at": 1762998122,
+        "crawled_at": 1762998269,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 73161,
+        "title": "Department of Psychological and Brain Sciences : UMass Amherst",
+        "link_count": 78
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/psychological-services",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/psychological-services",
+      "https://www.umass.edu/psychological-services/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/psychological-services",
+        "url_normalized": "https://www.umass.edu/psychological-services",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/psc/",
+        "fragments": [],
+        "discovered_at": 1762998122,
+        "queued_at": 1762998122,
+        "crawled_at": 1762998268,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 33088,
+        "title": "Psychological Services Center : Psychological Services Center : UMass Amherst",
+        "link_count": 24
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/psychological-services/",
+        "url_normalized": "https://www.umass.edu/psychological-services/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/psychological-services/people",
+        "fragments": [],
+        "discovered_at": 1762998264,
+        "queued_at": 1762998264,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/registrar",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/registrar",
+      "https://www.umass.edu/registrar/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/registrar",
+        "url_normalized": "https://www.umass.edu/registrar",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/registrar/re-enrollment-information",
+        "fragments": [],
+        "discovered_at": 1762997883,
+        "queued_at": 1762997883,
+        "crawled_at": 1762998050,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42458,
+        "title": "Welcome : University Registrar : UMass Amherst",
+        "link_count": 40
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/registrar/",
+        "url_normalized": "https://www.umass.edu/registrar/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/registrar/re-enrollment-information",
+        "fragments": [],
+        "discovered_at": 1762997883,
+        "queued_at": 1762997883,
+        "crawled_at": 1762998055,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42458,
+        "title": "Welcome : University Registrar : UMass Amherst",
+        "link_count": 40
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/research",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/research",
+      "https://www.umass.edu/research/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/research",
+        "url_normalized": "https://www.umass.edu/research",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/research/",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997831,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 55733,
+        "title": "Office of Research & Engagement : Research and Engagement : UMass Amherst",
+        "link_count": 59
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/research/",
+        "url_normalized": "https://www.umass.edu/research/",
+        "depth": 1,
+        "parent_url": "https://umass.edu",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997806,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 55733,
+        "title": "Office of Research & Engagement : Research and Engagement : UMass Amherst",
+        "link_count": 59
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/research-computing",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/research-computing",
+      "https://www.umass.edu/research-computing/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/research-computing",
+        "url_normalized": "https://www.umass.edu/research-computing",
+        "depth": 5,
+        "parent_url": "https://guides.library.umass.edu/c.php?g=1449844&p=11052214",
+        "fragments": [],
+        "discovered_at": 1762997878,
+        "queued_at": 1762997878,
+        "crawled_at": 1762998037,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45082,
+        "title": "Research Computing & Data : UMass Amherst Research Computing & Data : UMass Amherst",
+        "link_count": 36
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/research-computing/",
+        "url_normalized": "https://www.umass.edu/research-computing/",
+        "depth": 3,
+        "parent_url": "https://guides.library.umass.edu/dataservices",
+        "fragments": [],
+        "discovered_at": 1762997816,
+        "queued_at": 1762997816,
+        "crawled_at": 1762997885,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45082,
+        "title": "Research Computing & Data : UMass Amherst Research Computing & Data : UMass Amherst",
+        "link_count": 36
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/senate",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/senate",
+      "https://www.umass.edu/senate/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/senate",
+        "url_normalized": "https://www.umass.edu/senate",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/senate/2024-2030-academic-calendars",
+        "fragments": [],
+        "discovered_at": 1762998175,
+        "queued_at": 1762998175,
+        "crawled_at": 1762998328,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 84155,
+        "title": "Home : Faculty Senate : UMass Amherst",
+        "link_count": 184
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/senate/",
+        "url_normalized": "https://www.umass.edu/senate/",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/senate/2024-2030-academic-calendars",
+        "fragments": [],
+        "discovered_at": 1762998175,
+        "queued_at": 1762998175,
+        "crawled_at": 1762998331,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 84155,
+        "title": "Home : Faculty Senate : UMass Amherst",
+        "link_count": 184
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/site-policies",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/site-policies",
+      "https://www.umass.edu/site-policies/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/site-policies",
+        "url_normalized": "https://www.umass.edu/site-policies",
+        "depth": 4,
+        "parent_url": "https://subscribe.umass.edu/subscriptioncenter/managelist/subscribefromlink?channel_id=a2w6s000007eagyqam",
+        "fragments": [],
+        "discovered_at": 1762997846,
+        "queued_at": 1762997846,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/site-policies/",
+        "url_normalized": "https://www.umass.edu/site-policies/",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528621/assistant-professor-plant-health-microbe-interactions",
+        "fragments": [],
+        "discovered_at": 1762997974,
+        "queued_at": 1762997974,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/social-sciences",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/social-sciences",
+      "https://www.umass.edu/social-sciences/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/social-sciences",
+        "url_normalized": "https://www.umass.edu/social-sciences",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/anthro/",
+        "fragments": [],
+        "discovered_at": 1762998192,
+        "queued_at": 1762998192,
+        "crawled_at": null,
+        "response_time_ms": null,
+        "status_code": null,
+        "content_type": null,
+        "content_length": null,
+        "title": null,
+        "link_count": null
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/social-sciences/",
+        "url_normalized": "https://www.umass.edu/social-sciences/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/sociology/sociology-online-degree",
+        "fragments": [],
+        "discovered_at": 1762997873,
+        "queued_at": 1762997873,
+        "crawled_at": 1762998015,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 102135,
+        "title": "So you want to make an impact? You've come to the right place. : College of Social & Behavioral Sciences : UMass Amherst",
+        "link_count": 101
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/sociology",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/sociology",
+      "https://www.umass.edu/sociology/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/sociology",
+        "url_normalized": "https://www.umass.edu/sociology",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/sociology/sociology-online-degree",
+        "fragments": [],
+        "discovered_at": 1762997873,
+        "queued_at": 1762997873,
+        "crawled_at": 1762998011,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 44876,
+        "title": "Sociology : UMass Amherst",
+        "link_count": 39
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/sociology/",
+        "url_normalized": "https://www.umass.edu/sociology/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/sociology/news",
+        "fragments": [],
+        "discovered_at": 1762998013,
+        "queued_at": 1762998013,
+        "crawled_at": 1762998152,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 44876,
+        "title": "Sociology : UMass Amherst",
+        "link_count": 39
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/stockbridge",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/stockbridge",
+      "https://www.umass.edu/stockbridge/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/stockbridge",
+        "url_normalized": "https://www.umass.edu/stockbridge",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/stockbridge/online-associate-science-degree-horticulture",
+        "fragments": [],
+        "discovered_at": 1762997875,
+        "queued_at": 1762997875,
+        "crawled_at": 1762998026,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59389,
+        "title": "Stockbridge School of Agriculture : UMass Amherst",
+        "link_count": 67
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/stockbridge/",
+        "url_normalized": "https://www.umass.edu/stockbridge/",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528605/assistant-professor-crop-resilience-to-environmental-stress",
+        "fragments": [],
+        "discovered_at": 1762997976,
+        "queued_at": 1762997976,
+        "crawled_at": 1762998129,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59389,
+        "title": "Stockbridge School of Agriculture : UMass Amherst",
+        "link_count": 67
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/student-life",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/student-life",
+      "https://www.umass.edu/student-life/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/student-life",
+        "url_normalized": "https://www.umass.edu/student-life",
+        "depth": 6,
+        "parent_url": "https://www.umass.edu/orsl/resources/muslim",
+        "fragments": [],
+        "discovered_at": 1762998000,
+        "queued_at": 1762998000,
+        "crawled_at": 1762998142,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 52297,
+        "title": "SACL Student Life HOME : Student Affairs : UMass Amherst",
+        "link_count": 57
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/student-life/",
+        "url_normalized": "https://www.umass.edu/student-life/",
+        "depth": 7,
+        "parent_url": "https://www.umass.edu/student-life/sororities-fraternities",
+        "fragments": [],
+        "discovered_at": 1762998147,
+        "queued_at": 1762998147,
+        "crawled_at": 1762998308,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 52297,
+        "title": "SACL Student Life HOME : Student Affairs : UMass Amherst",
+        "link_count": 57
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/tto",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/tto",
+      "https://www.umass.edu/tto/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/tto",
+        "url_normalized": "https://www.umass.edu/tto",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/research/",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997834,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42855,
+        "title": "Technology Transfer Office (TTO) : Technology Transfer Office : UMass Amherst",
+        "link_count": 30
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/tto/",
+        "url_normalized": "https://www.umass.edu/tto/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/tto/programs-figures",
+        "fragments": [],
+        "discovered_at": 1762997968,
+        "queued_at": 1762997968,
+        "crawled_at": 1762998125,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42855,
+        "title": "Technology Transfer Office (TTO) : Technology Transfer Office : UMass Amherst",
+        "link_count": 30
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/uhs",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/uhs",
+      "https://www.umass.edu/uhs/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/uhs",
+        "url_normalized": "https://www.umass.edu/uhs",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/uhs/accesstocare/withdrawals",
+        "fragments": [],
+        "discovered_at": 1762997912,
+        "queued_at": 1762997912,
+        "crawled_at": 1762998104,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59078,
+        "title": "UHS Cares for UMass. : University Health Services : UMass Amherst",
+        "link_count": 86
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/uhs/",
+        "url_normalized": "https://www.umass.edu/uhs/",
+        "depth": 4,
+        "parent_url": "https://www.umass.edu/accessibility/wellness-resources",
+        "fragments": [],
+        "discovered_at": 1762997964,
+        "queued_at": 1762997964,
+        "crawled_at": 1762998124,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 59078,
+        "title": "UHS Cares for UMass. : University Health Services : UMass Amherst",
+        "link_count": 86
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/universityplus",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/universityplus",
+      "https://www.umass.edu/universityplus/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/universityplus",
+        "url_normalized": "https://www.umass.edu/universityplus",
+        "depth": 2,
+        "parent_url": "https://www.umass.edu/universityplus/programs/summer",
+        "fragments": [],
+        "discovered_at": 1762997806,
+        "queued_at": 1762997806,
+        "crawled_at": 1762997819,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 60376,
+        "title": "University+ Session Information Portal : University+ Session : UMass Amherst",
+        "link_count": 48
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/universityplus/",
+        "url_normalized": "https://www.umass.edu/universityplus/",
+        "depth": 5,
+        "parent_url": "https://www.umass.edu/registrar/academic-calendar",
+        "fragments": [],
+        "discovered_at": 1762998060,
+        "queued_at": 1762998060,
+        "crawled_at": 1762998172,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 60376,
+        "title": "University+ Session Information Portal : University+ Session : UMass Amherst",
+        "link_count": 48
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/veterinary-animal-sciences",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/veterinary-animal-sciences",
+      "https://www.umass.edu/veterinary-animal-sciences/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/veterinary-animal-sciences",
+        "url_normalized": "https://www.umass.edu/veterinary-animal-sciences",
+        "depth": 11,
+        "parent_url": "https://www.umass.edu/veterinary-animal-sciences/",
+        "fragments": [],
+        "discovered_at": 1762998129,
+        "queued_at": 1762998129,
+        "crawled_at": 1762998279,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42438,
+        "title": "Department of Veterinary and Animal Sciences : Department of Veterinary and Animal Sciences : UMass Amherst",
+        "link_count": 53
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/veterinary-animal-sciences/",
+        "url_normalized": "https://www.umass.edu/veterinary-animal-sciences/",
+        "depth": 10,
+        "parent_url": "https://careers.umass.edu/amherst/en-us/job/528737/assistant-professor-immunology",
+        "fragments": [],
+        "discovered_at": 1762997973,
+        "queued_at": 1762997973,
+        "crawled_at": 1762998129,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 42438,
+        "title": "Department of Veterinary and Animal Sciences : Department of Veterinary and Animal Sciences : UMass Amherst",
+        "link_count": 53
+      }
+    ]
+  },
+  {
+    "canonical_url": "https://umass.edu/writing-center",
+    "count": 2,
+    "original_urls": [
+      "https://www.umass.edu/writing-center",
+      "https://www.umass.edu/writing-center/"
+    ],
+    "records": [
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/writing-center",
+        "url_normalized": "https://www.umass.edu/writing-center",
+        "depth": 3,
+        "parent_url": "https://www.umass.edu/writing-center/",
+        "fragments": [],
+        "discovered_at": 1762997853,
+        "queued_at": 1762997853,
+        "crawled_at": 1762997992,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45539,
+        "title": "The Writing Center : UMass Amherst Writing Center : UMass Amherst",
+        "link_count": 42
+      },
+      {
+        "schema_version": 1,
+        "url": "https://www.umass.edu/writing-center/",
+        "url_normalized": "https://www.umass.edu/writing-center/",
+        "depth": 2,
+        "parent_url": "https://www.library.umass.edu/",
+        "fragments": [],
+        "discovered_at": 1762997809,
+        "queued_at": 1762997809,
+        "crawled_at": 1762997853,
+        "response_time_ms": null,
+        "status_code": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "content_length": 45539,
+        "title": "The Writing Center : UMass Amherst Writing Center : UMass Amherst",
+        "link_count": 42
       }
     ]
   }
