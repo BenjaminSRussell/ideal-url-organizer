@@ -12,8 +12,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.core.data_loader import DataLoader
 from src.core.config import get_config
+from src.core.web_crawler import WebCrawler
 from src.analyzers.data_quality_analyzer import DataQualityAnalyzer
+from src.analyzers.link_graph_analyzer import LinkGraphAnalyzer
+from src.analyzers.semantic_analyzer import SemanticAnalyzer
+from src.analyzers.advanced_analytics import AdvancedAnalytics
+from src.analyzers.comprehensive_report_generator import ComprehensiveReportGenerator
 from src.visualizers.chart_generator import ChartGenerator
+from src.generators.unified_report_generator import UnifiedReportGenerator
 
 # Import all organizers
 from src.organizers.method_01_by_domain import ByDomainOrganizer
@@ -79,7 +85,7 @@ class URLOrganizerOrchestrator:
             return False
 
         organizer_class, description = self.methods[method_name]
-        output_dir = self.project_root / 'data' / 'processed' / method_name
+        output_dir = self.project_root / 'data' / 'results' / 'methods' / method_name
 
         print(f"\n{description}")
 
@@ -124,12 +130,90 @@ class URLOrganizerOrchestrator:
         analyzer = DataQualityAnalyzer()
         analyzer.run(self.data_loader)
 
+    def run_advanced_analysis(self):
+        """Run advanced analytics (link graph, semantic, temporal, etc.)"""
+        print("\nRunning advanced analysis")
+
+        data_loader = DataLoader()
+        records = data_loader.load()
+
+        # Try to get crawled pages
+        pages = []
+        try:
+            # Check if crawled data exists
+            crawler = WebCrawler()
+            crawled_data_file = self.project_root / 'data' / 'crawled' / 'pages.jsonl'
+            if crawled_data_file.exists():
+                with open(crawled_data_file, 'r') as f:
+                    import json
+                    for line in f:
+                        try:
+                            page_data = json.loads(line)
+                            # Convert to PageContent if possible
+                            from src.core.web_crawler import PageContent
+                            page = PageContent(**page_data)
+                            pages.append(page)
+                        except Exception:
+                            pass
+            if pages:
+                print(f"  ✓ Loaded {len(pages)} crawled pages")
+        except Exception as e:
+            print(f"  Warning: Could not load page content: {e}")
+            pages = []
+
+        # Run link graph analysis
+        if pages:
+            print("\n  [1/4] Link Graph Analysis")
+            try:
+                link_analyzer = LinkGraphAnalyzer()
+                link_analyzer.analyze(pages)
+            except Exception as e:
+                print(f"    Error: {e}")
+
+        # Run semantic analysis
+        if pages:
+            print("\n  [2/4] Semantic Analysis")
+            try:
+                semantic_analyzer = SemanticAnalyzer()
+                semantic_analyzer.analyze(pages)
+            except Exception as e:
+                print(f"    Error: {e}")
+
+        # Run advanced analytics
+        print("\n  [3/4] Advanced Analytics")
+        try:
+            advanced_analytics = AdvancedAnalytics()
+            advanced_analytics.analyze(pages, records)
+        except Exception as e:
+            print(f"    Error: {e}")
+
+        # Generate comprehensive report
+        print("\n  [4/4] Generating Comprehensive Report")
+        try:
+            report_gen = ComprehensiveReportGenerator()
+            report_gen.run()
+        except Exception as e:
+            print(f"    Error: {e}")
+
     def run_visualization(self):
         """Generate visualizations"""
         print("\nGenerating visualizations")
 
         generator = ChartGenerator()
         generator.run(self.data_loader)
+
+    def run_unified_report(self):
+        """Generate unified HTML report"""
+        print("\nGenerating unified HTML report")
+
+        generator = UnifiedReportGenerator()
+        report_path = generator.generate_report()
+
+        if report_path:
+            print(f"\n[+] Unified report generated successfully")
+            print(f"[+] Open in browser: file://{report_path.absolute()}")
+        else:
+            print("\n[-] Failed to generate unified report")
 
     def list_methods(self):
         """List all available methods"""
@@ -142,17 +226,19 @@ class URLOrganizerOrchestrator:
 
     def run_full_pipeline(self):
         """Run complete analysis pipeline"""
-        print("\nFull pipeline: analysis, methods, and visualization")
+        print("\nFull pipeline: analysis, advanced analytics, methods, visualization, and unified report")
 
         start_time = datetime.now()
 
         self.run_analysis()
+        self.run_advanced_analysis()
         self.run_all_methods()
         self.run_visualization()
+        self.run_unified_report()
 
         elapsed = (datetime.now() - start_time).total_seconds()
         print(f"\nPipeline complete in {elapsed:.2f}s")
-        print(f"Results: {self.project_root / 'data'}")
+        print(f"Results: {self.project_root / 'data' / 'results'}")
 
 
 def main():
@@ -161,7 +247,9 @@ def main():
     parser.add_argument('--all', action='store_true', help='Run all organization methods')
     parser.add_argument('--method', type=str, help='Run specific organization method')
     parser.add_argument('--analyze', action='store_true', help='Run data quality analysis')
+    parser.add_argument('--advanced', action='store_true', help='Run advanced analytics (link graph, semantic, temporal)')
     parser.add_argument('--visualize', action='store_true', help='Generate visualizations')
+    parser.add_argument('--unified-report', action='store_true', help='Generate unified HTML report')
     parser.add_argument('--full', action='store_true', help='Run full pipeline')
     parser.add_argument('--list', action='store_true', help='List all available methods')
 
@@ -178,8 +266,12 @@ def main():
         orchestrator.run_method(args.method)
     elif args.analyze:
         orchestrator.run_analysis()
+    elif args.advanced:
+        orchestrator.run_advanced_analysis()
     elif args.visualize:
         orchestrator.run_visualization()
+    elif args.unified_report:
+        orchestrator.run_unified_report()
     else:
         parser.print_help()
 

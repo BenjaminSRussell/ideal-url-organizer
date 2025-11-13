@@ -14,7 +14,7 @@ class DataQualityAnalyzer:
     def __init__(self, output_dir: Path = None):
         if output_dir is None:
             project_root = Path(__file__).parent.parent.parent
-            output_dir = project_root / 'data' / 'analysis'
+            output_dir = project_root / 'data' / 'results' / 'analysis'
 
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -220,17 +220,17 @@ class DataQualityAnalyzer:
             recommendations.append("Consider upgrading HTTP URLs to HTTPS where possible")
 
         # Print summary
-        print(f"\n✓ STRENGTHS ({len(strengths)}):")
+        print(f"\n[+] STRENGTHS ({len(strengths)}):")
         for strength in strengths:
-            print(f"  • {strength}")
+            print(f"  - {strength}")
 
-        print(f"\n✗ WEAKNESSES ({len(weaknesses)}):")
+        print(f"\n[-] WEAKNESSES ({len(weaknesses)}):")
         for weakness in weaknesses:
-            print(f"  • {weakness}")
+            print(f"  - {weakness}")
 
-        print(f"\n→ RECOMMENDATIONS ({len(recommendations)}):")
+        print(f"\n[>] RECOMMENDATIONS ({len(recommendations)}):")
         for rec in recommendations:
-            print(f"  • {rec}")
+            print(f"  - {rec}")
 
         return strengths, weaknesses, recommendations
 
@@ -241,7 +241,7 @@ class DataQualityAnalyzer:
         with open(output_path, 'w') as f:
             json.dump(analysis, f, indent=2)
 
-        print(f"\n✓ Analysis saved to: {output_path}")
+        print(f"\n[+] Analysis saved to: {output_path}")
 
         # Also save a human-readable report
         self._save_readable_report(analysis)
@@ -259,17 +259,17 @@ class DataQualityAnalyzer:
 
             f.write("\n## Strengths\n\n")
             for strength in analysis['strengths']:
-                f.write(f"✓ {strength}\n\n")
+                f.write(f"[+] {strength}\n\n")
 
             f.write("\n## Weaknesses\n\n")
             for weakness in analysis['weaknesses']:
-                f.write(f"✗ {weakness}\n\n")
+                f.write(f"[-] {weakness}\n\n")
 
             f.write("\n## Recommendations\n\n")
             for rec in analysis['recommendations']:
-                f.write(f"→ {rec}\n\n")
+                f.write(f"[>] {rec}\n\n")
 
-        print(f"✓ Readable report saved to: {output_path}")
+        print(f"[+] Readable report saved to: {output_path}")
 
     def run(self, data_loader: DataLoader):
         """Run full analysis"""

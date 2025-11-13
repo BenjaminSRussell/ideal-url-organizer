@@ -1,0 +1,394 @@
+<!-- ============================================
+     SECTION TEMPLATES FOR UNIFIED REPORT
+     These templates show the structure for each report section
+     ============================================ -->
+
+<!-- EXECUTIVE SUMMARY SECTION -->
+<section id="executive-summary" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Executive Summary
+            <span class="section-badge">Overview</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('exec-summary-content')">Collapse</button>
+    </div>
+    <div id="exec-summary-content" class="section-content">
+        <!-- Key Metrics Cards -->
+        <div class="card-grid">
+            <div class="metric-card success">
+                <div class="metric-label">Total URLs Analyzed</div>
+                <div class="metric-value">{{ total_urls }}</div>
+                <div class="metric-description">Across {{ total_domains }} unique domains</div>
+            </div>
+            <div class="metric-card info">
+                <div class="metric-label">Crawl Coverage</div>
+                <div class="metric-value">{{ crawl_coverage }}%</div>
+                <div class="metric-description">{{ crawled_count }} of {{ total_urls }} URLs crawled</div>
+            </div>
+            <div class="metric-card warning">
+                <div class="metric-label">Average Depth</div>
+                <div class="metric-value">{{ avg_depth }}</div>
+                <div class="metric-description">Range: {{ min_depth }} - {{ max_depth }}</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Data Quality Score</div>
+                <div class="metric-value">{{ quality_score }}/100</div>
+                <div class="metric-description">Based on completeness metrics</div>
+            </div>
+        </div>
+
+        <!-- Top Insights -->
+        <h3 class="mb-md">Top Insights</h3>
+        <ul class="insight-list">
+            {% for insight in top_insights %}
+            <li class="insight-item">{{ insight }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Top Recommendations -->
+        <h3 class="mb-md">Top Recommendations</h3>
+        <ul class="insight-list">
+            {% for recommendation in top_recommendations %}
+            <li class="insight-item recommendation">{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- DATA OVERVIEW SECTION -->
+<section id="data-overview" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Data Overview
+            <span class="section-badge">Statistics</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('data-overview-content')">Collapse</button>
+    </div>
+    <div id="data-overview-content" class="section-content">
+        <!-- Basic Statistics Grid -->
+        <h3 class="mb-md">Basic Statistics</h3>
+        <div class="stats-grid mb-lg">
+            <div class="stat-box">
+                <div class="stat-value">{{ total_records }}</div>
+                <div class="stat-label">Total Records</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ unique_urls }}</div>
+                <div class="stat-label">Unique URLs</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ unique_domains }}</div>
+                <div class="stat-label">Unique Domains</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ avg_depth }}</div>
+                <div class="stat-label">Average Depth</div>
+            </div>
+        </div>
+
+        <!-- URL Quality -->
+        <h3 class="mb-md">URL Quality</h3>
+        <div class="stats-grid mb-lg">
+            <div class="stat-box">
+                <div class="stat-value">{{ https_count }}</div>
+                <div class="stat-label">HTTPS URLs</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ http_count }}</div>
+                <div class="stat-label">HTTP URLs</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ avg_url_length }}</div>
+                <div class="stat-label">Avg URL Length</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ orphan_count }}</div>
+                <div class="stat-label">Orphan URLs</div>
+            </div>
+        </div>
+
+        <!-- Completeness Metrics -->
+        <h3 class="mb-md">Data Completeness</h3>
+        {% for field, metrics in completeness_data.items() %}
+        <div class="progress-item">
+            <div class="progress-header">
+                <span class="progress-label">{{ field }}</span>
+                <span class="progress-value">{{ metrics.percentage }}%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar {{ metrics.class }}" style="width: {{ metrics.percentage }}%;">
+                    {{ metrics.count }} records
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- DATA QUALITY ASSESSMENT SECTION -->
+<section id="data-quality" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Data Quality Assessment
+            <span class="section-badge">Quality</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('data-quality-content')">Collapse</button>
+    </div>
+    <div id="data-quality-content" class="section-content">
+        <!-- Strengths -->
+        <h3 class="mb-md">Strengths</h3>
+        <ul class="insight-list mb-lg">
+            {% for strength in strengths %}
+            <li class="insight-item strength">{{ strength }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Weaknesses -->
+        <h3 class="mb-md">Weaknesses</h3>
+        <ul class="insight-list mb-lg">
+            {% for weakness in weaknesses %}
+            <li class="insight-item weakness">{{ weakness }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Recommendations -->
+        <h3 class="mb-md">Recommendations</h3>
+        <ul class="insight-list">
+            {% for recommendation in recommendations %}
+            <li class="insight-item recommendation">{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- ADVANCED ANALYTICS SECTION -->
+<section id="advanced-analytics" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Advanced Analytics
+            <span class="section-badge">Trends</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('advanced-analytics-content')">Collapse</button>
+    </div>
+    <div id="advanced-analytics-content" class="section-content">
+        <!-- Discovery Timeline -->
+        <h3 class="mb-md">Discovery Timeline</h3>
+        <div class="stats-grid mb-lg">
+            <div class="stat-box">
+                <div class="stat-value">{{ discovery_days }}</div>
+                <div class="stat-label">Discovery Days</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ discovery_trend }}</div>
+                <div class="stat-label">Trend</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ daily_avg }}</div>
+                <div class="stat-label">Daily Average</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ anomalies_count }}</div>
+                <div class="stat-label">Anomalies Detected</div>
+            </div>
+        </div>
+
+        <!-- Page Classification -->
+        <h3 class="mb-md">Page Classification</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Page Type</th>
+                    <th>Count</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for page_type, count in page_classification.items() %}
+                <tr>
+                    <td>{{ page_type }}</td>
+                    <td>{{ count }}</td>
+                    <td>{{ percentage }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- WEBSITE ARCHITECTURE SECTION -->
+<section id="architecture" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Website Architecture
+            <span class="section-badge">Structure</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('architecture-content')">Collapse</button>
+    </div>
+    <div id="architecture-content" class="section-content">
+        <!-- Graph Statistics -->
+        <h3 class="mb-md">Link Graph Statistics</h3>
+        <div class="stats-grid mb-lg">
+            <div class="stat-box">
+                <div class="stat-value">{{ num_nodes }}</div>
+                <div class="stat-label">Total Nodes</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ num_edges }}</div>
+                <div class="stat-label">Total Links</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ density }}</div>
+                <div class="stat-label">Graph Density</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">{{ communities }}</div>
+                <div class="stat-label">Communities</div>
+            </div>
+        </div>
+
+        <!-- Top Pages by Centrality -->
+        <h3 class="mb-md">Top Pages by Centrality</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>In-Degree</th>
+                    <th>PageRank</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for page in top_pages %}
+                <tr>
+                    <td class="font-mono">{{ page.url }}</td>
+                    <td>{{ page.in_degree }}</td>
+                    <td>{{ page.pagerank }}</td>
+                    <td><span class="badge info">{{ page.type }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- SEMANTIC ANALYSIS SECTION -->
+<section id="semantic-analysis" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Semantic Analysis
+            <span class="section-badge">Content</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('semantic-content')">Collapse</button>
+    </div>
+    <div id="semantic-content" class="section-content">
+        <!-- Topics Discovered -->
+        <h3 class="mb-md">Main Topics Discovered</h3>
+        <div class="mb-lg">
+            {% for topic in topics %}
+            <div class="mb-md">
+                <strong>Topic {{ topic.id }}:</strong>
+                {% for word in topic.words %}
+                <span class="badge info">{{ word }}</span>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Content Redundancy -->
+        <h3 class="mb-md">Content Redundancy Analysis</h3>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Cluster ID</th>
+                    <th>Pages</th>
+                    <th>Representative URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cluster in clusters %}
+                <tr>
+                    <td>{{ cluster.id }}</td>
+                    <td>{{ cluster.size }}</td>
+                    <td class="font-mono">{{ cluster.representative }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Named Entities -->
+        <h3 class="mb-md">Key Named Entities</h3>
+        {% for entity_type, entities in entity_data.items() %}
+        <div class="mb-md">
+            <strong>{{ entity_type }}:</strong>
+            {% for entity, count in entities %}
+            <span class="badge success">{{ entity }} ({{ count }})</span>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- VISUALIZATIONS SECTION -->
+<section id="visualizations" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Visualizations
+            <span class="section-badge">Charts</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('visualizations-content')">Collapse</button>
+    </div>
+    <div id="visualizations-content" class="section-content">
+        <div class="visualization-grid">
+            {% for viz in visualizations %}
+            <div class="visualization-card">
+                <h3 class="visualization-title">{{ viz.title }}</h3>
+                <img src="data:image/png;base64,{{ viz.image_base64 }}" alt="{{ viz.title }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ACTIONABLE INSIGHTS SECTION -->
+<section id="insights" class="section">
+    <div class="section-header">
+        <h2 class="section-title">
+            Actionable Insights
+            <span class="section-badge">Recommendations</span>
+        </h2>
+        <button class="toggle-btn" onclick="toggleSection('insights-content')">Collapse</button>
+    </div>
+    <div id="insights-content" class="section-content">
+        <!-- Content Strategy -->
+        <h3 class="mb-md">Content Strategy</h3>
+        <ul class="insight-list mb-lg">
+            {% for insight in content_strategy %}
+            <li class="insight-item">{{ insight }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Technical SEO -->
+        <h3 class="mb-md">Technical SEO</h3>
+        <ul class="insight-list mb-lg">
+            {% for insight in technical_seo %}
+            <li class="insight-item">{{ insight }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Architecture Optimization -->
+        <h3 class="mb-md">Architecture Optimization</h3>
+        <ul class="insight-list mb-lg">
+            {% for insight in architecture_optimization %}
+            <li class="insight-item">{{ insight }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Redundancy Mitigation -->
+        <h3 class="mb-md">Redundancy Mitigation</h3>
+        <ul class="insight-list">
+            {% for insight in redundancy_mitigation %}
+            <li class="insight-item recommendation">{{ insight }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

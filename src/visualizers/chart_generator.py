@@ -27,7 +27,7 @@ class ChartGenerator:
     def __init__(self, output_dir: Path = None):
         if output_dir is None:
             project_root = Path(__file__).parent.parent.parent
-            output_dir = project_root / 'data' / 'visualizations' / 'charts'
+            output_dir = project_root / 'data' / 'results' / 'visualizations'
 
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -63,7 +63,7 @@ class ChartGenerator:
         self._generate_url_length_histogram(records)
         self._generate_crawl_status_chart(records)
 
-        print(f"\n✓ All charts saved to: {self.output_dir}")
+        print(f"\n[+] All charts saved to: {self.output_dir}")
 
     def _generate_depth_distribution(self, records: List[URLRecord]):
         """Bar chart of URL distribution by depth"""

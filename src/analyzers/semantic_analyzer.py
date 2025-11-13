@@ -7,10 +7,14 @@ Features:
 3. Topic Modeling - Discover hidden subjects
 4. Advanced text analysis
 """
-from typing import List, Dict, Any, Tuple
+from __future__ import annotations
+from typing import List, Dict, Any, Tuple, TYPE_CHECKING
 from collections import Counter, defaultdict
 import json
 from pathlib import Path
+
+if TYPE_CHECKING:
+    import numpy as np
 
 try:
     from sentence_transformers import SentenceTransformer
@@ -31,10 +35,18 @@ except ImportError:
 try:
     from sklearn.decomposition import LatentDirichletAllocation
     from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+    from sklearn.cluster import DBSCAN
     TOPIC_MODELING_AVAILABLE = True
 except ImportError:
     TOPIC_MODELING_AVAILABLE = False
     print("Warning: scikit-learn not available. Install with: pip install scikit-learn")
+
+try:
+    from textblob import TextBlob
+    SENTIMENT_AVAILABLE = True
+except ImportError:
+    SENTIMENT_AVAILABLE = False
+    print("Warning: textblob not available. Install with: pip install textblob")
 
 from src.core.web_crawler import PageContent
 
@@ -61,7 +73,7 @@ class TextEmbedder:
         self.model = SentenceTransformer(model_name)
         self.model_name = model_name
 
-    def embed_text(self, text: str) -> np.ndarray:
+    def embed_text(self, text: str) -> 'np.ndarray':
         """
         Convert text to vector embedding
 
@@ -73,7 +85,7 @@ class TextEmbedder:
         """
         return self.model.encode(text, convert_to_numpy=True)
 
-    def embed_pages(self, pages: List[PageContent]) -> Dict[str, np.ndarray]:
+    def embed_pages(self, pages: List[PageContent]) -> Dict[str, 'np.ndarray']:
         """
         Embed multiple pages
 
@@ -300,6 +312,164 @@ class TopicModeler:
         return topic_distributions.argmax(axis=1).tolist()
 
 
+class SemanticClusterer:
+    """
+    Cluster similar pages based on semantic similarity
+
+    This identifies content redundancy and cannibalization
+    """
+
+    def __init__(self, embedder: TextEmbedder):
+        """
+        Initialize semantic clusterer
+
+        Args:
+            embedder: TextEmbedder instance for creating vectors
+        """
+        self.embedder = embedder
+
+    def cluster_pages(self, pages: List[PageContent], similarity_threshold: float = 0.7) -> Dict[str, Any]:
+        """
+        Cluster pages by semantic similarity
+
+        Args:
+            pages: List of PageContent objects
+            similarity_threshold: Minimum similarity for clustering
+
+        Returns:
+            Clustering results
+        """
+        if not EMBEDDINGS_AVAILABLE:
+            return {}
+
+        # Get embeddings
+        embeddings = self.embedder.embed_pages(pages)
+        if not embeddings:
+            return {}
+
+        # Build embedding matrix
+        import numpy as np
+        urls = list(embeddings.keys())
+        embedding_matrix = np.array([embeddings[url] for url in urls])
+
+        # Compute similarity matrix
+        from sklearn.metrics.pairwise import cosine_similarity
+        similarity_matrix = cosine_similarity(embedding_matrix)
+
+        # Use DBSCAN for clustering (similarity_threshold -> distance)
+        from sklearn.metrics.pairwise import cosine_distances
+        distances = cosine_distances(embedding_matrix)
+
+        try:
+            from sklearn.cluster import DBSCAN
+            clustering = DBSCAN(eps=1-similarity_threshold, min_samples=2, metric='precomputed')
+            labels = clustering.fit_predict(distances)
+        except Exception as e:
+            print(f"  Warning: Clustering failed: {e}")
+            return {}
+
+        # Organize clusters
+        clusters = defaultdict(list)
+        for url, label in zip(urls, labels):
+            clusters[int(label)].append(url)
+
+        # Filter out noise (-1 label) and prepare results
+        cluster_list = []
+        for cluster_id, cluster_urls in clusters.items():
+            if cluster_id != -1 and len(cluster_urls) > 1:
+                cluster_list.append({
+                    'id': cluster_id,
+                    'size': len(cluster_urls),
+                    'members': cluster_urls
+                })
+
+        # Sort by size
+        cluster_list.sort(key=lambda x: x['size'], reverse=True)
+
+        return {
+            'clusters': cluster_list,
+            'total_clusters': len(cluster_list),
+            'singleton_count': sum(1 for label, urls in clusters.items() if label != -1 and len(urls) == 1)
+        }
+
+
+class SentimentAnalyzer:
+    """
+    Analyze sentiment of page content
+    """
+
+    def analyze_sentiment(self, text: str) -> Dict[str, float]:
+        """
+        Analyze sentiment of text
+
+        Args:
+            text: Text to analyze
+
+        Returns:
+            Sentiment scores (polarity, subjectivity)
+        """
+        if not text or not SENTIMENT_AVAILABLE:
+            return {'polarity': 0.0, 'subjectivity': 0.0}
+
+        try:
+            from textblob import TextBlob
+            blob = TextBlob(text[:5000])
+            return {
+                'polarity': float(blob.sentiment.polarity),
+                'subjectivity': float(blob.sentiment.subjectivity)
+            }
+        except Exception as e:
+            print(f"  Warning: Sentiment analysis failed: {e}")
+            return {'polarity': 0.0, 'subjectivity': 0.0}
+
+    def analyze_pages(self, pages: List[PageContent]) -> Dict[str, Any]:
+        """
+        Analyze sentiment across pages
+
+        Args:
+            pages: List of PageContent objects
+
+        Returns:
+            Sentiment analysis results
+        """
+        if not SENTIMENT_AVAILABLE:
+            return {}
+
+        sentiments = {}
+        polarity_scores = []
+        subjectivity_scores = []
+
+        for page in pages:
+            text = f"{page.title or ''} {page.meta_description or ''} {(page.text_content or '')[:5000]}"
+            sentiment = self.analyze_sentiment(text)
+            sentiments[page.url] = sentiment
+            polarity_scores.append(sentiment['polarity'])
+            subjectivity_scores.append(sentiment['subjectivity'])
+
+        if not polarity_scores:
+            return {}
+
+        import numpy as np
+        return {
+            'total_analyzed': len(sentiments),
+            'polarity': {
+                'mean': float(np.mean(polarity_scores)),
+                'std': float(np.std(polarity_scores)),
+                'min': float(np.min(polarity_scores)),
+                'max': float(np.max(polarity_scores))
+            },
+            'subjectivity': {
+                'mean': float(np.mean(subjectivity_scores)),
+                'std': float(np.std(subjectivity_scores)),
+                'min': float(np.min(subjectivity_scores)),
+                'max': float(np.max(subjectivity_scores))
+            },
+            'most_positive': sorted(sentiments.items(), key=lambda x: x[1]['polarity'], reverse=True)[:5],
+            'most_negative': sorted(sentiments.items(), key=lambda x: x[1]['polarity'])[:5],
+            'most_subjective': sorted(sentiments.items(), key=lambda x: x[1]['subjectivity'], reverse=True)[:5]
+        }
+
+
 class SemanticAnalyzer:
     """
     High-level semantic analysis orchestrator
@@ -309,7 +479,7 @@ class SemanticAnalyzer:
         """Initialize semantic analyzer"""
         if output_dir is None:
             project_root = Path(__file__).parent.parent.parent
-            output_dir = project_root / 'data' / 'analysis' / 'semantic'
+            output_dir = project_root / 'data' / 'results' / 'analysis' / 'semantic'
 
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -332,6 +502,15 @@ class SemanticAnalyzer:
         if self._ner is None and NER_AVAILABLE:
             self._ner = NamedEntityRecognizer()
         return self._ner
+
+    def _get_section_from_url(self, url: str) -> str:
+        """Extract main path section from URL"""
+        from urllib.parse import urlparse
+        parsed = urlparse(url)
+        path_parts = parsed.path.strip('/').split('/')
+        if path_parts and path_parts[0]:
+            return path_parts[0]
+        return 'root'
 
     def analyze(self, pages: List[PageContent]) -> Dict[str, Any]:
         """
@@ -368,7 +547,7 @@ class SemanticAnalyzer:
             if embeddings:
                 import numpy as np
                 np.save(embeddings_file, {url: emb.tolist() for url, emb in embeddings.items()})
-                print(f"  ✓ Saved {len(embeddings)} embeddings")
+                print(f"  [+] Saved {len(embeddings)} embeddings")
 
         # 2. Named Entity Recognition
         if NER_AVAILABLE and self.ner:
@@ -394,39 +573,78 @@ class SemanticAnalyzer:
             entities_file = self.output_dir / 'entities.json'
             with open(entities_file, 'w') as f:
                 json.dump(entities, f, indent=2)
-            print(f"  ✓ Found {len(entity_stats)} entity types")
+            print(f"  [+] Found {len(entity_stats)} entity types")
 
-        # 3. Topic Modeling
+        # 3. Semantic Clustering (Redundancy Analysis)
+        if EMBEDDINGS_AVAILABLE and self.embedder:
+            print("\n[3/5] Detecting semantic clusters (content redundancy)...")
+            clusterer = SemanticClusterer(self.embedder)
+            clusters = clusterer.cluster_pages(pages)
+
+            if clusters:
+                analysis['clusters'] = clusters
+                print(f"  [+] Found {clusters.get('total_clusters', 0)} semantic clusters")
+                if clusters.get('clusters'):
+                    for cluster in clusters['clusters'][:3]:
+                        print(f"    - Cluster {cluster['id']}: {cluster['size']} similar pages")
+
+        # 4. Sentiment Analysis
+        if SENTIMENT_AVAILABLE:
+            print("\n[4/5] Analyzing sentiment...")
+            sentiment_analyzer = SentimentAnalyzer()
+            sentiment_results = sentiment_analyzer.analyze_pages(pages)
+
+            if sentiment_results:
+                analysis['sentiment'] = sentiment_results
+                print(f"  [+] Analyzed sentiment for {sentiment_results.get('total_analyzed', 0)} pages")
+                print(f"    - Polarity: {sentiment_results['polarity']['mean']:.2f} (avg)")
+                print(f"    - Subjectivity: {sentiment_results['subjectivity']['mean']:.2f} (avg)")
+
+        # 5. Topic Modeling with section distribution
         if TOPIC_MODELING_AVAILABLE:
-            print("\n[3/3] Discovering topics...")
+            print("\n[5/5] Discovering topics and section distribution...")
             texts = [
                 f"{p.title or ''} {p.meta_description or ''} {(p.text_content or '')[:1000]}"
                 for p in pages if p.text_content
             ]
+            pages_with_text = [p for p in pages if p.text_content]
 
             if len(texts) >= 5:  # Need minimum documents
                 topic_modeler = TopicModeler(n_topics=min(5, len(texts) // 2))
                 topic_modeler.fit(texts)
 
                 topics = topic_modeler.get_topics(n_words=10)
+                topic_assignments = topic_modeler.assign_topics(texts)
+
+                # Calculate topic distribution by section
+                section_topics = defaultdict(lambda: defaultdict(int))
+                for page, topic_id in zip(pages_with_text, topic_assignments):
+                    section = self._get_section_from_url(page.url)
+                    section_topics[section][int(topic_id)] += 1
+
                 analysis['topics'] = {
                     'num_topics': len(topics),
                     'topics': [
                         {'id': i, 'words': words}
                         for i, words in enumerate(topics)
-                    ]
+                    ],
+                    'section_distribution': {
+                        section: dict(topic_counts)
+                        for section, topic_counts in section_topics.items()
+                    }
                 }
 
-                print(f"  ✓ Discovered {len(topics)} topics")
+                print(f"  [+] Discovered {len(topics)} topics")
                 for i, words in enumerate(topics):
                     print(f"    Topic {i}: {', '.join(words[:5])}...")
+                print(f"  [+] Topic distribution by {len(section_topics)} sections computed")
 
         # Save analysis
         analysis_file = self.output_dir / 'semantic_analysis.json'
         with open(analysis_file, 'w') as f:
             json.dump(analysis, f, indent=2)
 
-        print(f"\n✓ Semantic analysis saved to: {analysis_file}")
+        print(f"\n[+] Semantic analysis saved to: {analysis_file}")
 
         return analysis
 

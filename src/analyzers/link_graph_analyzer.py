@@ -33,7 +33,7 @@ class LinkGraphAnalyzer:
 
         if output_dir is None:
             project_root = Path(__file__).parent.parent.parent
-            output_dir = project_root / 'data' / 'analysis' / 'link_graph'
+            output_dir = project_root / 'data' / 'results' / 'analysis' / 'link_graph'
 
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -134,7 +134,70 @@ class LinkGraphAnalyzer:
             except:
                 centrality['betweenness'] = {}
 
+        # Closeness: How easily a page can reach other pages
+        if G.number_of_nodes() > 1:
+            try:
+                # Use weakly connected components for directed graphs
+                if nx.is_weakly_connected(G):
+                    centrality['closeness'] = nx.closeness_centrality(G)
+                else:
+                    # For disconnected graphs, compute per component
+                    closeness = {}
+                    for component in nx.weakly_connected_components(G):
+                        subgraph = G.subgraph(component)
+                        component_closeness = nx.closeness_centrality(subgraph)
+                        closeness.update(component_closeness)
+                    centrality['closeness'] = closeness
+            except:
+                centrality['closeness'] = {}
+
         return centrality
+
+    def detect_communities(self, G: nx.DiGraph) -> Dict[str, Any]:
+        """
+        Detect communities (clusters) of pages using modularity optimization
+
+        Args:
+            G: NetworkX directed graph
+
+        Returns:
+            Community detection results
+        """
+        try:
+            from networkx.algorithms import community
+        except ImportError:
+            return {}
+
+        results = {}
+
+        try:
+            # Convert to undirected for community detection
+            G_undirected = G.to_undirected()
+
+            # Use greedy modularity optimization (Louvain-like algorithm)
+            communities = list(community.greedy_modularity_communities(G_undirected))
+
+            # Organize results
+            community_list = []
+            for idx, comm in enumerate(communities):
+                community_list.append({
+                    'id': idx,
+                    'size': len(comm),
+                    'members': list(comm)
+                })
+
+            # Sort by size
+            community_list.sort(key=lambda x: x['size'], reverse=True)
+
+            results['communities'] = community_list
+            results['total_communities'] = len(communities)
+            results['modularity'] = community.modularity(G_undirected, communities)
+
+        except Exception as e:
+            print(f"  Warning: Community detection failed: {e}")
+            results = {}
+
+        return results
 
     def identify_page_types(self, G: nx.DiGraph) -> Dict[str, List[str]]:
         """
@@ -193,7 +256,7 @@ class LinkGraphAnalyzer:
         # Build graph
         print("\nBuilding link graph...")
         G = self.build_graph(pages)
-        print(f"  ✓ Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+        print(f"  [+] Graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
 
         analysis = {
             'graph_stats': {
@@ -212,7 +275,7 @@ class LinkGraphAnalyzer:
             analysis['pagerank'] = {
                 'top_10': [{'url': url, 'score': score} for url, score in top_pagerank]
             }
-            print(f"  ✓ Top page: {top_pagerank[0][0]} (score: {top_pagerank[0][1]:.4f})")
+            print(f"  [+] Top page: {top_pagerank[0][0]} (score: {top_pagerank[0][1]:.4f})")
 
         # HITS
         print("\nComputing HITS (hubs and authorities)...")
@@ -225,17 +288,37 @@ class LinkGraphAnalyzer:
                 'top_hubs': [{'url': url, 'score': score} for url, score in top_hubs],
                 'top_authorities': [{'url': url, 'score': score} for url, score in top_authorities]
             }
-            print(f"  ✓ Top hub: {top_hubs[0][0]}")
-            print(f"  ✓ Top authority: {top_authorities[0][0]}")
+            print(f"  [+] Top hub: {top_hubs[0][0]}")
+            print(f"  [+] Top authority: {top_authorities[0][0]}")
 
         # Centrality measures
         print("\nComputing centrality measures...")
         centrality = self.find_central_pages(G)
+        analysis['centrality'] = {}
+
         if centrality.get('in_degree'):
             top_in_degree = sorted(centrality['in_degree'].items(), key=lambda x: x[1], reverse=True)[:10]
-            analysis['centrality'] = {
-                'top_in_degree': [{'url': url, 'degree': deg} for url, deg in top_in_degree]
-            }
+            analysis['centrality']['top_in_degree'] = [{'url': url, 'degree': deg} for url, deg in top_in_degree]
+
+        if centrality.get('betweenness'):
+            top_betweenness = sorted(centrality['betweenness'].items(), key=lambda x: x[1], reverse=True)[:10]
+            analysis['centrality']['top_betweenness'] = [{'url': url, 'score': score} for url, score in top_betweenness]
+            print(f"  [+] Betweenness centrality computed")
+
+        if centrality.get('closeness'):
+            top_closeness = sorted(centrality['closeness'].items(), key=lambda x: x[1], reverse=True)[:10]
+            analysis['centrality']['top_closeness'] = [{'url': url, 'score': score} for url, score in top_closeness]
+            print(f"  [+] Closeness centrality computed")
+
+        # Community detection
+        print("\nDetecting communities...")
+        communities = self.detect_communities(G)
+        if communities:
+            analysis['communities'] = communities
+            print(f"  [+] Found {communities.get('total_communities', 0)} communities")
+            if communities.get('communities'):
+                for comm in communities['communities'][:3]:
+                    print(f"    - Community {comm['id']}: {comm['size']} pages")
 
         # Page types
         print("\nCategorizing pages by link patterns...")
@@ -247,7 +330,7 @@ class LinkGraphAnalyzer:
 
         print("\nPage Type Distribution:")
         for ptype, count in analysis['page_types'].items():
-            print(f"  • {ptype}: {count} pages")
+            print(f"  - {ptype}: {count} pages")
 
         # Save analysis
         analysis_file = self.output_dir / 'link_graph_analysis.json'
@@ -258,8 +341,8 @@ class LinkGraphAnalyzer:
         graph_file = self.output_dir / 'graph.gexf'
         nx.write_gexf(G, graph_file)
 
-        print(f"\n✓ Link graph analysis saved to: {analysis_file}")
-        print(f"✓ Graph exported to: {graph_file} (open with Gephi)")
+        print(f"\n[+] Link graph analysis saved to: {analysis_file}")
+        print(f"[+] Graph exported to: {graph_file} (open with Gephi)")
 
         return analysis
 
