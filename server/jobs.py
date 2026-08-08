@@ -32,6 +32,7 @@ CRAWL_FLAG_MAP = {
 
 PROGRESS_BLOCK_RE = re.compile(
     r"PROGRESS REPORT \((?P<elapsed>\d+)s elapsed.*?\)\s*\n"
+    r"(?:=+\s*\n)?"
     r"\s*URLs Processed: (?P<processed>\d+) \((?P<rate>[\d.]+)/sec\) \| "
     r"Success: (?P<success>\d+) \| Failed: (?P<failed>\d+) \| Timeout: (?P<timeout>\d+)\s*\n"
     r"\s*Success Rate: (?P<success_rate>[\d.]+)% \| Total Discovered: (?P<discovered>\d+)"

@@ -27,12 +27,23 @@ class FakeConfig:
 
 
 def _write_fake_binary(tmp_dir: Path, extra_lines: str = "") -> Path:
+    # Reproduces the real rust_sitemap binary's exact PROGRESS REPORT layout
+    # (src/bfs_crawler.rs:808-818 in the rust-sitemapper repo): a `====`
+    # separator line between the elapsed-time line and the URLs-Processed
+    # line, and a trailing Frontier line + separator. PROGRESS_BLOCK_RE must
+    # match this real shape, not a simplified one, or the regex can pass
+    # tests while never matching a genuine crawl's output.
     script = tmp_dir / "fake_rust_sitemap.sh"
     script.write_text(
         "#!/bin/bash\n"
+        "echo\n"
+        "echo '================================================================================'\n"
         "echo '  PROGRESS REPORT (5s elapsed, 25s remaining)'\n"
+        "echo '================================================================================'\n"
         "echo '  URLs Processed: 10 (2.0/sec) | Success: 8 | Failed: 1 | Timeout: 1'\n"
         "echo '  Success Rate: 80.0% | Total Discovered: 20'\n"
+        "echo '  Frontier: 5 queued | 1 hosts | 1 with work | 0 in backoff'\n"
+        "echo '================================================================================'\n"
         + extra_lines,
         encoding="utf-8",
     )
@@ -59,13 +70,26 @@ def test_build_argv_maps_known_flags():
 
 
 def test_parse_latest_progress_picks_last_block():
+    # Matches the real binary's exact layout (src/bfs_crawler.rs:808-818):
+    # a `====` separator between the elapsed-time line and URLs Processed,
+    # and a trailing Frontier line + separator after Total Discovered.
     log = (
+        "\n"
+        "================================================================================\n"
         "  PROGRESS REPORT (5s elapsed, 25s remaining)\n"
+        "================================================================================\n"
         "  URLs Processed: 10 (2.0/sec) | Success: 8 | Failed: 1 | Timeout: 1\n"
         "  Success Rate: 80.0% | Total Discovered: 20\n"
+        "  Frontier: 5 queued | 1 hosts | 1 with work | 0 in backoff\n"
+        "================================================================================\n"
+        "\n"
+        "================================================================================\n"
         "  PROGRESS REPORT (10s elapsed, 20s remaining)\n"
+        "================================================================================\n"
         "  URLs Processed: 30 (3.0/sec) | Success: 25 | Failed: 3 | Timeout: 2\n"
         "  Success Rate: 83.3% | Total Discovered: 50\n"
+        "  Frontier: 8 queued | 2 hosts | 2 with work | 0 in backoff\n"
+        "================================================================================\n"
     )
     progress = parse_latest_progress(log)
     assert progress["elapsed_secs"] == 10
