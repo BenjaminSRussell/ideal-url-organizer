@@ -2,6 +2,7 @@
 """
 Tests for scripts/import_rust_sitemapper.py
 """
+import dataclasses
 import json
 import sys
 import tempfile
@@ -13,6 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scripts.import_rust_sitemapper import URL_RECORD_FIELDS, filter_record, convert_file
+from src.core.data_loader import URLRecord
 
 
 def test_filter_record_keeps_only_expected_fields():
@@ -195,6 +197,23 @@ def test_convert_file_skips_non_dict_json_not_fatal():
         print("PASS")
 
 
+def test_url_record_fields_matches_url_record_dataclass():
+    """Guard against URL_RECORD_FIELDS drifting from url-organizer's actual
+    URLRecord dataclass (src/core/data_loader.py). If a field is ever added,
+    renamed, or removed on URLRecord without updating URL_RECORD_FIELDS to
+    match, filter_record would silently drop/misalign data instead of
+    raising -- this test catches that at test time instead."""
+    print("\nTest 6: URL_RECORD_FIELDS matches URLRecord dataclass fields")
+
+    expected = [f.name for f in dataclasses.fields(URLRecord)]
+
+    assert URL_RECORD_FIELDS == expected, (
+        f"URL_RECORD_FIELDS {URL_RECORD_FIELDS} has drifted from "
+        f"URLRecord's actual fields {expected}"
+    )
+    print("PASS")
+
+
 def run_all_tests():
     print("\nimport_rust_sitemapper Test Suite")
 
@@ -204,6 +223,7 @@ def run_all_tests():
         test_convert_file_normal_case,
         test_convert_file_skips_malformed_lines_not_fatal,
         test_convert_file_skips_non_dict_json_not_fatal,
+        test_url_record_fields_matches_url_record_dataclass,
     ]
 
     passed = 0
