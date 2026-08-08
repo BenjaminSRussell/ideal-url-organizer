@@ -159,6 +159,42 @@ def test_convert_file_skips_malformed_lines_not_fatal():
         print("PASS")
 
 
+def test_convert_file_skips_non_dict_json_not_fatal():
+    """Valid JSON that isn't a dict (e.g., null, number, boolean, list) must be
+    skipped and counted, not crash the conversion. The key check must be
+    dict-aware: `not isinstance(raw, dict) or "url" not in raw`."""
+    print("\nTest 5: convert_file skips non-dict JSON values without crashing")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        input_path = tmp_path / "sitemap.jsonl"
+        output_path = tmp_path / "urls.jsonl"
+
+        valid = {
+            "schema_version": 5, "url": "https://a.example/", "url_normalized": "https://a.example/",
+            "depth": 0, "parent_url": None, "fragments": [], "discovered_at": 1, "queued_at": 1,
+            "crawled_at": 2, "response_time_ms": 10, "status_code": 200, "content_type": "text/html",
+            "content_length": 100, "title": "A", "link_count": 5,
+        }
+
+        with open(input_path, "w") as f:
+            f.write(json.dumps(valid) + "\n")
+            f.write("null\n")  # valid JSON but not a dict
+            f.write("42\n")  # valid JSON but not a dict
+            f.write("true\n")  # valid JSON but not a dict
+            f.write(json.dumps(["list", "of", "items"]) + "\n")  # valid JSON but not a dict
+            f.write(json.dumps(valid) + "\n")
+
+        stats = convert_file(input_path, output_path)
+
+        assert stats == {"written": 2, "skipped": 4}, stats
+
+        with open(output_path) as f:
+            lines = [json.loads(line) for line in f]
+        assert len(lines) == 2
+        print("PASS")
+
+
 def run_all_tests():
     print("\nimport_rust_sitemapper Test Suite")
 
@@ -167,6 +203,7 @@ def run_all_tests():
         test_filter_record_missing_optional_field_defaults_to_none,
         test_convert_file_normal_case,
         test_convert_file_skips_malformed_lines_not_fatal,
+        test_convert_file_skips_non_dict_json_not_fatal,
     ]
 
     passed = 0

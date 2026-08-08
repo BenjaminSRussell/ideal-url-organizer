@@ -69,7 +69,7 @@ def convert_file(input_path: Path, output_path: Path) -> dict:
                 skipped += 1
                 continue
 
-            if "url" not in raw:
+            if not isinstance(raw, dict) or "url" not in raw:
                 skipped += 1
                 continue
 
