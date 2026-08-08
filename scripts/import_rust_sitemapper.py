@@ -6,10 +6,21 @@ full analysis pipeline against it.
 
 Usage:
     python3 scripts/import_rust_sitemapper.py <path-to-sitemap.jsonl>
+
+You do not need to activate a virtualenv first -- whichever `python3`
+interpreter runs this script is also what the `./run.sh --all` subprocess
+will use (its PATH is set up to match), so `.venv/bin/python3
+scripts/import_rust_sitemapper.py ...` works directly.
+
+Prerequisites (one-time setup, before first use):
+    cp config/global.yaml.example config/global.yaml
+    pip install -r requirements.txt
 """
 import json
+import os
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 # The exact field set url-organizer's URLRecord dataclass accepts
@@ -47,8 +58,13 @@ def convert_file(input_path: Path, output_path: Path) -> dict:
     Stream-convert a rust-sitemapper sitemap.jsonl file into url-organizer's
     URLRecord JSONL shape, one line at a time (memory-safe for large crawls).
 
-    Lines that are blank, invalid JSON, or missing a "url" key are skipped
-    and counted rather than aborting the whole conversion.
+    Lines that are blank, invalid JSON, or lack a valid string "url" are
+    skipped and counted rather than aborting the whole conversion.
+
+    Writes to a temp file in output_path's directory and only replaces
+    output_path once the full loop has completed successfully, so a
+    mid-stream read error (bad encoding, wrong file format entirely)
+    can't truncate/destroy a pre-existing output_path.
 
     Returns {"written": int, "skipped": int}.
     """
@@ -57,25 +73,33 @@ def convert_file(input_path: Path, output_path: Path) -> dict:
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(input_path, "r") as infile, open(output_path, "w") as outfile:
-        for line in infile:
-            line = line.strip()
-            if not line:
-                continue
+    fd, tmp_path_str = tempfile.mkstemp(dir=str(output_path.parent), suffix=".tmp")
+    tmp_path = Path(tmp_path_str)
+    try:
+        with open(input_path, "r", encoding="utf-8") as infile, \
+                os.fdopen(fd, "w", encoding="utf-8") as outfile:
+            for line in infile:
+                line = line.strip()
+                if not line:
+                    continue
 
-            try:
-                raw = json.loads(line)
-            except json.JSONDecodeError:
-                skipped += 1
-                continue
+                try:
+                    raw = json.loads(line)
+                except json.JSONDecodeError:
+                    skipped += 1
+                    continue
 
-            if not isinstance(raw, dict) or "url" not in raw:
-                skipped += 1
-                continue
+                if not isinstance(raw, dict) or not isinstance(raw.get("url"), str):
+                    skipped += 1
+                    continue
 
-            filtered = filter_record(raw)
-            outfile.write(json.dumps(filtered) + "\n")
-            written += 1
+                filtered = filter_record(raw)
+                outfile.write(json.dumps(filtered) + "\n")
+                written += 1
+        os.replace(tmp_path, output_path)
+    except Exception:
+        tmp_path.unlink(missing_ok=True)
+        raise
 
     return {"written": written, "skipped": skipped}
 
@@ -86,7 +110,7 @@ def main():
         sys.exit(1)
 
     input_path = Path(sys.argv[1])
-    if not input_path.exists():
+    if not input_path.is_file():
         print(f"Error: input file not found: {input_path}")
         sys.exit(1)
     if input_path.stat().st_size == 0:
@@ -106,7 +130,17 @@ def main():
 
     print("\nRunning url-organizer pipeline (./run.sh --all)...")
     run_sh = project_root / "run.sh"
-    result = subprocess.run([str(run_sh), "--all"], cwd=str(project_root))
+
+    # run.sh internally invokes bare `python3`, which resolves via PATH --
+    # not necessarily the same interpreter running this script (e.g. when
+    # invoked as `.venv/bin/python3 scripts/import_rust_sitemapper.py ...`
+    # without the venv being activated). Prepend this interpreter's
+    # directory to the subprocess's PATH so run.sh's `python3` resolves to
+    # the same interpreter, and thus the same installed packages.
+    env = os.environ.copy()
+    env["PATH"] = str(Path(sys.executable).parent) + os.pathsep + env.get("PATH", "")
+
+    result = subprocess.run([str(run_sh), "--all"], cwd=str(project_root), env=env)
     sys.exit(result.returncode)
 
 
