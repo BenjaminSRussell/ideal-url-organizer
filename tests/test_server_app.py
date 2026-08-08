@@ -119,6 +119,44 @@ def test_crawl_status_404_for_unknown_job():
     print("PASS")
 
 
+def test_import_crawl_404_for_unknown_job():
+    tmp_dir = Path(tempfile.mkdtemp())
+    fake_cfg = FakeConfig(binary_path=tmp_dir / "unused", repo_dir=tmp_dir)
+    app.dependency_overrides[get_config] = lambda: fake_cfg
+    app.dependency_overrides[get_jobs_dir] = lambda: tmp_dir
+    try:
+        client = TestClient(app)
+        resp = client.post("/crawls/does-not-exist/import")
+        assert resp.status_code == 404
+    finally:
+        app.dependency_overrides.clear()
+    print("PASS")
+
+
+def test_import_crawl_409_when_job_not_completed():
+    tmp_dir = Path(tempfile.mkdtemp())
+    binary = _write_fake_binary(tmp_dir)
+    fake_cfg = FakeConfig(binary_path=binary, repo_dir=tmp_dir)
+    jobs_dir = tmp_dir / "jobs"
+
+    app.dependency_overrides[get_config] = lambda: fake_cfg
+    app.dependency_overrides[get_jobs_dir] = lambda: jobs_dir
+    try:
+        client = TestClient(app)
+        create_resp = client.post("/crawls", json={"start_url": "https://example.com"})
+        job_id = create_resp.json()["id"]
+        resp = client.post(f"/crawls/{job_id}/import")
+        # Either the job is still running (409) or it raced to completion
+        # and hit the next gate (sitemap.jsonl won't exist for a fake
+        # binary that never wrote one, giving 404) -- both are the
+        # "not importable yet" outcome this test cares about, never a
+        # bare 500 or a false 200.
+        assert resp.status_code in (404, 409)
+    finally:
+        app.dependency_overrides.clear()
+    print("PASS")
+
+
 def run_all_tests():
     print("\nserver.app Test Suite")
     tests = [
@@ -127,6 +165,8 @@ def run_all_tests():
         test_site_detail_404_for_unknown_site,
         test_create_crawl_and_lifecycle,
         test_crawl_status_404_for_unknown_job,
+        test_import_crawl_404_for_unknown_job,
+        test_import_crawl_409_when_job_not_completed,
     ]
     passed = failed = 0
     for test in tests:

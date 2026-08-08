@@ -100,7 +100,10 @@ def import_crawl(
     cfg: ServerConfig = Depends(get_config),
     jobs_dir: Path = Depends(get_jobs_dir),
 ):
-    status = get_job_status(job_id, jobs_dir)
+    try:
+        status = get_job_status(job_id, jobs_dir)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
     if status["state"] != "completed":
         raise HTTPException(
             status_code=409,
