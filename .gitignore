@@ -51,3 +51,7 @@ data/
 
 # Git worktrees
 .worktrees/
+
+# Server config and job directory
+server/config.yaml
+server/jobs/
