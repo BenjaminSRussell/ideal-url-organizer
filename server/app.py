@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from server.aggregator import RESULTS_DIR, aggregate_all, aggregate_site
@@ -13,6 +14,11 @@ from server.config import ServerConfig, load_config
 from server.jobs import JOBS_DIR, get_job_status, list_jobs, start_crawl
 
 app = FastAPI(title="sitemapper-viewer sidecar")
+
+
+@app.exception_handler(FileNotFoundError)
+async def _file_not_found_handler(request, exc):
+    return JSONResponse(status_code=500, content={"detail": str(exc)})
 
 
 def get_config() -> ServerConfig:

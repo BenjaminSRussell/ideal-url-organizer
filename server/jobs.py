@@ -39,6 +39,17 @@ PROGRESS_BLOCK_RE = re.compile(
 )
 COMPLETE_RE = re.compile(r"GRACEFUL SHUTDOWN: Crawl Complete")
 
+COMPLETION_SUMMARY_RE = re.compile(
+    r"Crawl complete: discovered (?P<discovered>\d+), processed (?P<processed>\d+) "
+    r"\((?P<success>\d+) success, (?P<failed>\d+) failed, (?P<timeout>\d+) timeout, "
+    r"(?P<success_rate>[\d.]+)% success rate\), (?P<elapsed>\d+)s"
+)
+
+# Live Popen handles for crawls started by *this* sidecar process, keyed by
+# job id. Polling these is what actually reaps exited children -- without it
+# they linger as zombies and a raw pid check reports them alive forever.
+_PROCS: dict = {}
+
 
 def build_argv(binary: Path, params: dict) -> list:
     argv = [str(binary), "crawl"]
@@ -63,6 +74,13 @@ def start_crawl(cfg, params: dict, jobs_dir: Path) -> str:
     job_dir = jobs_dir / job_id
     job_dir.mkdir(parents=True, exist_ok=True)
     log_path = job_dir / "log.txt"
+
+    # rust_sitemap defaults --data-dir to ./data when unset, so every job
+    # without an explicit dir would overwrite the previous job's sitemap.jsonl
+    # (and concurrent crawls would corrupt each other). Give each job its own.
+    if not params.get("data_dir"):
+        params = {**params, "data_dir": f"./data/jobs/{job_id}"}
+
     argv = build_argv(binary, params)
 
     log_fh = open(log_path, "wb")
@@ -74,6 +92,7 @@ def start_crawl(cfg, params: dict, jobs_dir: Path) -> str:
         cwd=str(cfg.rust_sitemapper_repo),
         start_new_session=True,
     )
+    _PROCS[job_id] = proc
 
     meta = {
         "id": job_id,
@@ -104,6 +123,25 @@ def parse_latest_progress(log_text: str):
     }
 
 
+def parse_completion_summary(log_text: str):
+    m = COMPLETION_SUMMARY_RE.search(log_text)
+    if not m:
+        return None
+    elapsed = int(m.group("elapsed"))
+    processed = int(m.group("processed"))
+    rate_per_sec = processed / elapsed if elapsed > 0 else 0.0
+    return {
+        "elapsed_secs": elapsed,
+        "processed": processed,
+        "rate_per_sec": rate_per_sec,
+        "success": int(m.group("success")),
+        "failed": int(m.group("failed")),
+        "timeout": int(m.group("timeout")),
+        "success_rate_pct": float(m.group("success_rate")),
+        "discovered": int(m.group("discovered")),
+    }
+
+
 def is_pid_alive(pid: int) -> bool:
     try:
         os.kill(pid, 0)
@@ -114,21 +152,45 @@ def is_pid_alive(pid: int) -> bool:
     return True
 
 
+def _is_job_process_dead(job_id: str, pid: int) -> bool:
+    """Prefer polling our own tracked Popen handle -- this correctly reaps
+    zombies, which a raw pid check cannot distinguish from a live process.
+    Falls back to is_pid_alive only for jobs with no tracked handle (e.g.
+    inherited from a prior sidecar process before a restart), which can't
+    be zombies of *this* process.
+    """
+    proc = _PROCS.get(job_id)
+    if proc is not None:
+        return proc.poll() is not None
+    return not is_pid_alive(pid)
+
+
+def _read_log_tail(log_path, max_bytes: int = 256 * 1024) -> str:
+    if not log_path.exists():
+        return ""
+    size = log_path.stat().st_size
+    with open(log_path, "rb") as f:
+        if size > max_bytes:
+            f.seek(size - max_bytes)
+        data = f.read()
+    return data.decode("utf-8", errors="replace")
+
+
 def get_job_status(job_id: str, jobs_dir: Path) -> dict:
     meta_path = jobs_dir / job_id / "meta.json"
     if not meta_path.exists():
         raise FileNotFoundError(f"No job found with id {job_id}")
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
     log_path = Path(meta["log_path"])
-    log_text = log_path.read_text(encoding="utf-8", errors="replace") if log_path.exists() else ""
+    log_text = _read_log_tail(log_path)
 
-    progress = parse_latest_progress(log_text)
+    progress = parse_completion_summary(log_text) or parse_latest_progress(log_text)
     completed = bool(COMPLETE_RE.search(log_text))
-    alive = is_pid_alive(meta["pid"])
+    dead = _is_job_process_dead(job_id, meta["pid"])
 
     if completed:
         state = "completed"
-    elif alive:
+    elif not dead:
         state = "running"
     else:
         state = "failed"

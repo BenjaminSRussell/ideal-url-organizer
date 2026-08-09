@@ -20,8 +20,11 @@ DEDUP_SUMMARY = "methods/method_16_canonical_deduplication/summary.json"
 def _read_json(path: Path):
     if not path.exists():
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        return None
 
 
 def aggregate_site(site_dir: Path) -> dict:
