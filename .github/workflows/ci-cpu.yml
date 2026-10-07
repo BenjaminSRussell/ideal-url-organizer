@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ci-cpu-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   cpu-tests:
     runs-on: ubuntu-latest
@@ -23,6 +27,7 @@ jobs:
       - name: Pytest (CPU, skip GPU/MLX)
         env:
           IDEAL_URL_STUB_EMBEDDER: "1"
+          PYTHONPATH: "."
         run: |
           pytest -m "not gpu and not mlx" \
             tests/test_stub_embedder.py \

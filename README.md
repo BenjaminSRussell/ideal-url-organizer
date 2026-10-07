@@ -534,3 +534,17 @@ Each JSONL line: `url`, `labels`, `priority`, `method`, `bucket`. Rust-sitemap: 
 ## HTTP content cache (#7)
 
 Crawler responses cache under `data/cache/http/{sha256}` with TTL from `performance.cache_ttl_seconds`. Bypass with `WebCrawler(use_cache=False)` / `--no-cache` when wired to CLI.
+
+## Results DB + unified run (#3 / #5)
+
+```bash
+# one URL per line
+printf 'https://example.com/\nhttps://example.org/a\n' > /tmp/urls.txt
+python -m src.results.runner --urls /tmp/urls.txt --methods method_01_by_domain,method_02_by_depth --out data/results/results.db
+# or:
+python src/main.py --run-db --urls-file /tmp/urls.txt --run-methods method_01_by_domain,method_08_by_protocol
+sqlite3 data/results/results.db 'SELECT method_id, COUNT(*) FROM method_assignments GROUP BY 1'
+```
+
+Tables: `urls`, `method_assignments`, `crawl_content`, `embeddings`, `runs`.
+Filesystem exports remain under `data/results/methods/` (optional).
