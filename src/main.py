@@ -263,6 +263,8 @@ def main():
     parser.add_argument('--results-db', type=str, default='data/results/results.db')
     parser.add_argument('--run-methods', type=str, default='method_01_by_domain,method_02_by_depth')
     parser.add_argument('--limit-methods', type=int, default=0)
+    parser.add_argument('--evaluate', action='store_true', help='Run method eval harness vs golden set (#4)')
+    parser.add_argument('--evaluate-fail-under', type=float, default=0.99)
 
     args = parser.parse_args()
     orchestrator = URLOrganizerOrchestrator()
@@ -277,6 +279,9 @@ def main():
         if args.limit_methods:
             argv += ['--limit-methods', str(args.limit_methods)]
         raise SystemExit(run_main(argv))
+    if args.evaluate:
+        from src.eval.harness import main as eval_main
+        raise SystemExit(eval_main(['--fail-under', str(args.evaluate_fail_under)]))
     if args.write_methods_md:
         from src.organizers.registry import write_methods_md
         print(write_methods_md())

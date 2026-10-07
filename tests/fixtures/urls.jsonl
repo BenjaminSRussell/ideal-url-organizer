@@ -1,0 +1,8 @@
+{"url":"https://www.example.com/a","expected":{"method_01_by_domain":"www.example.com","method_07_by_tld":"com","method_08_by_protocol":"https"}}
+{"url":"http://blog.example.com/post","expected":{"method_01_by_domain":"blog.example.com","method_07_by_tld":"com","method_08_by_protocol":"http"}}
+{"url":"https://shop.example.co.uk/item","expected":{"method_01_by_domain":"shop.example.co.uk","method_07_by_tld":"uk","method_08_by_protocol":"https"}}
+{"url":"https://cdn.github.com/assets/app.js","expected":{"method_01_by_domain":"cdn.github.com","method_07_by_tld":"com","method_08_by_protocol":"https"}}
+{"url":"http://localhost:8080/admin","expected":{"method_01_by_domain":"localhost","method_07_by_tld":"<no_tld>","method_08_by_protocol":"http"}}
+{"url":"https://docs.python.org/3/library/urllib.html","expected":{"method_01_by_domain":"docs.python.org","method_07_by_tld":"org","method_08_by_protocol":"https"}}
+{"url":"https://sub.domain.example.org/path/deep","expected":{"method_01_by_domain":"sub.domain.example.org","method_07_by_tld":"org","method_08_by_protocol":"https"}}
+{"url":"ftp://files.example.net/pub","expected":{"method_01_by_domain":"files.example.net","method_07_by_tld":"net","method_08_by_protocol":"ftp"}}
