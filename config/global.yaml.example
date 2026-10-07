@@ -164,3 +164,10 @@ performance:
   batch_size: 1000
   cache_enabled: true
   cache_ttl_seconds: 3600
+
+# HTTP content cache for crawler re-runs (#7)
+http_cache:
+  enabled: true
+  dir: "data/cache/http"
+  # TTL also under performance.cache_ttl_seconds
+

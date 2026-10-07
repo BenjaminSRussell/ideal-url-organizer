@@ -20,6 +20,7 @@ import json
 from urllib.parse import urljoin, urlparse
 
 from src.core.url_parser import URLParser
+from src.core.http_cache import HttpContentCache
 
 
 @dataclass
@@ -89,7 +90,9 @@ class WebCrawler:
                  timeout: int = 10,
                  max_retries: int = 3,
                  delay_between_requests: float = 1.0,
-                 user_agent: str = None):
+                 user_agent: str = None,
+                 cache: HttpContentCache | None = None,
+                 use_cache: bool = True):
         """
         Initialize web crawler
 
@@ -120,6 +123,8 @@ class WebCrawler:
         self.session.headers.update({'User-Agent': user_agent})
 
         self.last_request_time = 0
+        self.use_cache = use_cache
+        self.cache = cache if cache is not None else HttpContentCache()
 
     def fetch(self, url: str) -> Optional[PageContent]:
         """
@@ -135,6 +140,25 @@ class WebCrawler:
         self._respect_rate_limit()
 
         try:
+            if self.use_cache and self.cache is not None:
+                cached = self.cache.get(url)
+                if cached is not None:
+                    # Reconstruct minimal PageContent from cache
+                    meta = cached["meta"]
+                    body = cached["body"].decode("utf-8", errors="replace")
+                    content = PageContent(
+                        url=url,
+                        final_url=meta.get("final_url") or url,
+                        status_code=int(meta.get("status_code") or 200),
+                        response_time_ms=0,
+                        redirect_chain=meta.get("redirect_chain") or [],
+                        content_type=meta.get("content_type") or "text/html",
+                        content_length=len(cached["body"]),
+                    )
+                    if "text/html" in (content.content_type or ""):
+                        self._extract_html_content(body, content)
+                    return content
+
             # Make request
             start_time = time.time()
             response = self.session.get(
@@ -163,6 +187,18 @@ class WebCrawler:
             # Only parse HTML content
             if 'text/html' in content.content_type:
                 self._extract_html_content(response.text, content)
+
+            if self.use_cache and self.cache is not None:
+                self.cache.put(
+                    url,
+                    response.content,
+                    headers={
+                        "status_code": response.status_code,
+                        "final_url": response.url,
+                        "content_type": content.content_type,
+                        "redirect_chain": redirect_chain,
+                    },
+                )
 
             return content
 
