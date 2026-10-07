@@ -530,3 +530,7 @@ python scripts/export_seeds.py --method by_domain --input data/processed/by_doma
 ```
 
 Each JSONL line: `url`, `labels`, `priority`, `method`, `bucket`. Rust-sitemap: use the `url` field as `--start-url` entries. Scrapy: map `url`/`priority`/`labels` in seed_manager.
+
+## HTTP content cache (#7)
+
+Crawler responses cache under `data/cache/http/{sha256}` with TTL from `performance.cache_ttl_seconds`. Bypass with `WebCrawler(use_cache=False)` / `--no-cache` when wired to CLI.
