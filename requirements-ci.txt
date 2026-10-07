@@ -1,0 +1,15 @@
+# CPU/CI dependencies (no torch / sentence-transformers / GPU stacks)
+pyyaml>=6.0.1
+jinja2>=3.1
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+pandas>=2.0.0
+numpy>=1.24.0
+networkx>=3.0
+scikit-learn>=1.3.0
+pytest>=7.4.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+httpx>=0.24.0
+pydantic>=2.0.0

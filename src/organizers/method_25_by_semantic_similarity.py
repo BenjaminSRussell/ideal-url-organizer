@@ -9,13 +9,20 @@ from typing import List, Dict
 from collections import defaultdict
 import json
 
+import os
+
 try:
     from sklearn.cluster import KMeans
     import numpy as np
-    from sentence_transformers import SentenceTransformer
     CLUSTERING_AVAILABLE = True
 except ImportError:
     CLUSTERING_AVAILABLE = False
+
+try:
+    from sentence_transformers import SentenceTransformer
+    ST_AVAILABLE = True
+except ImportError:
+    ST_AVAILABLE = False
 
 from src.core.web_crawler import PageContent
 
@@ -23,15 +30,24 @@ from src.core.web_crawler import PageContent
 class BySemanticSimilarityOrganizer:
     """Organize URLs by semantic similarity clusters"""
 
-    def __init__(self, output_dir: Path, n_clusters: int = 5):
+    def __init__(self, output_dir: Path, n_clusters: int = 5, use_stub: bool | None = None):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.n_clusters = n_clusters
 
         if not CLUSTERING_AVAILABLE:
-            raise ImportError("sentence-transformers and scikit-learn required")
+            raise ImportError("scikit-learn (and numpy) required")
 
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+        if use_stub is None:
+            use_stub = os.getenv("IDEAL_URL_STUB_EMBEDDER", "").lower() in {"1", "true", "yes"}
+
+        if use_stub or not ST_AVAILABLE:
+            from src.organizers.stubs.embedder import StubSentenceEmbedder
+            self.model = StubSentenceEmbedder()
+            self.using_stub = True
+        else:
+            self.model = SentenceTransformer('all-MiniLM-L6-v2')
+            self.using_stub = False
 
     def organize(self, pages: List[PageContent]) -> Dict[str, List[PageContent]]:
         """Group pages by semantic similarity"""
