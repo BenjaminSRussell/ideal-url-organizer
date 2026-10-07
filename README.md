@@ -520,3 +520,13 @@ For in-depth documentation, see:
 ---
 
 **Built for production with modern web intelligence techniques - 2025** 
+
+
+## Handoff: seed export for Scrapy / Rust-sitemap
+
+```bash
+python scripts/export_seeds.py --method by_domain --input data/processed/by_domain.json --out data/processed/seeds.jsonl
+# or: python -m src.main export-seeds --method by_domain --input ... --out ...
+```
+
+Each JSONL line: `url`, `labels`, `priority`, `method`, `bucket`. Rust-sitemap: use the `url` field as `--start-url` entries. Scrapy: map `url`/`priority`/`labels` in seed_manager.
