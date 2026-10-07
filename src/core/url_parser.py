@@ -9,6 +9,29 @@ from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 import copy
 
+def _safe_unquote_path(path: str) -> str:
+    """Decode percent-encoding in path without collapsing distinct URLs.
+
+    Leaves encoded separators (%2F, %3F, %23) and spaces (%20) encoded so
+    ``/a%2Fb`` stays distinct from ``/a/b``, and paths never grow raw spaces.
+    """
+    # Use ASCII sentinel tokens that cannot appear in a URL path.
+    protected = (
+        path
+        .replace('%2F', '<<SLASH>>').replace('%2f', '<<SLASH>>')
+        .replace('%3F', '<<QMARK>>').replace('%3f', '<<QMARK>>')
+        .replace('%23', '<<HASH>>').replace('%23', '<<HASH>>')
+        .replace('%20', '<<SPACE>>')
+    )
+    decoded = unquote(protected)
+    return (
+        decoded
+        .replace('<<SLASH>>', '%2F')
+        .replace('<<QMARK>>', '%3F')
+        .replace('<<HASH>>', '%23')
+        .replace('<<SPACE>>', '%20')
+    )
+
 
 @dataclass
 class ParsedURL:
@@ -40,11 +63,9 @@ class ParsedURL:
 
     def __str__(self) -> str:
         """Reconstruct URL from components"""
-        # Rebuild query string from query_dict
-        if self.query_dict:
-            query = urlencode(self.query_dict, doseq=True)
-        else:
-            query = self.query
+        # Always rebuild from query_dict so cleared trackers stay cleared.
+        # Empty dict => empty query (do NOT fall back to raw self.query).
+        query = urlencode(self.query_dict, doseq=True) if self.query_dict else ''
 
         # Rebuild URL
         return urlunparse((
@@ -119,6 +140,8 @@ class URLParser:
             k: v for k, v in new_url.query_dict.items()
             if k not in self.tracker_params
         }
+        # Keep raw query in sync so __str__ never resurrects stripped trackers
+        new_url.query = urlencode(new_url.query_dict, doseq=True) if new_url.query_dict else ''
 
         return new_url
 
@@ -172,9 +195,10 @@ class URLParser:
         if remove_trailing_slash and len(new_url.path) > 1 and new_url.path.endswith('/'):
             new_url.path = new_url.path.rstrip('/')
 
-        # Decode percent encoding
+        # Decode percent encoding carefully: never decode separators that
+        # change URL structure (%2F, %3F, %23) or produce invalid spaces.
         if decode_percent_encoding:
-            new_url.path = unquote(new_url.path)
+            new_url.path = _safe_unquote_path(new_url.path)
 
         # Sort query parameters
         if sort_query_params and new_url.query_dict:
@@ -183,6 +207,14 @@ class URLParser:
         # Remove fragment
         if remove_fragments:
             new_url.fragment = ''
+
+        # Preserve IPv6 brackets in netloc (urlparse strips them from hostname)
+        if ':' in new_url.hostname and not new_url.hostname.startswith('['):
+            host = f'[{new_url.hostname}]'
+            if new_url.port:
+                new_url.netloc = f'{host}:{new_url.port}'
+            else:
+                new_url.netloc = host
 
         return new_url
 
