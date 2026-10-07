@@ -289,6 +289,11 @@ def main():
     if args.check_methods_md:
         from src.organizers.registry import main as reg_main
         raise SystemExit(reg_main(['--check']))
+    if args.evaluate:
+        from src.eval.harness import main as eval_main
+        raise SystemExit(eval_main([
+            "--fail-under", str(args.evaluate_fail_under),
+        ]))
     if args.list:
         orchestrator.list_methods()
     elif args.full:
