@@ -256,10 +256,19 @@ def main():
     parser.add_argument('--unified-report', action='store_true', help='Generate unified HTML report')
     parser.add_argument('--full', action='store_true', help='Run full pipeline')
     parser.add_argument('--list', action='store_true', help='List all available methods')
+    parser.add_argument('--write-methods-md', action='store_true', help='Regenerate docs/METHODS.md (#6)')
+    parser.add_argument('--check-methods-md', action='store_true', help='CI drift check for METHODS.md (#6)')
 
     args = parser.parse_args()
     orchestrator = URLOrganizerOrchestrator()
 
+    if args.write_methods_md:
+        from src.organizers.registry import write_methods_md
+        print(write_methods_md())
+        return
+    if args.check_methods_md:
+        from src.organizers.registry import main as reg_main
+        raise SystemExit(reg_main(['--check']))
     if args.list:
         orchestrator.list_methods()
     elif args.full:
