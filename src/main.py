@@ -258,10 +258,25 @@ def main():
     parser.add_argument('--list', action='store_true', help='List all available methods')
     parser.add_argument('--write-methods-md', action='store_true', help='Regenerate docs/METHODS.md (#6)')
     parser.add_argument('--check-methods-md', action='store_true', help='CI drift check for METHODS.md (#6)')
+    parser.add_argument('--run-db', action='store_true', help='Unified run into results.db (#5)')
+    parser.add_argument('--urls-file', type=str, help='URL list for --run-db')
+    parser.add_argument('--results-db', type=str, default='data/results/results.db')
+    parser.add_argument('--run-methods', type=str, default='method_01_by_domain,method_02_by_depth')
+    parser.add_argument('--limit-methods', type=int, default=0)
 
     args = parser.parse_args()
     orchestrator = URLOrganizerOrchestrator()
 
+    if args.run_db:
+        from pathlib import Path as _P
+        from src.results.runner import main as run_main
+        if not args.urls_file:
+            print('--urls-file required with --run-db')
+            return
+        argv = ['--urls', args.urls_file, '--out', args.results_db, '--methods', args.run_methods]
+        if args.limit_methods:
+            argv += ['--limit-methods', str(args.limit_methods)]
+        raise SystemExit(run_main(argv))
     if args.write_methods_md:
         from src.organizers.registry import write_methods_md
         print(write_methods_md())
