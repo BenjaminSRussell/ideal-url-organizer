@@ -34,3 +34,7 @@ jobs:
             --ignore=tests/test_all_methods.py \
             --ignore=tests/test_all_methods_comprehensive.py \
             --ignore=tests/test_production.py
+      - name: METHODS.md drift check
+        env:
+          PYTHONPATH: "."
+        run: python -m src.organizers.registry --check
