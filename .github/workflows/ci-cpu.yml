@@ -23,8 +23,10 @@ jobs:
       - name: Pytest (CPU, skip GPU/MLX)
         env:
           IDEAL_URL_STUB_EMBEDDER: "1"
+          PYTHONPATH: "."
         run: |
           pytest -m "not gpu and not mlx" \
+            tests/test_http_cache.py \
             tests/test_stub_embedder.py \
             tests/test_canonical_url.py \
             tests/test_aggregator.py \
