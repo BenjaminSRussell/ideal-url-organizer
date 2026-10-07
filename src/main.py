@@ -242,6 +242,10 @@ class URLOrganizerOrchestrator:
 
 
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "export-seeds":
+        from scripts.export_seeds import main as export_main
+        raise SystemExit(export_main(sys.argv[2:]))
+
     """Main entry point"""
     parser = argparse.ArgumentParser(description='URL Organizer')
     parser.add_argument('--all', action='store_true', help='Run all organization methods')
