@@ -4,10 +4,11 @@ Uses urllib.parse for robust, standards-compliant URL manipulation
 
 THE GOLDEN RULE: Never use regex to parse URLs!
 """
-from urllib.parse import urlparse, urlunparse, parse_qs, urlencode, unquote
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode, unquote, quote
 from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 import copy
+import re
 
 
 @dataclass
@@ -40,13 +41,10 @@ class ParsedURL:
 
     def __str__(self) -> str:
         """Reconstruct URL from components"""
-        # Rebuild query string from query_dict
-        if self.query_dict:
-            query = urlencode(self.query_dict, doseq=True)
-        else:
-            query = self.query
+        # Always rebuild query from query_dict (even when empty) so tracker
+        # removal is not undone by falling back to the original query string.
+        query = urlencode(self.query_dict, doseq=True) if self.query_dict else ''
 
-        # Rebuild URL
         return urlunparse((
             self.scheme,
             self.netloc,
@@ -162,19 +160,27 @@ class URLParser:
                (new_url.scheme == 'https' and new_url.port == 443):
                 new_url.port = None
 
-        # Rebuild netloc with potentially modified hostname/port
+        # Rebuild netloc with potentially modified hostname/port (keep IPv6 brackets)
+        host = new_url.hostname
+        if host and ':' in host and not host.startswith('['):
+            host = f'[{host}]'
         if new_url.port:
-            new_url.netloc = f"{new_url.hostname}:{new_url.port}"
+            new_url.netloc = f"{host}:{new_url.port}"
         else:
-            new_url.netloc = new_url.hostname
+            new_url.netloc = host
 
-        # Remove trailing slash from path (but keep '/' for root)
+        # Normalize percent-encoding without changing path semantics:
+        # decode only unreserved chars; keep %2F/%3F/%23/%20 etc.
+        if decode_percent_encoding:
+            new_url.path = self._normalize_path_encoding(new_url.path)
+
+        # Remove trailing slash from path (but keep '/' for root) AFTER encoding normalize
         if remove_trailing_slash and len(new_url.path) > 1 and new_url.path.endswith('/'):
             new_url.path = new_url.path.rstrip('/')
 
-        # Decode percent encoding
-        if decode_percent_encoding:
-            new_url.path = unquote(new_url.path)
+        # Lowercase scheme for stable canonical form
+        if new_url.scheme:
+            new_url.scheme = new_url.scheme.lower()
 
         # Sort query parameters
         if sort_query_params and new_url.query_dict:
@@ -185,6 +191,27 @@ class URLParser:
             new_url.fragment = ''
 
         return new_url
+
+
+    @staticmethod
+    def _normalize_path_encoding(path: str) -> str:
+        """RFC 3986-ish path normalize: decode unreserved, keep reserved escapes."""
+        if not path:
+            return path
+        UNRESERVED = set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~')
+
+        def repl(match):
+            hexv = match.group(1)
+            try:
+                ch = bytes.fromhex(hexv).decode('utf-8')
+            except Exception:
+                return ('%' + hexv).upper()
+            if len(ch) == 1 and ch in UNRESERVED:
+                return ch
+            return f'%{hexv.upper()}'
+
+        normalized = re.sub(r'%([0-9a-fA-F]{2})', repl, path)
+        return quote(normalized, safe="/:@!$&'()*+,;=-._~%")
 
     def clean(self, url: str, normalize: bool = True, remove_trackers: bool = True) -> str:
         """
